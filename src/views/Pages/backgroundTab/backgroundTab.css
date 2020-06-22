@@ -90,6 +90,10 @@ button.active {
   width: 5%;
 }
 
+ul#socialList > li a:hover {
+  color: blue;
+}
+
 ul#headingList {
   text-decoration: none;
   margin-left: 5%;

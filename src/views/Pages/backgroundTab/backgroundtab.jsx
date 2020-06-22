@@ -37,7 +37,7 @@ class backgroundtab extends Component {
               </div>
             </div>
             <div className='row socializationLinks'>
-              <ul>
+              <ul id='socialList'>
                 <li>
                   <a
                     href='https://www.github.com/jatinkmr'
@@ -98,12 +98,11 @@ class backgroundtab extends Component {
           <div className='contentHolder'>
             <div className='contentHeading bg-dark'>
               <ul id='headingList' className='nav'>
-                <li className='nav-item'>
+                <li className='nav-item' onClick={this.changeHandler}>
                   <button
                     type='button'
                     className='btn btn-link active'
                     name='home'
-                    onClick={this.changeHandler}
                   >
                     <span>
                       <i className='fa fa-home'></i>
@@ -112,12 +111,11 @@ class backgroundtab extends Component {
                     Home
                   </button>
                 </li>
-                <li className='nav-item'>
+                <li className='nav-item' onClick={this.changeHandler}>
                   <button
                     type='button'
                     className='btn btn-link'
                     name='profile'
-                    onClick={this.changeHandler}
                   >
                     <span>
                       <i className='fa fa-user' aria-hidden='true'></i>
@@ -126,12 +124,11 @@ class backgroundtab extends Component {
                   Profile
                   </button>
                 </li>
-                <li className='nav-item'>
+                <li className='nav-item' onClick={this.changeHandler}>
                   <button
                     type='button'
                     className='btn btn-link'
                     name='contact'
-                    onClick={this.changeHandler}
                   >
                     <span>
                       <i className='fa fa-envelope' aria-hidden='true'></i>
