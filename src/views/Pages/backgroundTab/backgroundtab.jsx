@@ -1,7 +1,26 @@
 import React, { Component } from 'react'
 import './backgroundTab.css'
+import { appendScript } from './background.js'
 
 class backgroundtab extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      status: 'home'
+    }
+
+    // ChangeHandler for NavigationBar
+    this.changeHandler = this.changeHandler.bind(this)
+  }
+
+  componentDidMount () {
+    appendScript('./background.js')
+  }
+
+  changeHandler = event => {
+    this.setState({ status: event.target.name })
+    console.log('Status => ', event.target.name)
+  }
   render () {
     return (
       <div className='container'>
@@ -77,7 +96,57 @@ class backgroundtab extends Component {
             </div>
           </div>
           <div className='contentHolder'>
-            contentHolder
+            <div className='contentHeading bg-dark'>
+              <ul id='headingList' className='nav'>
+                <li className='nav-item'>
+                  <button
+                    type='button'
+                    className='btn btn-link active'
+                    name='home'
+                    onClick={this.changeHandler}
+                  >
+                    <span>
+                      <i className='fa fa-home'></i>
+                    </span>
+                    <br />
+                    Home
+                  </button>
+                </li>
+                <li className='nav-item'>
+                  <button
+                    type='button'
+                    className='btn btn-link'
+                    name='profile'
+                    onClick={this.changeHandler}
+                  >
+                    <span>
+                      <i className='fa fa-user' aria-hidden='true'></i>
+                    </span>
+                    <br />
+                  Profile
+                  </button>
+                </li>
+                <li className='nav-item'>
+                  <button
+                    type='button'
+                    className='btn btn-link'
+                    name='contact'
+                    onClick={this.changeHandler}
+                  >
+                    <span>
+                      <i className='fa fa-envelope' aria-hidden='true'></i>
+                    </span>
+                    <br />
+                  Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div className='contentData'>
+              {this.state.status === 'home' ? 'Home' : null}
+              {this.state.status === 'profile' ? 'profile' : null}
+              {this.state.status === 'contact' ? 'Contact' : null}
+            </div>
           </div>
         </div>
       </div>

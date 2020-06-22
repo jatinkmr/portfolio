@@ -1,14 +1,18 @@
 /* for Desktop and Laptop */
+button.active {
+  background-color: blue;
+  color: black;
+}
 
 .fakeDiv {
-    position: relative;
-    height: 50%;
-    padding: 4%;
+  position: relative;
+  height: 50%;
+  padding: 4%;
 }
 
 .dataHolder {
-    width: 100%;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
 }
 
 .socialMediaHolder {
@@ -19,106 +23,144 @@
 }
 
 .contentHolder {
-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
-width: 70%;
-float: right;
-
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  width: 70%;
+  float: right;
 }
 
 .topBackGround {
-    padding: 10%;
-    background-color: blue;
+  padding: 10%;
+  background-color: blue;
 }
 
 .profileImage {
-    text-align: center;
-    margin-top: -6%;
+  text-align: center;
+  margin-top: -6%;
 }
 
 .profileImage > img {
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
 }
 
 .socializeRow {
-    padding-left: 5%;
-    margin-top: 5%;
+  padding-left: 5%;
+  margin-top: 5%;
 }
 
 .socialization {
-    font-family: cursive;
-    height: 40px;
-    width: 35%;
-    background-color: grey;
-    padding: 3%;
-    margin-left: 5%;
+  font-family: cursive;
+  height: 40px;
+  width: 35%;
+  background-color: grey;
+  padding: 3%;
+  margin-left: 5%;
 }
 
 .socialization > b {
-    font-family: Brush Script Std cursive;
+  font-family: Brush Script Std cursive;
 }
 
 .socializationLinks > ul li a {
-    font-size: 37px;
-    color: red;
-    display: block;
-    text-decoration: none;
+  font-size: 37px;
+  color: red;
+  display: block;
+  text-decoration: none;
 }
 
 .socializationLinks > ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .socializationLinks > ul li {
-    position: relative;
-    float: left;
-    text-align: center;
-    margin-right: 20px;
+  position: relative;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
 }
 
 .socializationLinks {
-    margin-left: 2%;
-    padding-top: 5%;
+  margin-left: 2%;
+  padding-top: 5%;
 }
 
 .socializationLinks > span {
-    height: 5%;
-    width: 5%;
+  height: 5%;
+  width: 5%;
 }
 
+ul#headingList {
+  text-decoration: none;
+  margin-left: 5%;
+}
+
+ul#headingList > li {
+  height: 67px;
+  width: 13%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+}
+
+li.nav-item > button:hover {
+  background-color: blue;
+  color: red;
+  zoom: 1;
+  text-decoration: none;
+}
+
+li.nav-item > button {
+  width: 100px;
+}
 
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
-    .topBackGround {
-        padding: 12%;
-    }
-    .socialization {
-        width: 60%;
-    }
-    .socializationLinks > ul li a {
-        font-size: 25px;
-    }
+  .topBackGround {
+    padding: 16%;
+  }
+  .socialization {
+    width: 60%;
+  }
+  .socializationLinks > ul li a {
+    font-size: 25px;
+  }
+  ul#headingList > li {
+    width: 15%;
+    padding-left: 4%;
+    padding-right: 5%;
+  }
+  li.nav-item > button {
+    width: 70px;
+  }
 }
-
 
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
-    .socialMediaHolder {
-        width: 100%;
-    }
-    .contentHolder {
-        width: 100%;
-    }
-    .topBackGround {
-        padding: 10%;
-    }
-    .socialization {
-        width: 35%;
-    }
-    .socializationLinks > ul li a {
-        font-size: 30px;
-    }
+  .socialMediaHolder {
+    width: 100%;
+  }
+  .contentHolder {
+    width: 100%;
+  }
+  .topBackGround {
+    padding: 10%;
+  }
+  .socialization {
+    width: 35%;
+  }
+  .socializationLinks > ul li a {
+    font-size: 30px;
+  }
+  ul#headingList > li {
+    width: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  li.nav-item > button {
+    width: 70px;
+  }
 }
