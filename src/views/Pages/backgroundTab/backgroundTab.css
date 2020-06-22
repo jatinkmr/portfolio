@@ -12,14 +12,17 @@
 }
 
 .socialMediaHolder {
-    float: left;
-    width: 30%;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  width: 30%;
+  background: #262524;
+  float: left;
 }
 
 .contentHolder {
-    border-left: 2px solid black;
-    float: right;
-    width: 70%;
+box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+width: 70%;
+float: right;
+
 }
 
 .topBackGround {
