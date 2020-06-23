@@ -1,0 +1,195 @@
+/* for Desktop and Laptop */
+.a {
+  font-family: "Milkshake", Cursive;
+  color: white;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+
+.b {
+  color: rgb(18, 9, 68);
+  font-family: "La Belle Aurore", cursive;
+}
+
+.a:hover {
+  color: orange;
+  /* animation: rubberBand 5s infinite; */
+  animation-name: rubberBand;
+}
+
+.b:hover {
+  color: red;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.mainDiv {
+  padding-left: 6%;
+  padding-bottom: 3%;
+}
+
+.intro {
+  float: left;
+  text-align: left;
+  padding-left: 4%;
+  padding-top: 5%;
+  width: 70%;
+}
+
+.resumeHolder {
+  float: right;
+  width: 30%;
+}
+
+.hello {
+  background-color: grey;
+  width: 45%;
+  font-size: 65%;
+  text-align: center;
+}
+
+.myName {
+  background-color: #616161;
+  margin-top: 3%;
+  width: 72%;
+  text-align: center;
+}
+
+.jImage > img {
+  width: 10%;
+}
+
+.developer {
+  background-color: #696969;
+  width: 75%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.desig {
+  background-color: #696969;
+  width: 90%;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.coffee {
+  background-color: #9895d0;
+  margin-top: 5%;
+  width: 60%;
+  font-size: 40px;
+}
+
+.coffee > span {
+  font-size: 48px;
+  color: red;
+}
+
+.resumeHeader {
+  padding-left: 10%;
+}
+
+.resumeHeaderContent {
+  box-shadow: 0 0 20px 1px rgb(122, 120, 146);
+  padding: 2%;
+  width: 80%;
+  margin-top: 15%;
+  background-color: blue;
+  font-family: system-ui;
+  text-align: center;
+}
+
+.resumeDiv {
+  margin-top: 15%;
+  margin-left: 8%;
+  width: 80%;
+}
+
+.resumeButton {
+  background-color: silver;
+  border-radius: 90px;
+  width: 100%;
+  color: red;
+  font-family: cursive, sans-serif;
+}
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+  .hello {
+    width: 50%;
+  }
+  .myName {
+    font-size: 30px;
+    width: 80%;
+  }
+  .developer {
+    width: 85%;
+    font-size: 30px;
+  }
+  .desig {
+    width: 90%;
+  }
+  .desig > h2 {
+    font-size: 20px;
+  }
+  .coffee {
+    width: 65%;
+    font-size: 25px;
+  }
+  .coffee > i {
+    font-size: 25px;
+  }
+  .resumeButton {
+    font-size: 10px;
+  }
+}
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+  .hello {
+    width: 50%;
+    font-size: 60%;
+  }
+  .myName {
+    width: 76%;
+  }
+  .coffee {
+    font-size: 30px;
+  }
+  .coffee > i {
+    font-size: 35px;
+  }
+  .resumeHolder {
+    width: 100%;
+    text-align: center;
+  }
+  .resumeDiv {
+    padding-left: 10%;
+  }
+}

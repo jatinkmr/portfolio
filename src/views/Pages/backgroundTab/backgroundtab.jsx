@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './backgroundTab.css'
 import { appendScript } from './background.js'
+import HomeTab from '../homeTab/hometab.jsx'
+import ProfileTab from '../profileTab/profiletab.jsx'
 
 // class backgroundtab
 class backgroundtab extends Component {
@@ -22,7 +24,7 @@ class backgroundtab extends Component {
 
   // ChangeHandler function for changin the tab
   changeHandler = event => {
-    this.setState({ status: event.target.name })
+    // this.setState({ status: event.target.name })
     console.log('Status => ', event.target.name)
   }
 
@@ -114,28 +116,20 @@ class backgroundtab extends Component {
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
-                  <button
-                    type='button'
-                    className='btn btn-link'
-                    name='profile'
-                  >
+                  <button type='button' className='btn btn-link' name='profile'>
                     Profile
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
-                  <button
-                    type='button' 
-                    className='btn btn-link'
-                    name='contact'
-                  >
+                  <button type='button' className='btn btn-link' name='contact'>
                     Contact
                   </button>
                 </li>
               </ul>
             </div>
             <div className='contentData'>
-              {this.state.status === 'home' ? 'Home' : null}
-              {this.state.status === 'profile' ? 'profile' : null}
+              {this.state.status === 'home' ? <HomeTab /> : null}
+              {this.state.status === 'profile' ? <ProfileTab /> : null}
               {this.state.status === 'contact' ? 'Contact' : null}
             </div>
           </div>
