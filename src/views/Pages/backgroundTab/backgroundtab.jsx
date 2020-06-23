@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import './backgroundTab.css'
 import { appendScript } from './background.js'
 
+// class backgroundtab
 class backgroundtab extends Component {
+  // constructor
   constructor (props) {
     super(props)
     this.state = {
@@ -13,14 +15,18 @@ class backgroundtab extends Component {
     this.changeHandler = this.changeHandler.bind(this)
   }
 
+  // import js file into jsx file
   componentDidMount () {
     appendScript('./background.js')
   }
 
+  // ChangeHandler function for changin the tab
   changeHandler = event => {
     this.setState({ status: event.target.name })
     console.log('Status => ', event.target.name)
   }
+
+  // render function which render's all the content
   render () {
     return (
       <div className='container'>
@@ -104,10 +110,6 @@ class backgroundtab extends Component {
                     className='btn btn-link active'
                     name='home'
                   >
-                    <span>
-                      <i className='fa fa-home'></i>
-                    </span>
-                    <br />
                     Home
                   </button>
                 </li>
@@ -117,24 +119,16 @@ class backgroundtab extends Component {
                     className='btn btn-link'
                     name='profile'
                   >
-                    <span>
-                      <i className='fa fa-user' aria-hidden='true'></i>
-                    </span>
-                    <br />
-                  Profile
+                    Profile
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
                   <button
-                    type='button'
+                    type='button' 
                     className='btn btn-link'
                     name='contact'
                   >
-                    <span>
-                      <i className='fa fa-envelope' aria-hidden='true'></i>
-                    </span>
-                    <br />
-                  Contact
+                    Contact
                   </button>
                 </li>
               </ul>
@@ -151,4 +145,5 @@ class backgroundtab extends Component {
   }
 }
 
+// export backgroundtab class
 export default backgroundtab

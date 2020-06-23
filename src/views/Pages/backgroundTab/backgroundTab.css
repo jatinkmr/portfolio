@@ -1,4 +1,5 @@
 /* for Desktop and Laptop */
+
 button.active {
   background-color: blue;
   color: black;
@@ -100,12 +101,8 @@ ul#headingList {
 }
 
 ul#headingList > li {
-  height: 67px;
-  width: 13%;
-  padding-top: 1%;
-  padding-left: 1%;
-  padding-bottom: 1%;
-  padding-right: 1%;
+  padding-right: 5%;
+  width: 14%;
 }
 
 li.nav-item > button:hover {
@@ -119,11 +116,20 @@ li.nav-item > button {
   width: 100px;
 }
 
+.contentData {
+  background-color: #262524;
+}
+
+.contentHeading {
+  padding: 2%;
+}
+
+
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
   .topBackGround {
-    padding: 16%;
+    padding: 13%;
   }
   .socialization {
     width: 60%;
@@ -131,15 +137,15 @@ li.nav-item > button {
   .socializationLinks > ul li a {
     font-size: 25px;
   }
-  ul#headingList > li {
-    width: 15%;
-    padding-left: 4%;
-    padding-right: 5%;
-  }
   li.nav-item > button {
     width: 70px;
   }
+  ul#headingList > li {
+    padding-right: 0%;
+    width: 14%
+  }
 }
+
 
 /* for mobilePhones */
 
@@ -159,12 +165,14 @@ li.nav-item > button {
   .socializationLinks > ul li a {
     font-size: 30px;
   }
-  ul#headingList > li {
-    width: 20%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
   li.nav-item > button {
     width: 70px;
+  }
+  ul#headingList > li {
+    margin-right: 10%;
+  }
+  ul#headingList > button {
+    padding-right: 5%;
+    width: 14%
   }
 }
