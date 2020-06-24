@@ -140,6 +140,9 @@
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
+  .resumeHeaderContent {
+    font-size: 10px;
+  }
   .myName {
     width: 85%;
   }
@@ -175,6 +178,9 @@
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
+  .resumeHeaderContent {
+    font-size: 15px;
+  }
   .intro {
     width: 90%;
   }
@@ -183,10 +189,10 @@
     font-size: 60%;
   }
   .myName {
-    width: 95%;
+    width: 97%;
   }
   .developer {
-    width: 95%;
+    width: 97%;
   }
   .desig {
     width: 100%;
