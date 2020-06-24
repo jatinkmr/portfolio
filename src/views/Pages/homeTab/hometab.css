@@ -173,17 +173,24 @@
 
 @media screen and (max-width: 767px) {
   .hello {
-    width: 50%;
+    width: 70%;
     font-size: 60%;
   }
   .myName {
-    width: 76%;
+    width: 95%;
+  }
+  .developer {
+    width: 95%;
+  }
+  .desig {
+    width: 100%;
   }
   .coffee {
-    font-size: 30px;
+    font-size: 25px;
+    width: 90%;
   }
   .coffee > i {
-    font-size: 35px;
+    font-size: 30px;
   }
   .resumeHolder {
     width: 100%;

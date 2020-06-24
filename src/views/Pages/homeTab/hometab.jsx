@@ -65,7 +65,7 @@ class HomeTab extends Component {
             <h2>
               <span className='a'>MERN Stack </span>
               &nbsp;
-              <span className='a'>/</span>
+              <span className='a b'>/</span>
               &nbsp;
               <span className='a'>FULL Stack</span>
             </h2>
