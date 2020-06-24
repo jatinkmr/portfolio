@@ -24,8 +24,8 @@ class backgroundtab extends Component {
 
   // ChangeHandler function for changin the tab
   changeHandler = event => {
-    // this.setState({ status: event.target.name })
-    console.log('Status => ', event.target.name)
+    this.setState({ status: event.target.name })
+    // console.log('Status => ', event.target.name)
   }
 
   // render function which render's all the content

@@ -21,6 +21,7 @@ button.active {
   width: 30%;
   background: #262524;
   float: left;
+  min-height: 31.3em;
 }
 
 .contentHolder {
@@ -118,6 +119,7 @@ li.nav-item > button {
 
 .contentData {
   background-color: #262524;
+  min-height: 27em;
 }
 
 .contentHeading {
@@ -143,6 +145,12 @@ li.nav-item > button {
   ul#headingList > li {
     padding-right: 0%;
     width: 14%
+  }
+  .contentData {
+    min-height: 21.3em;
+  }
+  .socialMediaHolder {
+    min-height: 25em
   }
 }
 
