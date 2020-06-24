@@ -140,6 +140,9 @@
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
+  .myName {
+    width: 85%;
+  }
   .hello {
     width: 50%;
   }
@@ -172,6 +175,9 @@
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
+  .intro {
+    width: 90%;
+  }
   .hello {
     width: 70%;
     font-size: 60%;
@@ -187,7 +193,7 @@
   }
   .coffee {
     font-size: 25px;
-    width: 90%;
+    width: 75%;
   }
   .coffee > i {
     font-size: 30px;
@@ -197,6 +203,10 @@
     text-align: center;
   }
   .resumeDiv {
-    padding-left: 10%;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .resumeButton {
+    height: 30px;
   }
 }
