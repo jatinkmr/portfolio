@@ -41,7 +41,7 @@ class backgroundtab extends Component {
             </div>
             <div className='row socializeRow'>
               <div className='socialization'>
-                I <b>socialize</b> On
+                I <strong>socialize</strong> On
               </div>
             </div>
             <div className='row socializationLinks'>

@@ -126,6 +126,11 @@ li.nav-item > button {
   padding: 2%;
 }
 
+.socialization:hover {
+  color: red;
+  zoom: 1;
+}
+
 
 /* for tablets */
 

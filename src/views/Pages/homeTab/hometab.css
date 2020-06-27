@@ -137,6 +137,11 @@
   font-family: cursive, sans-serif;
 }
 
+.resumeButton:hover {
+  color: blue;
+  cursor: pointer;
+}
+
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
