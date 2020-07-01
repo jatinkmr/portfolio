@@ -52,7 +52,7 @@ button.active {
 .socialization {
   font-family: cursive;
   height: 40px;
-  width: 35%;
+  width: 40%;
   background-color: grey;
   padding: 3%;
   margin-left: 5%;
@@ -131,6 +131,19 @@ li.nav-item > button {
   zoom: 1;
 }
 
+.footerContent {
+  padding: 1%;
+  color: #b3d471;
+  background-color: #423232;
+  margin-bottom: 5%;
+  width: 100%;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+  font-family: Cursive;
+}
+
+.footerContent > p {
+  width: 100%;
+}
 
 /* for tablets */
 
@@ -163,6 +176,10 @@ li.nav-item > button {
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
+  .footerContent,
+  .dataHolder {
+    margin-left: 0.5%;
+  }
   .socialMediaHolder {
     width: 100%;
   }
@@ -187,5 +204,8 @@ li.nav-item > button {
   ul#headingList > button {
     padding-right: 5%;
     width: 14%
+  }
+  .footerContent {
+    margin-bottom: 15%;
   }
 }

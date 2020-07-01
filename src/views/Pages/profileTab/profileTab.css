@@ -1,0 +1,32 @@
+/* for Desktop and Laptop */
+.skills {
+    color: white;
+    border: 1px solid white;
+    float: left;
+    width: 40%;
+}
+.experience {
+    color: white;
+    border: 1px solid white;
+    float: right;
+    width: 50%;
+}
+.skill {
+    color: red;
+    font-family: URW Chancery L, cursive
+}
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {}
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+    .skills {
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+    }
+}

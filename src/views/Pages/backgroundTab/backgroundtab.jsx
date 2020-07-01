@@ -33,7 +33,7 @@ class backgroundtab extends Component {
     return (
       <div className='container'>
         <div className='row fakeDiv'></div>
-        <div className='dataHolder'>
+        <div className='row dataHolder'>
           <div className='socialMediaHolder'>
             <div className='topBackGround'></div>
             <div className='profileImage'>
@@ -133,6 +133,9 @@ class backgroundtab extends Component {
               {this.state.status === 'contact' ? 'Contact' : null}
             </div>
           </div>
+        </div>
+        <div className='row footerContent'>
+          <p className='text-right'>Copyright &copy; 2020 Jatin Kumar Kamboj</p>
         </div>
       </div>
     )
