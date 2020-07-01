@@ -10,24 +10,45 @@ class ProfileTab extends Component {
                     <h2 className='a skill'>Skills</h2>
                     <div className='skillSection'>
                         <span className='skillHeading'>GIT</span>
+                        <div className='skillGrade'>
+                            <div className='gitSkill'></div>
+                        </div>
                     </div>
                     <div className='skillSection'>
                         <span className='skillHeading'>HTML/PUG & CSS</span>
-                    </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>PHP</span>
+                        <div className='skillGrade'>
+                            <div className='htmlSkill'></div>
+                        </div>
                     </div>
                     <div className='skillSection'>
                         <span className='skillHeading'>ReactJS</span>
+                        <div className='skillGrade'>
+                            <div className='reactSkill'></div>
+                        </div>
+                    </div>
+                    <div className='skillSection'>
+                        <span className='skillHeading'>pHp</span>
+                        <div className='skillGrade'>
+                            <div className='phpMySql'></div>
+                        </div>
                     </div>
                     <div className='skillSection'>
                         <span className='skillHeading'>NodeJS</span>
+                        <div className='skillGrade'>
+                            <div className='nodeJsSkill'></div>
+                        </div>
                     </div>
                     <div className='skillSection'>
                         <span className='skillHeading'>MySQL</span>
+                        <div className='skillGrade'>
+                            <div className='phpMySql'></div>
+                        </div>
                     </div>
                     <div className='skillSection'>
                         <span className='skillHeading'>MongoDB</span>
+                        <div className='skillGrade'>
+                            <div className='mongoDb'></div>
+                        </div>
                     </div>
                 </div>
                 <div className='experience'>

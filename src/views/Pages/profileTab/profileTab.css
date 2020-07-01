@@ -5,26 +5,70 @@
 }
 .skills {
   color: white;
-  border: 1px solid white;
   float: left;
   width: 40%;
 }
 .experience {
   color: white;
-  border: 1px solid white;
   float: right;
   width: 50%;
 }
 .skill {
   color: red;
   font-family: URW Chancery L, cursive;
+  text-decoration: underline;
+  text-decoration-style: double;
+  text-decoration-color: #91924ac4;
 }
 .skillSection {
   margin-top: 5%;
-  margin-bottom: 3%;
+  margin-bottom: 7%;
 }
 .skillHeading {
   padding-left: 3%;
+  color: #bc90de;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 18px;
+}
+.skillHeading:hover {
+  color: #d44545;
+}
+.skillGrade {
+  height: 5px;
+  background-color: grey;
+  width: 80%;
+  margin-left: 3%;
+}
+.nodeJsSkill {
+  background-color: blue;
+  width: 60%;
+  height: 5px;
+}
+.gitSkill {
+  background-color: blue;
+  height: 5px;
+  width: 70%;
+}
+.htmlSkill {
+  background-color: blue;
+  height: 5px;
+  width: 70%;
+}
+.reactSkill {
+  background-color: blue;
+  height: 5px;
+  width: 50%;
+}
+.phpMySql {
+  background-color: blue;
+  height: 5px;
+  width: 55%;
+}
+.mongoDb {
+  background-color: blue;
+  height: 5px;
+  width: 50%;
 }
 
 /* for tablets */
@@ -32,6 +76,9 @@
 @media screen and (max-width: 1000px) {
   .skill {
     font-size: 20px;
+  }
+  .skillHeading {
+    font-size: 13px;
   }
 }
 
@@ -43,5 +90,8 @@
   }
   .experience {
     width: 80%;
+  }
+  .skillHeading {
+    font-size: 15px;
   }
 }
