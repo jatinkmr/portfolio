@@ -1,7 +1,7 @@
 /* for Desktop and Laptop */
 .a {
   font-family: "Milkshake", Cursive;
-  color: white;
+  color: #520a0a;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
@@ -106,6 +106,10 @@
 
 .coffee > span {
   font-size: 48px;
+  color: red;
+}
+
+.iLove {
   color: red;
 }
 

@@ -42,7 +42,7 @@
 }
 .nodeJsSkill {
   background-color: blue;
-  width: 60%;
+  width: 65%;
   height: 5px;
 }
 .gitSkill {
@@ -63,12 +63,12 @@
 .phpMySql {
   background-color: blue;
   height: 5px;
-  width: 55%;
+  width: 60%;
 }
 .mongoDb {
   background-color: blue;
   height: 5px;
-  width: 50%;
+  width: 60%;
 }
 
 /* for tablets */
@@ -85,6 +85,9 @@
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
+  .skill {
+    font-size: 35px;
+  }
   .skills {
     width: 80%;
   }
