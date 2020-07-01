@@ -1,32 +1,47 @@
 /* for Desktop and Laptop */
+.mainProfileDiv {
+  padding-left: 6%;
+  padding-top: 3%;
+}
 .skills {
-    color: white;
-    border: 1px solid white;
-    float: left;
-    width: 40%;
+  color: white;
+  border: 1px solid white;
+  float: left;
+  width: 40%;
 }
 .experience {
-    color: white;
-    border: 1px solid white;
-    float: right;
-    width: 50%;
+  color: white;
+  border: 1px solid white;
+  float: right;
+  width: 50%;
 }
 .skill {
-    color: red;
-    font-family: URW Chancery L, cursive
+  color: red;
+  font-family: URW Chancery L, cursive;
+}
+.skillSection {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.skillHeading {
+  padding-left: 3%;
 }
 
 /* for tablets */
 
-@media screen and (max-width: 1000px) {}
+@media screen and (max-width: 1000px) {
+  .skill {
+    font-size: 20px;
+  }
+}
 
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
-    .skills {
-        width: 100%;
-    }
-    .experience {
-        width: 100%;
-    }
+  .skills {
+    width: 80%;
+  }
+  .experience {
+    width: 80%;
+  }
 }

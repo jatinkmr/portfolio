@@ -142,6 +142,10 @@
   cursor: pointer;
 }
 
+.coffeeColor > i{
+  color: #6f4e37;
+}
+
 /* for tablets */
 
 @media screen and (max-width: 1000px) {

@@ -78,7 +78,7 @@ class HomeTab extends Component {
             <span className='a'>
               <i className='fa fa-heart' aria-hidden='true'></i>
             </span>{' '}
-            <span className='a'>
+            <span className='a coffeeColor'>
               <i className='fa fa-coffee' aria-hidden='true'></i>
             </span>
           </div>

@@ -135,7 +135,7 @@ class backgroundtab extends Component {
           </div>
         </div>
         <div className='row footerContent'>
-          <p className='text-right'>Copyright &copy; 2020 Jatin Kumar Kamboj</p>
+          <p className='text-right'>Copyright &copy; 2020 Jatin Kumar "Kamboj"</p>
         </div>
       </div>
     )
