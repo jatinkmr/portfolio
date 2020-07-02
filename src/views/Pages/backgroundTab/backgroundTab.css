@@ -41,7 +41,17 @@ button.active {
 }
 
 .profileImage > img {
-  box-shadow: 0 0 20px 1px black
+  box-shadow: 6px 6px black;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.profileImage > img:hover {
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
 }
 
 .socializeRow {
@@ -57,6 +67,16 @@ button.active {
   padding: 3%;
   margin-left: 5%;
   box-shadow: 7px 7px #1b0308;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.socialization:hover {
+  transform: translate3d(7px, 7px, 0);
+  box-shadow: 0px 0px #1b0308;
 }
 
 .socialization > strong {
@@ -164,16 +184,15 @@ li.nav-item > button {
   }
   ul#headingList > li {
     padding-right: 0%;
-    width: 14%
+    width: 14%;
   }
   .contentData {
     min-height: 21.3em;
   }
   .socialMediaHolder {
-    min-height: 25em
+    min-height: 25em;
   }
 }
-
 
 /* for mobilePhones */
 
@@ -205,7 +224,7 @@ li.nav-item > button {
   }
   ul#headingList > button {
     padding-right: 5%;
-    width: 14%
+    width: 14%;
   }
   .footerContent {
     margin-bottom: 15%;

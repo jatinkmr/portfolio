@@ -72,17 +72,17 @@ class HomeTab extends Component {
           </div>
           <div className='coffee'>
             P.S.{' '}
-            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="I">
+            <span className="d-inline-block" tabIndex="0" data-toggle="tooltip" title="I">
               <span className='a iLove'>
                 <i className='fa fa-italic' aria-hidden='true'></i>
               </span>{' '}
             </span>
-            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Love">
+            <span className="d-inline-block" tabIndex="0" data-toggle="tooltip" title="Love">
               <span className='a iLove'>
                 <i className='fa fa-heart' aria-hidden='true'></i>
               </span>{' '}
             </span>
-            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Coffee">
+            <span className="d-inline-block" tabIndex="0" data-toggle="tooltip" title="Coffee">
               <span className='a coffeeColor'>
                 <i className='fa fa-coffee' aria-hidden='true'></i>
               </span>
