@@ -62,13 +62,13 @@ class HomeTab extends Component {
             </div>
           </h1>
           <div className='desig'>
-            <h2>
+            <p>
               <span className='a'>MERN Stack </span>
               &nbsp;
               <span className='a b'>/</span>
               &nbsp;
               <span className='a'>FULL Stack</span>
-            </h2>
+            </p>
           </div>
           <div className='coffee'>
             P.S.{' '}

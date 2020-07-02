@@ -76,7 +76,7 @@
 .myName {
   background-color: #616161;
   margin-top: 3%;
-  width: 72%;
+  width: 75%;
   text-align: center;
 }
 
@@ -96,9 +96,11 @@
   width: 90%;
   margin-top: 3%;
   text-align: center;
+  font-size: 1.75rem;
 }
 
 .coffee {
+  font-family: fantasy;
   background-color: #9895d0;
   margin-top: 5%;
   width: 60%;
@@ -161,7 +163,7 @@
     width: 85%;
   }
   .hello {
-    width: 50%;
+    width: 55%;
   }
   .myName {
     font-size: 30px;
@@ -173,6 +175,7 @@
   }
   .desig {
     width: 90%;
+    font-size: 1.40rem;
   }
   .desig > h2 {
     font-size: 20px;
