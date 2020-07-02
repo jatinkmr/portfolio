@@ -56,10 +56,11 @@ button.active {
   background-color: grey;
   padding: 3%;
   margin-left: 5%;
+  box-shadow: 7px 7px #1b0308;
 }
 
-.socialization > b {
-  font-family: Brush Script Std cursive;
+.socialization > strong {
+  font-family: "Milkshake", Cursive;
 }
 
 .socializationLinks > ul li a {
@@ -94,6 +95,7 @@ button.active {
 
 ul#socialList > li a:hover {
   color: blue;
+  text-shadow: 2px 2px white;
 }
 
 ul#headingList {
