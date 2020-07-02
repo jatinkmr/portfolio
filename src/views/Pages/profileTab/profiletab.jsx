@@ -53,6 +53,7 @@ class ProfileTab extends Component {
                 </div>
                 <div className='experience'>
                     <h2 className='a skill'>Experience</h2>
+                    <div></div>
                 </div>
             </div>
         )

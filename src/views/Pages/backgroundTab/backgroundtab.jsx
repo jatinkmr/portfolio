@@ -37,7 +37,7 @@ class backgroundtab extends Component {
           <div className='socialMediaHolder'>
             <div className='topBackGround'></div>
             <div className='profileImage'>
-              <img src='images/mine.jpg' alt='mine' height='10%' width='60%' />
+              <img src='images/mine.jpg' alt='mine' height='10%' width='60%' data-toggle='tooltip' title='Jatin Kumar "Kamboj"' />
             </div>
             <div className='row socializeRow'>
               <div className='socialization'>
@@ -51,6 +51,7 @@ class backgroundtab extends Component {
                     href='https://www.github.com/jatinkmr'
                     target='_blank'
                     rel='noopener noreferrer'
+                    data-toggle='tooltip' title='GitHub'
                   >
                     <i className='fa fa-github-square'></i>
                   </a>
@@ -60,6 +61,7 @@ class backgroundtab extends Component {
                     href='https://www.linkedin.com/in/jatinkumarkamboj/'
                     target='_blank'
                     rel='noopener noreferrer'
+                    data-toggle='tooltip' title='LinkedIn'
                   >
                     <i className='fa fa-linkedin'></i>
                   </a>
@@ -69,6 +71,7 @@ class backgroundtab extends Component {
                     href='mailto:kumar.jatin873@gmail.com'
                     target='_blank'
                     rel='noopener noreferrer'
+                    data-toggle='tooltip' title='Google(gMail)'
                   >
                     <i className='fa fa-google-plus'></i>
                   </a>
@@ -78,6 +81,7 @@ class backgroundtab extends Component {
                     href='https://twitter.com/jatinkrkamboj'
                     target='_blank'
                     rel='noopener noreferrer'
+                    data-toggle='tooltip' title='Twitter'
                   >
                     <i className='fa fa-twitter'></i>
                   </a>
@@ -87,6 +91,7 @@ class backgroundtab extends Component {
                     href='https://www.instagram.com/ijatinkrkamb0j/'
                     target='_blank'
                     rel='noopener noreferrer'
+                    data-toggle='tooltip' title='InstaGram'
                   >
                     <i className='fa fa-instagram'></i>
                   </a>
@@ -96,6 +101,7 @@ class backgroundtab extends Component {
                     href='https://www.facebook.com/jatin.kamboj.37'
                     target='_blank'
                     rel='noopener noreferrer'
+                    data-toggle='tooltip' title='FaceBook'
                   >
                     <i className='fa fa-facebook-square'></i>
                   </a>

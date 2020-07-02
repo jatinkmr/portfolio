@@ -33,6 +33,8 @@
 }
 .skillHeading:hover {
   color: #d44545;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 .skillGrade {
   height: 5px;
@@ -68,7 +70,7 @@
 .mongoDb {
   background-color: blue;
   height: 5px;
-  width: 60%;
+  width: 50%;
 }
 
 /* for tablets */
