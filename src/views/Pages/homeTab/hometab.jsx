@@ -92,7 +92,7 @@ class HomeTab extends Component {
         <div className='resumeHolder'>
           <div className='resumeHeader'>
             <div className='resumeHeaderContent'>
-              Some <b>Other</b> points
+              Some <b>૦੮Һ૯Ր</b> points
             </div>
           </div>
           <div className='resumeDiv'>

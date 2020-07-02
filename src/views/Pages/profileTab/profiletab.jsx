@@ -50,6 +50,24 @@ class ProfileTab extends Component {
                             <div className='mongoDb'></div>
                         </div>
                     </div>
+                    <div className='skillSection'>
+                        <span className='skillHeading'>postgreSql</span>
+                        <div className='skillGrade'>
+                            <div className='postgreSql'></div>
+                        </div>
+                    </div>
+                    <div className='skillSection'>
+                        <span className='skillHeading'>KnexJS</span>
+                        <div className='skillGrade'>
+                            <div className='knexJs'></div>
+                        </div>
+                    </div>
+                    <div className='skillSection'>
+                        <span className='skillHeading'>Java</span>
+                        <div className='skillGrade'>
+                            <div className='java'></div>
+                        </div>
+                    </div>
                 </div>
                 <div className='experience'>
                     <h2 className='a skill'>Experience</h2>

@@ -35,6 +35,7 @@
   color: #d44545;
   text-decoration: underline;
   text-decoration-color: white;
+  text-shadow: 1px 2px black;
 }
 .skillGrade {
   height: 5px;
@@ -71,6 +72,21 @@
   background-color: blue;
   height: 5px;
   width: 50%;
+}
+.postgreSql {
+  background-color: blue;
+  height: 5px;
+  width: 45%;
+}
+.knexJs {
+  background-color: blue;
+  height: 5px;
+  width: 50%;
+}
+.java {
+  background-color: blue;
+  height: 5px;
+  width: 55%;
 }
 
 /* for tablets */
