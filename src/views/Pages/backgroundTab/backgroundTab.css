@@ -116,6 +116,7 @@ button.active {
 ul#socialList > li a:hover {
   color: blue;
   text-shadow: 2px 2px white;
+  transform: translate3d(0, -6px, -6px);
 }
 
 ul#headingList {
@@ -126,9 +127,11 @@ ul#headingList {
 ul#headingList > li {
   padding-right: 5%;
   width: 14%;
+  margin-right: 2%;
 }
 
 li.nav-item > button:hover {
+  box-shadow: 4px 4px black;
   background-color: blue;
   color: red;
   zoom: 1;
