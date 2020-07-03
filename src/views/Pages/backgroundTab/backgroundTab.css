@@ -188,6 +188,7 @@ li.nav-item > button {
   ul#headingList > li {
     padding-right: 0%;
     width: 14%;
+    margin-right: 3%;
   }
   .contentData {
     min-height: 21.3em;
