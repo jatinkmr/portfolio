@@ -72,13 +72,24 @@ class ProfileTab extends Component {
                 <div className='experience'>
                     <h2 className='a skill'>Work Experience</h2>
                     <div className='row workExperience'>
-                        <h3>Intern Software Developer</h3>
-                        <div className='row nameAndYear'>
-                            <div className='col-md-6'>
-                                <p>iTM(iTechMission) Pvt. Ltd.</p>
-                            </div>
-                            <div className='col-md-6'>
-                                <p>July 2019 - October 2019</p>
+                        <div className='braces'>
+                            <p>&#x007B;</p>
+                        </div>
+                        <div className='experienceData'>
+                            <div className='position a'>Intern Software Developer</div>
+                            <div className='companyAndYear'>
+                                <div className='companyName a'>
+                                    <a
+                                        href='http://www.itechmission.org/'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        data-toggle='tooltip'
+                                        title='iTM'
+                                    >
+                                        iTM(iTechMission) Pvt. Ltd.
+                                    </a>
+                                </div>
+                                <div className='year a'>Jul 2019 - Oct 2019</div>
                             </div>
                         </div>
                     </div>

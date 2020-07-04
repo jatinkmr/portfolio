@@ -14,7 +14,7 @@
 .experience {
   color: white;
   float: right;
-  width: 55%;
+  width: 60%;
 }
 
 .skill {
@@ -108,11 +108,50 @@
 
 .workExperience {
   padding-top: 5%;
-  padding-left: 4%;
+  padding-left: 3%;
 }
 
 .nameAndYear {
   width: 100%;
+}
+
+.companyAndYear {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.companyName {
+  font-family: Times, Times New Roman, Georgia, serif;
+  float: left;
+  width: 55%;
+}
+
+.companyName > a:hover {
+  color: #a79074d6;
+}
+
+.year {
+  font-family: Times, Times New Roman, Georgia, serif;
+  color: #8a9abf;
+  float: right;
+  width: 45%;
+}
+
+.braces {
+  color: #0ed642;
+  font-size: 60px;
+  margin-right: 2%;
+}
+
+.experienceData {
+  width: 90%;
+}
+
+.position {
+  font-family: fira code;
+  color: #e5b9b8;
+  font-size: 20px;
+  margin-top: 3%;
 }
 
 /* for tablets */
@@ -124,8 +163,19 @@
   .skillHeading {
     font-size: 13px;
   }
+  .position {
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  .companyName {
+    width: 45%;
+    font-size: 12px;
+  }
+  .year {
+    width: 55%;
+    font-size: 12px;
+  }
 }
-
 
 /* for mobilePhones */
 
@@ -140,6 +190,18 @@
     width: 80%;
   }
   .skillHeading {
+    font-size: 15px;
+  }
+  .position {
+    margin-top: 3%;
+    font-size: 19px;
+  }
+  .companyName {
+    width: 50%;
+    font-size: 15px;
+  }
+  .year {
+    width: 50%;
     font-size: 15px;
   }
 }
