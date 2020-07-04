@@ -1,18 +1,22 @@
 /* for Desktop and Laptop */
+
 .mainProfileDiv {
   padding-left: 6%;
   padding-top: 3%;
 }
+
 .skills {
   color: white;
   float: left;
   width: 40%;
 }
+
 .experience {
   color: white;
   float: right;
-  width: 50%;
+  width: 55%;
 }
+
 .skill {
   color: red;
   font-family: URW Chancery L, cursive;
@@ -20,10 +24,12 @@
   text-decoration-style: double;
   text-decoration-color: #91924ac4;
 }
+
 .skillSection {
   margin-top: 5%;
   margin-bottom: 7%;
 }
+
 .skillHeading {
   padding-left: 3%;
   color: #bc90de;
@@ -31,62 +37,82 @@
   font-weight: bold;
   font-size: 18px;
 }
+
 .skillHeading:hover {
   color: #d44545;
   text-decoration: underline;
   text-decoration-color: white;
   text-shadow: 1px 2px black;
 }
+
 .skillGrade {
   height: 5px;
   background-color: grey;
   width: 80%;
   margin-left: 3%;
 }
+
 .nodeJsSkill {
   background-color: blue;
   width: 65%;
   height: 5px;
 }
+
 .gitSkill {
   background-color: blue;
   height: 5px;
   width: 60%;
 }
+
 .htmlSkill {
   background-color: blue;
   height: 5px;
   width: 55%;
 }
+
 .reactSkill {
   background-color: blue;
   height: 5px;
   width: 45%;
 }
+
 .phpMySql {
   background-color: blue;
   height: 5px;
   width: 55%;
 }
+
 .mongoDb {
   background-color: blue;
   height: 5px;
   width: 50%;
 }
+
 .postgreSql {
   background-color: blue;
   height: 5px;
   width: 45%;
 }
+
 .knexJs {
   background-color: blue;
   height: 5px;
   width: 50%;
 }
+
 .java {
   background-color: blue;
   height: 5px;
   width: 55%;
+}
+
+.workExperience {
+  padding-top: 5%;
+  padding-left: 4%;
+}
+
+.nameAndYear {
+  width: 100%;
 }
 
 /* for tablets */
@@ -99,6 +125,7 @@
     font-size: 13px;
   }
 }
+
 
 /* for mobilePhones */
 

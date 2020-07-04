@@ -115,7 +115,7 @@ button.active {
 
 ul#socialList > li a:hover {
   color: blue;
-  text-shadow: 2px 2px white;
+  text-shadow: 3px -1px white;
   transform: translate3d(0, -6px, -6px);
 }
 

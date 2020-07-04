@@ -70,8 +70,18 @@ class ProfileTab extends Component {
                     </div>
                 </div>
                 <div className='experience'>
-                    <h2 className='a skill'>Experience</h2>
-                    <div></div>
+                    <h2 className='a skill'>Work Experience</h2>
+                    <div className='row workExperience'>
+                        <h3>Intern Software Developer</h3>
+                        <div className='row nameAndYear'>
+                            <div className='col-md-6'>
+                                <p>iTM(iTechMission) Pvt. Ltd.</p>
+                            </div>
+                            <div className='col-md-6'>
+                                <p>July 2019 - October 2019</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
