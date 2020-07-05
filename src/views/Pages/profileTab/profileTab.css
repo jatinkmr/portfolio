@@ -42,7 +42,7 @@
   color: #d44545;
   text-decoration: underline;
   text-decoration-color: white;
-  text-shadow: 1px 2px black;
+  text-shadow: 4px -4px black;
 }
 
 .skillGrade {
@@ -164,7 +164,7 @@
     font-size: 13px;
   }
   .position {
-    margin-top: 5%;
+    margin-top: 6%;
     font-size: 15px;
   }
   .companyName {
@@ -193,15 +193,18 @@
     font-size: 15px;
   }
   .position {
-    margin-top: 3%;
+    margin-top: 7%;
     font-size: 19px;
   }
+  .companyAndYear {
+    width: 120%;
+  }
   .companyName {
-    width: 50%;
-    font-size: 15px;
+    width: 60%;
+    font-size: 12px;
   }
   .year {
-    width: 50%;
-    font-size: 15px;
+    width: 40%;
+    font-size: 12px;
   }
 }
