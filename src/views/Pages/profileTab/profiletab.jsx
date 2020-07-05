@@ -76,7 +76,7 @@ class ProfileTab extends Component {
                             <p>&#x007B;</p>
                         </div>
                         <div className='experienceData'>
-                            <div className='position a'>Intern Full-Stack Web Developer</div>
+                            <div className='position a'>Intern FullStack Web Developer</div>
                             <div className='companyAndYear'>
                                 <div className='companyName a'>
                                     <a
