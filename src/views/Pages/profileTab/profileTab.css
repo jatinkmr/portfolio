@@ -154,6 +154,31 @@
   margin-top: 3%;
 }
 
+.companyWork {
+  padding-top: 7%;
+}
+
+ul.workList {
+  padding-left: 1%;
+  width: 85%;
+}
+
+ul.workList > li {
+  font-family: Consolas, "courier new";
+}
+
+ul.workList > li > a {
+  color: #0de48bd9;
+  font-family: fantasy;
+}
+
+ul.workList > li > a:hover {
+  text-shadow: 2px 2px #3c040c;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
@@ -165,17 +190,27 @@
   }
   .position {
     margin-top: 6%;
-    font-size: 15px;
+    font-size: 13px;
   }
   .companyName {
-    width: 45%;
-    font-size: 12px;
+    width: 50%;
+    font-size: 11px;
   }
   .year {
-    width: 55%;
-    font-size: 12px;
+    width: 50%;
+    font-size: 11px;
+  }
+  .braces {
+    font-size: 50px;
+  }
+  .companyWork {
+    padding-top: 6%;
+  }
+  ul.workList {
+    width: 90%;
   }
 }
+
 
 /* for mobilePhones */
 
@@ -194,7 +229,7 @@
   }
   .position {
     width: 120%;
-    margin-top: 7%;
+    margin-top: 6%;
     font-size: 17px;
   }
   .companyAndYear {
@@ -207,5 +242,14 @@
   .year {
     width: 40%;
     font-size: 11px;
+  }
+  .braces {
+    margin-left: 2%;
+  }
+  ul.workList {
+    width: 100%;
+  }
+  ul.workList > li {
+    padding-top: 2%;
   }
 }
