@@ -194,17 +194,17 @@
   }
   .position {
     margin-top: 7%;
-    font-size: 19px;
+    font-size: 17px;
   }
   .companyAndYear {
     width: 120%;
   }
   .companyName {
     width: 60%;
-    font-size: 12px;
+    font-size: 11px;
   }
   .year {
     width: 40%;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
