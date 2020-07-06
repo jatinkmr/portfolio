@@ -3,6 +3,7 @@ import './backgroundTab.css'
 import { appendScript } from './background.js'
 import HomeTab from '../homeTab/hometab.jsx'
 import ProfileTab from '../profileTab/profiletab.jsx'
+import ContactTab from '../contactUs/contact.jsx'
 
 // class backgroundtab
 class backgroundtab extends Component {
@@ -136,7 +137,7 @@ class backgroundtab extends Component {
             <div className='contentData'>
               {this.state.status === 'home' ? <HomeTab /> : null}
               {this.state.status === 'profile' ? <ProfileTab /> : null}
-              {this.state.status === 'contact' ? 'Contact' : null}
+              {this.state.status === 'contact' ? <ContactTab /> : null}
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ button.active {
 }
 
 .socialization {
-  font-family: cursive;
+  font-family: Pacifico;
   height: 40px;
   width: 40%;
   background-color: grey;
@@ -80,7 +80,7 @@ button.active {
 }
 
 .socialization > strong {
-  font-family: "Milkshake", Cursive;
+  font-family: Oleo Script;
 }
 
 .socializationLinks > ul li a {

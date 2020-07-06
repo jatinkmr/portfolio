@@ -1,0 +1,71 @@
+/* for Desktop and Laptop */
+.mainContactDiv {
+  padding-top: 8%;
+  padding-left: 10%;
+  color: white;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.waveHand {
+  color: #b08a27;
+  width: 100%;
+  font-family: Oleo Script;
+}
+
+.contactHeading {
+  color: #bda1d6cf;
+  width: 100%;
+  font-size: 25px;
+  font-family: Oleo Script;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+  .contactHeading {
+    width: 80%;
+    font-size: 22px;
+  }
+}
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+  .contactHeading {
+    font-size: 21px;
+  }
+}
