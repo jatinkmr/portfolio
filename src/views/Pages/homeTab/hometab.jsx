@@ -100,10 +100,10 @@ class HomeTab extends Component {
               href={process.env.PUBLIC_URL + '/resume/resume.pdf'}
               download='resume.pdf'
             >
-              <button className='resumeButton'>
+              <div className='resumeButton'>
                 <i className='fa fa-file-pdf-o'></i>&nbsp; &nbsp;
                 Resume&nbsp;[.pdf]
-              </button>
+              </div>
             </a>
           </div>
         </div>

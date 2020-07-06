@@ -73,23 +73,26 @@ class ProfileTab extends Component {
                     <h2 className='a skill'>Work Experience</h2>
                     <div className='row workExperience'>
                         <div className='braces'>
-                            <p>&#x007B;</p>
+                            <p className='a'>&#x007B;</p>
                         </div>
                         <div className='experienceData'>
                             <div className='position a'>Intern FullStack Web Developer</div>
                             <div className='companyAndYear'>
-                                <div className='companyName a'>
+                                <div className='companyName'>
                                     <a
                                         href='https://www.momkidcare.com/'
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         data-toggle='tooltip'
                                         title='MomKidCare'
+                                        className='a'
                                     >
                                         MomKidCare
                                     </a>
                                 </div>
-                                <div className='year a'>Mar 2020 - Present</div>
+                                <div className='year'>
+                                    <p className='a'>Mar 2020 - Present</p>
+                                </div>
                             </div>
                             <div className='companyWork'>
                                 <ul className='workList'>
@@ -117,23 +120,26 @@ class ProfileTab extends Component {
                     </div>
                     <div className='row workExperience'>
                         <div className='braces'>
-                            <p>&#x007B;</p>
+                            <p className='a'>&#x007B;</p>
                         </div>
                         <div className='experienceData'>
                             <div className='position a'>Intern Back-End Developer</div>
                             <div className='companyAndYear'>
-                                <div className='companyName a'>
+                                <div className='companyName'>
                                     <a
                                         href='https://www.entrancezone.com/'
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         data-toggle='tooltip'
                                         title='EntranceZone'
+                                        className='a'
                                     >
                                         EntranceZone
                                     </a>
                                 </div>
-                                <div className='year a'>Nov 2019</div>
+                                <div className='year'>
+                                    <p className='a'>Nov 2019</p>
+                                </div>
                             </div>
                             <div className='companyWork'>
                                 <ul className='workList'>
@@ -161,23 +167,26 @@ class ProfileTab extends Component {
                     </div>
                     <div className='row workExperience'>
                         <div className='braces'>
-                            <p>&#x007B;</p>
+                            <p className='a'>&#x007B;</p>
                         </div>
                         <div className='experienceData'>
                             <div className='position a'>Intern Software Developer</div>
                             <div className='companyAndYear'>
-                                <div className='companyName a'>
+                                <div className='companyName'>
                                     <a
                                         href='http://www.itechmission.org/'
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         data-toggle='tooltip'
                                         title='iTM'
+                                        className='a'
                                     >
                                         iTM(iTechMission) Pvt. Ltd.
                                     </a>
                                 </div>
-                                <div className='year a'>Jul 2019 - Oct 2019</div>
+                                <div className='year'>
+                                    <p className='a'>Jul 2019 - Oct 2019</p>
+                                </div>
                             </div>
                             <div className='companyWork'>
                                 <ul className='workList'>

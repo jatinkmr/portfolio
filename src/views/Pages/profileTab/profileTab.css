@@ -107,7 +107,7 @@
 }
 
 .workExperience {
-  padding-top: 5%;
+  padding-top: 4%;
   padding-left: 3%;
 }
 
@@ -126,19 +126,25 @@
   width: 55%;
 }
 
-.companyName > a:hover {
-  color: #a79074d6;
+.companyName > a {
+  color: #9797b7;
 }
 
-.year {
+.companyName > a:hover {
+  color: #a79074d6;
+  text-decoration: none;
+}
+
+.year > p{
   font-family: Times, Times New Roman, Georgia, serif;
   color: #8a9abf;
   float: right;
   width: 45%;
 }
 
-.braces {
-  color: #0ed642;
+.braces > p {
+  font-family: cursive;
+  color: #a00a0a;
   font-size: 60px;
   margin-right: 2%;
 }
@@ -159,12 +165,18 @@
 }
 
 ul.workList {
+  list-style-type: "=> ";
   padding-left: 1%;
   width: 85%;
 }
 
 ul.workList > li {
-  font-family: Consolas, "courier new";
+  font-family: Fira Code;
+  color: #d6c0c0;
+}
+
+ul.workList > li:hover {
+  color: #9296ff;
 }
 
 ul.workList > li > a {
@@ -173,6 +185,7 @@ ul.workList > li > a {
 }
 
 ul.workList > li > a:hover {
+  color: red;
   text-shadow: 2px 2px #3c040c;
   text-decoration: underline;
   text-decoration-style: double;
@@ -196,7 +209,7 @@ ul.workList > li > a:hover {
     width: 50%;
     font-size: 11px;
   }
-  .year {
+  .year > p {
     width: 50%;
     font-size: 11px;
   }
@@ -239,7 +252,10 @@ ul.workList > li > a:hover {
     width: 60%;
     font-size: 11px;
   }
-  .year {
+  .companyName > a {
+    font-size: 14px;
+  }
+  .year > p {
     width: 40%;
     font-size: 11px;
   }
@@ -247,6 +263,7 @@ ul.workList > li > a:hover {
     margin-left: 2%;
   }
   ul.workList {
+    list-style-type: "# ";
     width: 100%;
   }
   ul.workList > li {
