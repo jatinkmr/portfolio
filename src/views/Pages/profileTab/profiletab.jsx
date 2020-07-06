@@ -8,64 +8,119 @@ class ProfileTab extends Component {
             <div className='row mainProfileDiv'>
                 <div className='skills'>
                     <h2 className='a skill'>Skills</h2>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>GIT</span>
-                        <div className='skillGrade'>
-                            <div className='gitSkill'></div>
+                    <div className='skillHeader'>
+                        <h3 className='a'>HTML</h3>
+                    </div>
+                    <div className='skillContentDetails'>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>HTML</span>
+                            <div className='skillGrade'>
+                                <div className='htmlSkill'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>JSX</span>
+                            <div className='skillGrade'>
+                                <div className='jsxSkill'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>pHp</span>
+                            <div className='skillGrade'>
+                                <div className='phpMySql'></div>
+                            </div>
                         </div>
                     </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>HTML/PUG & CSS</span>
-                        <div className='skillGrade'>
-                            <div className='htmlSkill'></div>
+                    <div className='skillHeader'>
+                        <h3 className='a'>CSS</h3>
+                    </div>
+                    <div className='skillContentDetails'>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>CSS</span>
+                            <div className='skillGrade'>
+                                <div className='cssSkill'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>BootStrap</span>
+                            <div className='skillGrade'>
+                                <div className='bootStrapSkill'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>ReactStrap</span>
+                            <div className='skillGrade'>
+                                <div className='reactStrapSkill'></div>
+                            </div>
                         </div>
                     </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>ReactJS</span>
-                        <div className='skillGrade'>
-                            <div className='reactSkill'></div>
+                    <div className='skillHeader'>
+                        <h3 className='a'>JavaScript</h3>
+                    </div>
+                    <div className='skillContentDetails'>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>ReactJS</span>
+                            <div className='skillGrade'>
+                                <div className='reactSkill'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>NodeJS</span>
+                            <div className='skillGrade'>
+                                <div className='nodeJsSkill'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>KnexJS</span>
+                            <div className='skillGrade'>
+                                <div className='knexJs'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>jQuery</span>
+                            <div className='skillGrade'>
+                                <div className='jQuerySkill'></div>
+                            </div>
                         </div>
                     </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>pHp</span>
-                        <div className='skillGrade'>
-                            <div className='phpMySql'></div>
+                    <div className='skillHeader'>
+                        <h3 className='a'>Back-End</h3>
+                    </div>
+                    <div className='skillContentDetails'>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>MySQL</span>
+                            <div className='skillGrade'>
+                                <div className='phpMySql'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>MongoDB</span>
+                            <div className='skillGrade'>
+                                <div className='mongoDb'></div>
+                            </div>
+                        </div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>postgreSql</span>
+                            <div className='skillGrade'>
+                                <div className='postgreSql'></div>
+                            </div>
                         </div>
                     </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>NodeJS</span>
-                        <div className='skillGrade'>
-                            <div className='nodeJsSkill'></div>
-                        </div>
+                    <div className='skillHeader'>
+                        <h3 className='a'>Other</h3>
                     </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>MySQL</span>
-                        <div className='skillGrade'>
-                            <div className='phpMySql'></div>
+                    <div className='skillContentDetails'>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>GIT</span>
+                            <div className='skillGrade'>
+                                <div className='gitSkill'></div>
+                            </div>
                         </div>
-                    </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>MongoDB</span>
-                        <div className='skillGrade'>
-                            <div className='mongoDb'></div>
-                        </div>
-                    </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>postgreSql</span>
-                        <div className='skillGrade'>
-                            <div className='postgreSql'></div>
-                        </div>
-                    </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>KnexJS</span>
-                        <div className='skillGrade'>
-                            <div className='knexJs'></div>
-                        </div>
-                    </div>
-                    <div className='skillSection'>
-                        <span className='skillHeading'>Java</span>
-                        <div className='skillGrade'>
-                            <div className='java'></div>
+                        <div className='skillSection'>
+                            <span className='skillHeading'>Heroku</span>
+                            <div className='skillGrade'>
+                                <div className='herokuSkill'></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +143,7 @@ class ProfileTab extends Component {
                                         className='a'
                                     >
                                         MomKidCare
-                                    </a>
+                  </a>
                                 </div>
                                 <div className='year'>
                                     <p className='a'>Mar 2020 - Present</p>
@@ -97,11 +152,10 @@ class ProfileTab extends Component {
                             <div className='companyWork'>
                                 <ul className='workList'>
                                     <li>
-                                        Work on Company Product and Provide Full-Stack Developer Support.
-                                    </li>
-                                    <li>
-                                        Tools: NodeJS, ReactJS, MongoDB and Pug.
-                                    </li>
+                                        Work on Company Product and Provide Full-Stack Developer
+                                        Support.
+                  </li>
+                                    <li>Tools: NodeJS, ReactJS, MongoDB and Pug.</li>
                                     <li className='projectName'>
                                         Project:{' '}
                                         <a
@@ -112,7 +166,7 @@ class ProfileTab extends Component {
                                             title='MomKidCare'
                                         >
                                             MomKidCare
-                                        </a>
+                    </a>
                                     </li>
                                 </ul>
                             </div>
@@ -135,7 +189,7 @@ class ProfileTab extends Component {
                                         className='a'
                                     >
                                         EntranceZone
-                                    </a>
+                  </a>
                                 </div>
                                 <div className='year'>
                                     <p className='a'>Nov 2019</p>
@@ -144,11 +198,10 @@ class ProfileTab extends Component {
                             <div className='companyWork'>
                                 <ul className='workList'>
                                     <li>
-                                        Work on Company Product and Provide BackEnd support in making APIs(Application Programming Interfaces).
-                                    </li>
-                                    <li>
-                                        Tools: NodeJS and PostgreSQL.
-                                    </li>
+                                        Work on Company Product and Provide BackEnd support in
+                                        making APIs(Application Programming Interfaces).
+                  </li>
+                                    <li>Tools: NodeJS and PostgreSQL.</li>
                                     <li className='projectName'>
                                         Project:{' '}
                                         <a
@@ -159,7 +212,7 @@ class ProfileTab extends Component {
                                             title='EntranceZone'
                                         >
                                             EntranceZone
-                                        </a>
+                    </a>
                                     </li>
                                 </ul>
                             </div>
@@ -182,7 +235,7 @@ class ProfileTab extends Component {
                                         className='a'
                                     >
                                         iTM(iTechMission) Pvt. Ltd.
-                                    </a>
+                  </a>
                                 </div>
                                 <div className='year'>
                                     <p className='a'>Jul 2019 - Oct 2019</p>
@@ -190,12 +243,8 @@ class ProfileTab extends Component {
                             </div>
                             <div className='companyWork'>
                                 <ul className='workList'>
-                                    <li>
-                                        Provide BackEnd support on Companies Projects.
-                                    </li>
-                                    <li>
-                                        Tools: Core php, wordPress and MySQL.
-                                    </li>
+                                    <li>Provide BackEnd support on Companies Projects.</li>
+                                    <li>Tools: Core php, wordPress(CMS) and MySQL.</li>
                                     <li className='projectName'>
                                         Project:{' '}
                                         <a
@@ -206,7 +255,7 @@ class ProfileTab extends Component {
                                             title='learning4impact'
                                         >
                                             Learning4Impact
-                                        </a>
+                    </a>
                                     </li>
                                 </ul>
                             </div>

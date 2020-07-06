@@ -30,6 +30,20 @@
   margin-bottom: 7%;
 }
 
+.skillHeader {
+  padding-top: 5%;
+  padding-left: 2%;
+}
+
+.skillHeader > h3 {
+  color: #bedac1a3;
+  text-decoration: underline;
+}
+
+.skillContentDetails {
+  padding-left: 4%;
+}
+
 .skillHeading {
   padding-left: 3%;
   color: #bc90de;
@@ -64,10 +78,46 @@
   width: 60%;
 }
 
+.herokuSkill {
+  background-color: blue;
+  height: 5px;
+  width: 50%;
+}
+
 .htmlSkill {
   background-color: blue;
   height: 5px;
+  width: 75%;
+}
+
+.jsxSkill {
+  background-color: blue;
+  height: 5px;
+  width: 65%;
+}
+
+.cssSkill {
+  background-color: blue;
+  height: 5px;
+  width: 62%;
+}
+
+.bootStrapSkill {
+  background-color: blue;
+  height: 5px;
+  width: 60%;
+}
+
+.reactStrapSkill {
+  background-color: blue;
+  height: 5px;
   width: 55%;
+}
+
+.jQuerySkill {
+  background-color: blue;
+  height: 5px;
+  width: 52%;
 }
 
 .reactSkill {
@@ -98,12 +148,6 @@
   background-color: blue;
   height: 5px;
   width: 50%;
-}
-
-.java {
-  background-color: blue;
-  height: 5px;
-  width: 55%;
 }
 
 .workExperience {
