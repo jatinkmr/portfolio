@@ -8,7 +8,7 @@ class ContactTab extends Component {
             <div className='row mainContactDiv'>
                 <div className='waveHand'>
                     <h1>
-                        Hi there! <span className='wave' role='img' aria-label='waving-hand'>👋</span>
+                        Hi There...!! <span className='wave' role='img' aria-label='waving-hand'>👋</span>
                     </h1>
                 </div>
                 <div className='contactHeading'>
