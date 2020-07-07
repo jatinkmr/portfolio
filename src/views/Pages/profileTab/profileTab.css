@@ -36,8 +36,13 @@
 }
 
 .skillHeader > h3 {
-  color: #bedac1a3;
+  font-family: Oleo Script;
+  color: #c7ccd0a3;
   text-decoration: underline;
+}
+
+.skillHeader > h3:hover {
+  text-shadow: 3px 3px red;
 }
 
 .skillContentDetails {
@@ -303,11 +308,14 @@ ul.workList > li > a:hover {
     font-size: 16px;
   }
   .year > p {
-    width: 70%;
+    width: 75%;
     font-size: 12px;
   }
   .braces {
     margin-left: 2%;
+  }
+  .braces > p {
+    font-size: 55px;
   }
   ul.workList {
     list-style-type: "# ";

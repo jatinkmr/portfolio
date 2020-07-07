@@ -15,7 +15,76 @@ class ContactTab extends Component {
                     I am available for hire and open to any ideas of cooperation.
                 </div>
                 <div className='contactDetails'>
-                    <div></div>
+                    <div className='connectHeading'>
+                        <p>You can connect or contact me at :</p>
+                    </div>
+                    <div>
+                        <p className='speech'>Contact Information: </p>
+                    </div>
+                    <div className='row socializationLinks'>
+                        <ul id='socialList'>
+                            <li>
+                                <a
+                                    href='https://www.github.com/jatinkmr'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    data-toggle='tooltip' title='GitHub'
+                                >
+                                    <i className='fa fa-github-square'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='https://www.linkedin.com/in/jatinkumarkamboj/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    data-toggle='tooltip' title='LinkedIn'
+                                >
+                                    <i className='fa fa-linkedin'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='mailto:kumar.jatin873@gmail.com'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    data-toggle='tooltip' title='Google(gMail)'
+                                >
+                                    <i className='fa fa-google-plus'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='https://twitter.com/jatinkrkamboj'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    data-toggle='tooltip' title='Twitter'
+                                >
+                                    <i className='fa fa-twitter'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='https://www.instagram.com/ijatinkrkamb0j/'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    data-toggle='tooltip' title='InstaGram'
+                                >
+                                    <i className='fa fa-instagram'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href='https://www.facebook.com/jatin.kamboj.37'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    data-toggle='tooltip' title='FaceBook'
+                                >
+                                    <i className='fa fa-facebook-square'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )

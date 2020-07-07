@@ -1,6 +1,6 @@
 /* for Desktop and Laptop */
 .mainContactDiv {
-  padding-top: 8%;
+  padding-top: 7%;
   padding-left: 10%;
   color: white;
 }
@@ -24,6 +24,13 @@
   width: 100%;
   font-size: 25px;
   font-family: Oleo Script;
+}
+
+.connectHeading {
+  font-family: Pacifico;
+  font-size: 27px;
+  color: #847ad2d6;
+  padding-top: 7%;
 }
 
 @keyframes wave-animation {
@@ -53,6 +60,43 @@
   }
 }
 
+p.speech {
+  position: relative;
+  width: 200px;
+  height: 107px;
+  text-align: center;
+  line-height: 107px;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
@@ -67,5 +111,8 @@
 @media screen and (max-width: 767px) {
   .contactHeading {
     font-size: 21px;
+  }
+  .connectHeading {
+    font-size: 19px;
   }
 }
