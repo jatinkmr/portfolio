@@ -214,6 +214,7 @@
 }
 
 .resumeButton {
+  padding: 2%;
   text-align: center;
   background-color: silver;
   border-radius: 90px;
