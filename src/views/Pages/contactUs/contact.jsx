@@ -5,7 +5,7 @@ import './contact.css'
 class ContactTab extends Component {
     render() {
         return (
-            <div className='row mainContactDiv'>
+            <div className='row mainContactDiv fade-in'>
                 <div className='waveHand'>
                     <h1>
                         Hi There...!! <span className='wave' role='img' aria-label='waving-hand'>👋</span>

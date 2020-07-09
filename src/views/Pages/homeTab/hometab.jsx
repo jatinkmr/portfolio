@@ -5,7 +5,7 @@ import './hometab.css'
 class HomeTab extends Component {
   render () {
     return (
-      <div className='row mainDiv'>
+      <div className='row mainDiv fade-in'>
         <div className='intro'>
           <h1>
             <div className='hello'>

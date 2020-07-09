@@ -5,7 +5,7 @@ import './profileTab.css'
 class ProfileTab extends Component {
     render() {
         return (
-            <div className='row mainProfileDiv'>
+            <div className='row mainProfileDiv fade-in'>
                 <div className='skills'>
                     <h2 className='a skill'>Skills</h2>
                     <div className='skillHeader'>
