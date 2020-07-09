@@ -79,6 +79,8 @@
 }
 
 p.speech {
+  font-family: Pacifico;
+  font-size: 20px;
   position: relative;
   width: 200px;
   height: 107px;
