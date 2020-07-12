@@ -198,8 +198,7 @@ class ProfileTab extends Component {
                             <div className='companyWork'>
                                 <ul className='workList'>
                                     <li>
-                                        Work on Company Product and Provide BackEnd support in
-                                        making APIs(Application Programming Interfaces).
+                                        Work on Company Product and Provide BackEnd Support.
                   </li>
                                     <li>Tools: NodeJS and PostgreSQL.</li>
                                     <li className='projectName'>
