@@ -8,18 +8,17 @@ class AboutTab extends Component {
             <div className='row mainAboutTab fade-in'>
                 <div className='waveHand'>
                     <h1>
-                        Hi There...!!{' '}
+                        Hey There...!!{' '}
                         <span className='wave' role='img' aria-label='waving-hand'>
                             👋
-            </span>
+                        </span>
                     </h1>
                 </div>
                 <div className='mainAboutHello'>
-                    I&#39;m <span>Jatin Kumar</span> from Delhi, India which is also known
-          as Capital of India. I&#39;m a Web Developer.
-          <br />
+                    I&#39;m <span>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. I&#39;m a Web Developer.
                     <br />
-          Currently I&#39;m working as an Intern FullStack Web Developer at{' '}
+                    <br />
+                    Currently I&#39;m working as an Intern FullStack Web Developer at{' '}
                     <span>
                         <a
                             href='https://www.momkidcare.com/'
@@ -29,9 +28,9 @@ class AboutTab extends Component {
                             title='MomKidCare'
                         >
                             MomKidCare
-            </a>
-                    </span>
-          . I always tried to learn new technologies in Web and try to implement them too.
+                        </a>
+                    </span>.
+                    I always tried to learn new technologies in Web and try to implement them too.
         </div>
             </div>
         )
