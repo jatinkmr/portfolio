@@ -4,6 +4,7 @@ import { appendScript } from './background.js'
 import HomeTab from '../homeTab/hometab.jsx'
 import ProfileTab from '../profileTab/profiletab.jsx'
 import ContactTab from '../contactUs/contact.jsx'
+import AboutTab from '../aboutTab/aboutTab.jsx'
 
 // class backgroundtab
 class backgroundtab extends Component {
@@ -128,6 +129,11 @@ class backgroundtab extends Component {
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
+                  <button type='button' className='btn btn-link' name='about'>
+                    About
+                  </button>
+                </li>
+                <li className='nav-item' onClick={this.changeHandler}>
                   <button type='button' className='btn btn-link' name='contact'>
                     Contact
                   </button>
@@ -137,6 +143,7 @@ class backgroundtab extends Component {
             <div className='contentData'>
               {this.state.status === 'home' ? <HomeTab /> : null}
               {this.state.status === 'profile' ? <ProfileTab /> : null}
+              {this.state.status === 'about' ? <AboutTab /> : null}
               {this.state.status === 'contact' ? <ContactTab /> : null}
             </div>
           </div>

@@ -1,0 +1,15 @@
+/* for Desktop and Laptop */
+.mainAboutTab {
+    padding-top: 7%;
+    padding-left: 10%;
+}
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+}
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+}
