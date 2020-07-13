@@ -119,22 +119,23 @@ class backgroundtab extends Component {
                     type='button'
                     className='btn btn-link active'
                     name='home'
+                    data-toggle='tooltip' title='Home'
                   >
                     Home
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
-                  <button type='button' className='btn btn-link' name='profile'>
+                  <button type='button' className='btn btn-link' name='profile' data-toggle='tooltip' title='Profile'>
                     Profile
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
-                  <button type='button' className='btn btn-link' name='about'>
+                  <button type='button' className='btn btn-link' name='about' data-toggle='tooltip' title='About Me'>
                     About
                   </button>
                 </li>
                 <li className='nav-item' onClick={this.changeHandler}>
-                  <button type='button' className='btn btn-link' name='contact'>
+                  <button type='button' className='btn btn-link' name='contact' data-toggle='tooltip' title='Contact'>
                     Contact
                   </button>
                 </li>

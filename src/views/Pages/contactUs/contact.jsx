@@ -8,11 +8,16 @@ class ContactTab extends Component {
             <div className='row mainContactDiv fade-in'>
                 <div className='waveHand'>
                     <h1>
-                        Hi There...!! <span className='wave' role='img' aria-label='waving-hand'>👋</span>
+                        Hi There...!!{' '}
+                        <span className='wave' role='img' aria-label='waving-hand'>
+                            👋
+                        </span>
                     </h1>
                 </div>
                 <div className='contactHeading'>
-                    I am available for hire and open to any ideas of cooperation.
+                    I&#39;m available for hire and open to any ideas of cooperation. <br />
+                    <br /> My inbox is always open for Every0ne whether you want to say
+                    &quot;Hello&quot; or have any other &quot;question&#x2753;&quot;. <br/ ><br /> Just mail me or connect with me at below given medium.
                 </div>
                 <div className='contactDetails'>
                     <div className='connectHeading'>
@@ -28,7 +33,8 @@ class ContactTab extends Component {
                                     href='https://www.github.com/jatinkmr'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    data-toggle='tooltip' title='GitHub'
+                                    data-toggle='tooltip'
+                                    title='GitHub'
                                 >
                                     <i className='fa fa-github-square'></i>
                                 </a>
@@ -38,7 +44,8 @@ class ContactTab extends Component {
                                     href='https://www.linkedin.com/in/jatinkumarkamboj/'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    data-toggle='tooltip' title='LinkedIn'
+                                    data-toggle='tooltip'
+                                    title='LinkedIn'
                                 >
                                     <i className='fa fa-linkedin'></i>
                                 </a>
@@ -48,7 +55,8 @@ class ContactTab extends Component {
                                     href='mailto:kumar.jatin873@gmail.com'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    data-toggle='tooltip' title='Google(gMail)'
+                                    data-toggle='tooltip'
+                                    title='Google(gMail)'
                                 >
                                     <i className='fa fa-google-plus'></i>
                                 </a>
@@ -58,7 +66,8 @@ class ContactTab extends Component {
                                     href='https://twitter.com/jatinkrkamboj'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    data-toggle='tooltip' title='Twitter'
+                                    data-toggle='tooltip'
+                                    title='Twitter'
                                 >
                                     <i className='fa fa-twitter'></i>
                                 </a>
@@ -68,7 +77,8 @@ class ContactTab extends Component {
                                     href='https://www.instagram.com/ijatinkrkamb0j/'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    data-toggle='tooltip' title='InstaGram'
+                                    data-toggle='tooltip'
+                                    title='InstaGram'
                                 >
                                     <i className='fa fa-instagram'></i>
                                 </a>
@@ -78,7 +88,8 @@ class ContactTab extends Component {
                                     href='https://www.facebook.com/jatin.kamboj.37'
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    data-toggle='tooltip' title='FaceBook'
+                                    data-toggle='tooltip'
+                                    title='FaceBook'
                                 >
                                     <i className='fa fa-facebook-square'></i>
                                 </a>

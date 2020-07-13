@@ -6,6 +6,9 @@ class AboutTab extends Component {
     render() {
         return (
             <div className='row mainAboutTab fade-in'>
+                <div className='whoAmI'>
+                    Who&#39;s <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> ?
+                </div>
                 <div className='waveHand'>
                     <h1>
                         Hey There...!!{' '}
@@ -15,7 +18,7 @@ class AboutTab extends Component {
                     </h1>
                 </div>
                 <div className='mainAboutHello'>
-                    I&#39;m <span>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. I&#39;m a Web Developer.
+                    I&#39;m <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. I&#39;m a <span title='Web Developer'>Web Developer</span>.
                     <br />
                     <br />
                     Currently I&#39;m working as an Intern FullStack Web Developer at{' '}
@@ -29,8 +32,8 @@ class AboutTab extends Component {
                         >
                             MomKidCare
                         </a>
-                    </span>.
-                    I always tried to learn new technologies in Web and try to implement them too.
+                    </span>.<br />
+                    I always tried to learn new technologies in Web Development and try to implement them too.
         </div>
             </div>
         )
