@@ -1,7 +1,20 @@
 /* for Desktop and Laptop */
 .mainAboutTab {
-    padding-top: 7%;
-    padding-left: 10%;
+  padding-top: 7%;
+  padding-left: 10%;
+}
+
+.mainAboutHello {
+  color: #bda1d6cf;
+  width: 80%;
+  font-size: 25px;
+  font-family: Oleo Script;
+  text-shadow: 4px 4px black;
+}
+
+.mainAboutHello > span {
+  font-family: Pacifico;
+  font-size: 22px;
 }
 
 /* for tablets */
