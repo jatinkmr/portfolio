@@ -223,14 +223,23 @@ li.nav-item > button {
   li.nav-item > button {
     width: 70px;
   }
+  .contentHeading {
+    padding: 5%;
+  }
+  ul#headingList {
+    margin-left: 0%;
+  }
   ul#headingList > li {
-    margin-right: 10%;
+    margin-right: 6%;
   }
   ul#headingList > button {
-    padding-right: 5%;
-    width: 14%;
+    padding-right: 2%;
+    width: 15%;
   }
   .footerContent {
     margin-bottom: 15%;
+  }
+  li.nav-item > button {
+    font-size: 12px;
   }
 }

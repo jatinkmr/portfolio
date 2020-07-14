@@ -1,0 +1,11 @@
+/* for Desktop and Laptop */
+
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {}
+
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {}
