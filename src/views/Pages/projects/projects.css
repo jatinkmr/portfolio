@@ -1,5 +1,17 @@
 /* for Desktop and Laptop */
 
+.divProjectTab {
+    padding-top: 5%;
+    padding-left: 8%;
+}
+
+.projectHeading > .a{
+    font-family: Oleo Script;
+    font-size: 30px;
+    color: #4ce699;
+    text-shadow: 4px 4px #a91919;
+}
+
 
 /* for tablets */
 

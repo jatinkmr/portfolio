@@ -224,7 +224,8 @@ li.nav-item > button {
     width: 70px;
   }
   .contentHeading {
-    padding: 5%;
+    padding-top: 2%;
+    padding-left: 0%;
   }
   ul#headingList {
     margin-left: 0%;

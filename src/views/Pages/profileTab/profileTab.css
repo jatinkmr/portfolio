@@ -278,6 +278,9 @@ ul.workList > li > a:hover {
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
+  .mainProfileDiv {
+    padding-left: 8%;
+  }
   .skill {
     font-size: 35px;
   }
