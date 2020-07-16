@@ -18,10 +18,9 @@ class AboutTab extends Component {
                     </h1>
                 </div>
                 <div className='mainAboutHello'>
-                    I&#39;m <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. I&#39;m a <span title='Web Developer'>Web Developer</span>.
-                    <br />
-                    <br />
-                    Currently I&#39;m working as an Intern FullStack Web Developer at{' '}
+                    I&#39;m <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. <br /><br />
+                    Well-organized person, problem solver, independent employee with high attention to detail. I Like outdoor activities, TV series and, Video Games. <br /><br />
+                    I&#39;m a <span title='Web Developer'>Web Developer</span> and Currently I&#39;m working as an Intern FullStack Web Developer at{' '}
                     <span>
                         <a
                             href='https://www.momkidcare.com/'
@@ -32,7 +31,7 @@ class AboutTab extends Component {
                         >
                             MomKidCare
                         </a>
-                    </span>.<br />
+                    </span>.<br /><br />
                     I always tried to learn new technologies in Web Development and try to implement them too.
         </div>
             </div>
