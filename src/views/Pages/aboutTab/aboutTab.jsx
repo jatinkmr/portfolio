@@ -7,7 +7,7 @@ class AboutTab extends Component {
         return (
             <div className='row mainAboutTab fade-in'>
                 <div className='whoAmI'>
-                    Who&#39;s <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> ?
+                    Who&#39;s <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> &#x2753;
                 </div>
                 <div className='waveHand'>
                     <h1>
@@ -33,7 +33,9 @@ class AboutTab extends Component {
                         </a>
                     </span>.<br /><br />
                     I always tried to learn new technologies in Web Development and try to implement them too.
-        </div>
+                    <br /><br />
+                    Think we could Create SomeThing Together &#x2753; Feel Free to Drop me an email &#10069;
+                </div>
             </div>
         )
     }
