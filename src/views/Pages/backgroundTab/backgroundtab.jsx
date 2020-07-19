@@ -5,7 +5,6 @@ import HomeTab from '../homeTab/hometab.jsx'
 import ProfileTab from '../profileTab/profiletab.jsx'
 import ContactTab from '../contactUs/contact.jsx'
 import AboutTab from '../aboutTab/aboutTab.jsx'
-import ProjectTab from '../projects/projects.jsx'
 
 // class backgroundtab
 class backgroundtab extends Component {
@@ -140,11 +139,6 @@ class backgroundtab extends Component {
                     Contact
                   </button>
                 </li>
-                <li className='nav-item' onClick={this.changeHandler}>
-                  <button type='button' className='btn btn-link' name='projects' data-toggle='tooltip' title='Projects'>
-                    Projects
-                  </button>
-                </li>
               </ul>
             </div>
             <div className='contentData'>
@@ -152,7 +146,6 @@ class backgroundtab extends Component {
               {this.state.status === 'profile' ? <ProfileTab /> : null}
               {this.state.status === 'about' ? <AboutTab /> : null}
               {this.state.status === 'contact' ? <ContactTab /> : null}
-              {this.state.status === 'projects' ? <ProjectTab /> : null}
             </div>
           </div>
         </div>

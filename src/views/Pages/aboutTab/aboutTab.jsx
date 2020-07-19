@@ -34,7 +34,7 @@ class AboutTab extends Component {
                     </span>.<br /><br />
                     I always tried to learn new technologies in Web Development and try to implement them too.
                     <br /><br />
-                    Think we could Create SomeThing Together &#x2753; Feel Free to Drop me an email &#10069;
+                    Think we could Create SomeThing Together &#x2753; <br />Feel Free to Drop me an email <i class="fa fa-envelope" aria-hidden="true"></i> &#10069;
                 </div>
             </div>
         )
