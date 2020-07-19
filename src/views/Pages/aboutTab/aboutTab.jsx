@@ -18,8 +18,8 @@ class AboutTab extends Component {
                     </h1>
                 </div>
                 <div className='mainAboutHello'>
-                    I&#39;m <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. <br /><br />
-                    Well-organized person, problem solver, independent employee with high attention to detail. I Like outdoor activities, TV series and, Video Games. <br /><br />
+                    I&#39;m <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. I am an upComing Full Stack Developer.<br /><br />
+                    Well-organized person, problem solver, independent employee with high attention to detail. I Like outdoor activities, Pencil Sketching, Horror Movies and Video Games. <br /><br />
                     I&#39;m a <span title='Web Developer'>Web Developer</span> and Currently I&#39;m working as an Intern FullStack Web Developer at{' '}
                     <span>
                         <a
