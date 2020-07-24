@@ -17,7 +17,7 @@ class ContactTab extends Component {
                 <div className='contactHeading'>
                     I&#39;m available for hire and open to any ideas of cooperation. <br />
                     <br /> My inbox is always open for Every0ne whether you want to say
-                    &quot;Hello&quot; or have any other &quot;question&#x2753;&quot;. <br/ ><br /> Just mail me or connect with me at below given medium.
+                    &quot;Hello&quot; or have any other &quot;Question&#x2753;&quot;. <br/ ><br /> Just mail me or connect with me at below given medium.
                 </div>
                 <div className='contactDetails'>
                     <div className='connectHeading'>
