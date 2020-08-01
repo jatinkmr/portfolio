@@ -29,7 +29,7 @@ class AboutTab extends Component {
                             data-toggle='tooltip'
                             title='MomKidCare'
                         >
-                            MomKidCare
+                            Insurgics Health Solution Pvt. Ltd.
                         </a>
                     </span>.<br /><br />
                     I always tried to learn new technologies in Web Development and try to implement them too.
