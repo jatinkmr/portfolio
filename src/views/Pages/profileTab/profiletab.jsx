@@ -142,8 +142,8 @@ class ProfileTab extends Component {
                                         title='MomKidCare'
                                         className='a'
                                     >
-                                        MomKidCare
-                  </a>
+                                        Insurgics Health Solution Pvt. Ltd.
+                                    </a>
                                 </div>
                                 <div className='year'>
                                     <p className='a'>Mar 2020 - Present</p>
@@ -154,7 +154,7 @@ class ProfileTab extends Component {
                                     <li>
                                         Work on Company Product and Provide Full-Stack Developer
                                         Support.
-                  </li>
+                                    </li>
                                     <li>Tools: NodeJS, ReactJS, MongoDB and Pug.</li>
                                     <li className='projectName'>
                                         Project:{' '}
@@ -166,7 +166,7 @@ class ProfileTab extends Component {
                                             title='MomKidCare'
                                         >
                                             MomKidCare
-                    </a>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -189,7 +189,7 @@ class ProfileTab extends Component {
                                         className='a'
                                     >
                                         EntranceZone
-                  </a>
+                                    </a>
                                 </div>
                                 <div className='year'>
                                     <p className='a'>Nov 2019</p>
@@ -199,7 +199,7 @@ class ProfileTab extends Component {
                                 <ul className='workList'>
                                     <li>
                                         Work on Company Product and Provide BackEnd Support.
-                  </li>
+                                    </li>
                                     <li>Tools: NodeJS and PostgreSQL.</li>
                                     <li className='projectName'>
                                         Project:{' '}
@@ -211,7 +211,7 @@ class ProfileTab extends Component {
                                             title='EntranceZone'
                                         >
                                             EntranceZone
-                    </a>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -234,7 +234,7 @@ class ProfileTab extends Component {
                                         className='a'
                                     >
                                         iTM(iTechMission) Pvt. Ltd.
-                  </a>
+                                    </a>
                                 </div>
                                 <div className='year'>
                                     <p className='a'>Jul 2019 - Oct 2019</p>
@@ -254,7 +254,7 @@ class ProfileTab extends Component {
                                             title='learning4impact'
                                         >
                                             Learning4Impact
-                    </a>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
