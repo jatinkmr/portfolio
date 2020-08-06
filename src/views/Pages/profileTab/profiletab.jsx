@@ -233,7 +233,7 @@ class ProfileTab extends Component {
                                         title='iTM'
                                         className='a'
                                     >
-                                        iTM(iTechMission) Pvt. Ltd.
+                                        iTM (iTechMission) Pvt. Ltd.
                                     </a>
                                 </div>
                                 <div className='year'>
