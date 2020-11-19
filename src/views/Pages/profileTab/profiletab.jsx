@@ -126,6 +126,58 @@ class ProfileTab extends Component {
                 </div>
                 <div className='experience'>
                     <h2 className='a skill'>Work Experience</h2>
+                    <div className='skillHeader'>
+                        <h3 className='a'>Full Time</h3>
+                    </div>
+                    <div className='row workExperience'>
+                        <div className='braces'>
+                            <p className='a'>&#x007B;</p>
+                        </div>
+                        <div className='experienceData'>
+                            <div className='position a'>Associate Software Developer</div>
+                            <div className='companyAndYear'>
+                                <div className='companyName'>
+                                    <a
+                                        href='https://www.momkidcare.com/'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        data-toggle='tooltip'
+                                        title='MomKidCare'
+                                        className='a'
+                                    >
+                                        Insurgics Health Solution Pvt. Ltd.
+                                    </a>
+                                </div>
+                                <div className='year'>
+                                    <p className='a'>Nov 2020 - Present</p>
+                                </div>
+                            </div>
+                            <div className='companyWork'>
+                                <ul className='workList'>
+                                    <li>
+                                        Work on Company Product and Provide Full-Stack Developer
+                                        Support.
+                                    </li>
+                                    <li>Tools: NodeJS, ReactJS, MongoDB and Pug.</li>
+                                    <li className='projectName'>
+                                        Project:{' '}
+                                        <a
+                                            href='https://www.momkidcare.com/'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            data-toggle='tooltip'
+                                            title='MomKidCare'
+                                        >
+                                            MomKidCare
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='skillHeader'>
+                        <h3 className='a'>Internships</h3>
+                    </div>
                     <div className='row workExperience'>
                         <div className='braces'>
                             <p className='a'>&#x007B;</p>
