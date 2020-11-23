@@ -117,6 +117,10 @@ p.speech:after {
   border-color: #fff transparent transparent #fff;
 }
 
+.contactDetails {
+width: 85%;
+}
+
 
 /* for tablets */
 
