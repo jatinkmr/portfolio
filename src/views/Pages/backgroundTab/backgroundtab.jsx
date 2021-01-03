@@ -8,23 +8,16 @@ import AboutTab from '../aboutTab/aboutTab.jsx'
 
 // class backgroundtab
 class backgroundtab extends Component {
-  // constructor
-  constructor (props) {
-    super(props)
-    this.state = {
-      status: 'home'
-    }
-
-    // ChangeHandler for NavigationBar
-    this.changeHandler = this.changeHandler.bind(this)
-  }
+  state = {
+    status: 'home'
+  };
 
   // import js file into jsx file
   componentDidMount () {
     appendScript('./background.js')
   }
 
-  // ChangeHandler function for changin the tab
+  // ChangeHandler function for changing the tab
   changeHandler = event => {
     this.setState({ status: event.target.name })
     // console.log('Status => ', event.target.name)
