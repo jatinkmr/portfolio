@@ -7,21 +7,21 @@
 
 .mainAboutHello {
   color: #bda1d6cf;
-  width: 80%;
+  width: 90%;
   font-size: 25px;
   font-family: Oleo Script;
   text-shadow: 4px 4px black;
   margin-bottom: 6%;
 }
 
-.mainAboutHello > span {
+.mainAboutHello>span {
   font-family: Pacifico;
   font-size: 30px;
   text-decoration: underline;
   color: red;
 }
 
-.mainAboutHello > i {
+.mainAboutHello>i {
   color: red;
 }
 
@@ -33,7 +33,7 @@
   padding-bottom: 3%;
 }
 
-.whoAmI > span {
+.whoAmI>span {
   color: #02051b;
   font-family: Great Vibes;
   font-size: 50px;
@@ -45,7 +45,19 @@
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
-  .waveHand > h1 {
+  .mainAboutHello {
+    font-size: 22px;
+  }
+
+  .whoAmI {
+    font-size: 28px;
+  }
+
+  .whoAmI>span {
+    font-size: 42px;
+  }
+
+  .waveHand>h1 {
     width: 60%;
   }
 }
@@ -54,10 +66,22 @@
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
-  .waveHand > h1 {
-    width: 85%;
+  .mainAboutHello>span {
+    font-size: 28px;
   }
-  .whoAmI > span {
-    font-size: 40px;
+  .mainAboutHello {
+    font-size: 22px;
+  }
+
+  .whoAmI {
+    font-size: 25px;
+  }
+
+  .whoAmI>span {
+    font-size: 38px;
+  }
+
+  .waveHand>h1 {
+    width: 90%;
   }
 }

@@ -110,7 +110,7 @@
   box-shadow: 6px 6px black;
   background-color: #616161;
   margin-top: 3%;
-  width: 75%;
+  width: 85%;
   text-align: center;
   transition: transform 0.4s, box-shadow 0.4s;
   transition-property: transform, box-shadow;
@@ -131,7 +131,7 @@
 .developer {
   box-shadow: 6px 6px black;
   background-color: #696969;
-  width: 75%;
+  width: 85%;
   margin-top: 3%;
   text-align: center;
   transition: transform 0.4s, box-shadow 0.4s;
@@ -269,18 +269,18 @@
     width: 85%;
   }
   .hello {
-    width: 55%;
+    width: 60%;
   }
   .myName {
     font-size: 30px;
-    width: 80%;
+    width: 90%;
   }
   .developer {
     width: 85%;
     font-size: 30px;
   }
   .desig {
-    width: 90%;
+    width: 100%;
     font-size: 1.4rem;
   }
   .desig > h2 {

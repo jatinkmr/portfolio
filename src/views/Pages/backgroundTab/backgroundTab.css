@@ -121,7 +121,6 @@ ul#socialList > li a:hover {
 
 ul#headingList {
   text-decoration: none;
-  margin-left: 5%;
 }
 
 ul#headingList > li {
@@ -218,7 +217,7 @@ li.nav-item > button {
     width: 36%;
   }
   .socializationLinks > ul li a {
-    font-size: 35px;
+    font-size: 30px;
   }
   li.nav-item > button {
     width: 70px;
@@ -232,6 +231,7 @@ li.nav-item > button {
   }
   ul#headingList > li {
     margin-right: 6%;
+    margin-left: 3%;
   }
   ul#headingList > button {
     padding-right: 2%;

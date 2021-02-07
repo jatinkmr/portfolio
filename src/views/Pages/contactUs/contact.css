@@ -20,7 +20,7 @@
   font-family: Oleo Script;
 }
 
-.waveHand > h1 {
+.waveHand>h1 {
   width: 41%;
   text-shadow: 8px 5px black;
   transition: transform 0.4s, text-shadow 0.4s;
@@ -30,7 +30,7 @@
   transition-delay: 0s, 0s;
 }
 
-.waveHand > h1:hover {
+.waveHand>h1:hover {
   transform: translate3d(8px, 5px, 0);
   text-shadow: 0px 0px;
 }
@@ -40,7 +40,7 @@
   width: 90%;
   font-size: 25px;
   font-family: Oleo Script;
-      text-shadow: 4px 4px black;
+  text-shadow: 4px 4px black;
 }
 
 .connectHeading {
@@ -55,24 +55,31 @@
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
   }
+
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -117,17 +124,14 @@ p.speech:after {
   border-color: #fff transparent transparent #fff;
 }
 
-.contactDetails {
-width: 85%;
-}
-
 
 /* for tablets */
 
 @media screen and (max-width: 1000px) {
-  .waveHand > h1 {
+  .waveHand>h1 {
     width: 50%;
   }
+
   .contactHeading {
     width: 80%;
     font-size: 22px;
@@ -138,12 +142,17 @@ width: 85%;
 /* for mobilePhones */
 
 @media screen and (max-width: 767px) {
-  .waveHand > h1 {
-    width: 80%;
+  .mainContactDiv {
+    padding-left: 5%;
   }
+  .waveHand>h1 {
+    width: 95%;
+  }
+
   .contactHeading {
     font-size: 21px;
   }
+
   .connectHeading {
     font-size: 19px;
   }

@@ -1,7 +1,7 @@
 /* for Desktop and Laptop */
 
 .mainProfileDiv {
-  padding-left: 6%;
+  padding-left: 4%;
   padding-top: 3%;
 }
 
@@ -87,6 +87,12 @@
   background-color: blue;
   height: 5px;
   width: 50%;
+}
+
+.awsSkill {
+  background-color: blue;
+  height: 5px;
+  width: 45%;
 }
 
 .htmlSkill {
@@ -285,10 +291,11 @@ ul.workList > li > a:hover {
     font-size: 35px;
   }
   .skills {
-    width: 80%;
+    width: 90%;
   }
   .experience {
-    width: 80%;
+    width: 90%;
+    float: none;
   }
   .skillHeading {
     font-size: 15px;
@@ -313,9 +320,6 @@ ul.workList > li > a:hover {
   .year > p {
     width: 75%;
     font-size: 12px;
-  }
-  .braces {
-    margin-left: 2%;
   }
   .braces > p {
     font-size: 55px;
