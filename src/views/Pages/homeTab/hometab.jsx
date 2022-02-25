@@ -99,7 +99,7 @@ class HomeTab extends Component {
             <div className='resumeDiv'>
               <a
                 href={process.env.PUBLIC_URL + '/resume/resume.pdf'}
-                download='resume.pdf'
+                download='JatinKumarKambojResume.pdf'
               >
                 <div className='resumeButton'>
                   <i className='fa fa-file-pdf-o'></i>&nbsp; &nbsp;
