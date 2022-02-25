@@ -1,0 +1,354 @@
+/* for Desktop and Laptop */
+
+.a {
+  font-weight: bold;
+  font-family: "Milkshake", Cursive;
+  color: #520a0a;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+}
+
+.b {
+  text-shadow: 3px 2px skyblue;
+  color: rgb(18, 9, 68);
+  font-family: "La Belle Aurore", cursive;
+}
+
+.a:hover {
+  color: orange;
+  /* animation: rubberBand 5s infinite; */
+  animation-name: rubberBand;
+  -webkit-animation-name: rubberBand; /*for Safari*/
+  -moz-animation-name: rubberBand; /* for MorZila */
+  -o-animation-name: rubberBand; /* for Opera */
+}
+
+.b:hover {
+  color: red;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.mainDiv {
+  padding-left: 6%;
+  padding-bottom: 3%;
+}
+
+.fade-in {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  -moz-animation: fadeIn ease 10s;
+  -o-animation: fadeIn ease 10s;
+  -ms-animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro {
+  float: left;
+  text-align: left;
+  padding-left: 4%;
+  padding-top: 5%;
+  width: 70%;
+}
+
+.resumeHolder {
+  float: right;
+  width: 30%;
+}
+
+.hello {
+  box-shadow: 6px 6px black;
+  background-color: grey;
+  width: 45%;
+  font-size: 65%;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.hello:hover {
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
+}
+
+.myName {
+  box-shadow: 6px 6px black;
+  background-color: #616161;
+  margin-top: 3%;
+  width: 85%;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.myName:hover {
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
+}
+
+.jImage > img {
+  width: 10%;
+}
+
+.developer {
+  box-shadow: 6px 6px black;
+  background-color: #696969;
+  width: 85%;
+  margin-top: 3%;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.developer:hover {
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
+}
+
+.desig {
+  box-shadow: 6px 6px black;
+  background-color: #696969;
+  width: 90%;
+  margin-top: 3%;
+  text-align: center;
+  font-size: 1.75rem;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.desig:hover {
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
+}
+
+.coffee {
+  box-shadow: 6px 6px black;
+  font-family: fantasy;
+  background-color: #9895d0;
+  margin-top: 5%;
+  width: 60%;
+  font-size: 40px;
+  color: #010015a6;
+  text-shadow: 2px 2px #250202;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.coffee:hover {
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
+}
+
+.coffee > span {
+  font-size: 48px;
+  color: red;
+}
+
+.iLove {
+  color: red;
+}
+
+.resumeHeader {
+  padding-left: 10%;
+}
+
+.resumeHeaderContent {
+  box-shadow: 6px 8px #0a1001;
+  padding: 2%;
+  width: 80%;
+  margin-top: 15%;
+  background-color: #4444ff;
+  font-family: system-ui;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.resumeHeaderContent:hover {
+  color: #2f0208;
+  transform: translate3d(6px, 8px, 0);
+  box-shadow: 0px 0px #0a1001;
+}
+
+.resumeDiv {
+  margin-top: 15%;
+  margin-left: 8%;
+  width: 80%;
+}
+
+.resumeDiv > a:hover {
+  text-decoration: none;
+}
+
+.resumeButton {
+  padding: 2%;
+  text-align: center;
+  background-color: silver;
+  border-radius: 90px;
+  width: 100%;
+  height: 30px;
+  color: red;
+  font-family: cursive, sans-serif;
+  box-shadow: 6px 6px black;
+  transition: transform 0.4s, box-shadow 0.4s;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.resumeButton:hover {
+  color: blue;
+  cursor: pointer;
+  transform: translate3d(6px, 6px, 0);
+  box-shadow: 0px 0px;
+  text-decoration: none;
+}
+
+.coffeeColor > i {
+  color: #6f4e37;
+}
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+  .resumeHeaderContent {
+    font-size: 10px;
+  }
+  .myName {
+    width: 85%;
+  }
+  .hello {
+    width: 60%;
+  }
+  .myName {
+    font-size: 30px;
+    width: 90%;
+  }
+  .developer {
+    width: 85%;
+    font-size: 30px;
+  }
+  .desig {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .desig > h2 {
+    font-size: 20px;
+  }
+  .coffee {
+    width: 65%;
+    font-size: 25px;
+  }
+  .coffee > i {
+    font-size: 25px;
+  }
+  .resumeDiv {
+    margin-left: 3%;
+  }
+  .resumeButton {
+    height: 20px;
+    font-size: 10px;
+  }
+}
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+  .b {
+    text-shadow: 2px 2px skyblue;
+  }
+  .resumeHeaderContent {
+    font-size: 15px;
+  }
+  .intro {
+    width: 90%;
+  }
+  .hello {
+    width: 70%;
+    font-size: 60%;
+  }
+  .myName {
+    width: 97%;
+  }
+  .developer {
+    width: 97%;
+  }
+  .desig {
+    width: 100%;
+  }
+  .coffee {
+    font-size: 25px;
+    width: 75%;
+    font-weight: bolder;
+  }
+  .coffee > i {
+    font-size: 30px;
+  }
+  .resumeHolder {
+    width: 100%;
+    text-align: center;
+  }
+  .resumeDiv {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 12%;
+  }
+  .resumeButton {
+    height: 35px;
+    width: 80%;
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+}

@@ -1,0 +1,159 @@
+/* for Desktop and Laptop */
+
+.mainContactDiv {
+  padding-top: 7%;
+  padding-left: 10%;
+  color: white;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.waveHand {
+  color: #b08a27;
+  width: 100%;
+  font-family: Oleo Script;
+}
+
+.waveHand>h1 {
+  width: 41%;
+  text-shadow: 8px 5px black;
+  transition: transform 0.4s, text-shadow 0.4s;
+  transition-property: transform, text-shadow;
+  transition-duration: 0.4s, 0.4s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+
+.waveHand>h1:hover {
+  transform: translate3d(8px, 5px, 0);
+  text-shadow: 0px 0px;
+}
+
+.contactHeading {
+  color: #bda1d6cf;
+  width: 90%;
+  font-size: 25px;
+  font-family: Oleo Script;
+  text-shadow: 4px 4px black;
+}
+
+.connectHeading {
+  font-family: Pacifico;
+  font-size: 27px;
+  color: #847ad2d6;
+  padding-top: 7%;
+  text-shadow: 4px 3px black;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+p.speech {
+  font-family: Pacifico;
+  font-size: 20px;
+  position: relative;
+  width: 200px;
+  height: 107px;
+  text-align: center;
+  line-height: 107px;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666;
+}
+
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+  .waveHand>h1 {
+    width: 50%;
+  }
+
+  .contactHeading {
+    width: 80%;
+    font-size: 22px;
+  }
+}
+
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+  .mainContactDiv {
+    padding-left: 5%;
+  }
+  .waveHand>h1 {
+    width: 95%;
+  }
+
+  .contactHeading {
+    font-size: 21px;
+  }
+
+  .connectHeading {
+    font-size: 19px;
+  }
+}

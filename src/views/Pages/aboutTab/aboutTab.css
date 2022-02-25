@@ -1,0 +1,87 @@
+/* for Desktop and Laptop */
+
+.mainAboutTab {
+  padding-top: 7%;
+  padding-left: 10%;
+}
+
+.mainAboutHello {
+  color: #bda1d6cf;
+  width: 90%;
+  font-size: 25px;
+  font-family: Oleo Script;
+  text-shadow: 4px 4px black;
+  margin-bottom: 6%;
+}
+
+.mainAboutHello>span {
+  font-family: Pacifico;
+  font-size: 30px;
+  text-decoration: underline;
+  color: red;
+}
+
+.mainAboutHello>i {
+  color: red;
+}
+
+.whoAmI {
+  font-family: Oleo Script;
+  color: #72ab71;
+  font-size: 32px;
+  text-shadow: 3px 3px #243f67;
+  padding-bottom: 3%;
+}
+
+.whoAmI>span {
+  color: #02051b;
+  font-family: Great Vibes;
+  font-size: 50px;
+  text-shadow: 1px 1px #ff0e0e;
+  font-weight: 1000;
+}
+
+
+/* for tablets */
+
+@media screen and (max-width: 1000px) {
+  .mainAboutHello {
+    font-size: 22px;
+  }
+
+  .whoAmI {
+    font-size: 28px;
+  }
+
+  .whoAmI>span {
+    font-size: 42px;
+  }
+
+  .waveHand>h1 {
+    width: 60%;
+  }
+}
+
+
+/* for mobilePhones */
+
+@media screen and (max-width: 767px) {
+  .mainAboutHello>span {
+    font-size: 28px;
+  }
+  .mainAboutHello {
+    font-size: 22px;
+  }
+
+  .whoAmI {
+    font-size: 25px;
+  }
+
+  .whoAmI>span {
+    font-size: 38px;
+  }
+
+  .waveHand>h1 {
+    width: 90%;
+  }
+}
