@@ -147,6 +147,42 @@ class ProfileTab extends Component {
                                 <p className='a'>&#x007B;</p>
                             </div>
                             <div className='experienceData'>
+                                <div className='position a'>Software Developer</div>
+                                <div className='companyAndYear'>
+                                    <div className='companyName'>
+                                        <a
+                                            href='https://www.firstcry.com/'
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                            data-toggle='tooltip'
+                                            title='FirstCry'
+                                            className='a'
+                                        >
+                                            BrainBees Solutions Pvt Ltd (FirstCry)
+                                    </a>
+                                    </div>
+                                    <div className='year'>
+                                        <p className='a'>Aug 2021 - Present</p>
+                                    </div>
+                                </div>
+                                <div className='companyWork'>
+                                    <ul className='workList'>
+                                        <li>
+                                            Work in CRM(Customer Relationship Management)-Team as Full-Stack Developer.
+                                        </li>
+                                        <li>Developed REST API using the Express framework along backend logic.</li>
+                                        <li>Designed FrontEnd User-Interface using VueJS.</li>
+                                        <li>FrontEnd User Interface Integration with REST APIs. </li>
+                                        <li>Tools: NodeJS, ExpressJS, VueJS, PostgresSQL and Sequelize.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='row workExperience'>
+                            <div className='braces'>
+                                <p className='a'>&#x007B;</p>
+                            </div>
+                            <div className='experienceData'>
                                 <div className='position a'>Associate Software Developer</div>
                                 <div className='companyAndYear'>
                                     <div className='companyName'>
@@ -186,42 +222,6 @@ class ProfileTab extends Component {
                                                 MomKidCare
                                         </a>
                                         </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='row workExperience'>
-                            <div className='braces'>
-                                <p className='a'>&#x007B;</p>
-                            </div>
-                            <div className='experienceData'>
-                                <div className='position a'>Software Developer</div>
-                                <div className='companyAndYear'>
-                                    <div className='companyName'>
-                                        <a
-                                            href='https://www.firstcry.com/'
-                                            target='_blank'
-                                            rel='noopener noreferrer'
-                                            data-toggle='tooltip'
-                                            title='FirstCry'
-                                            className='a'
-                                        >
-                                            BrainBees Solutions Pvt Ltd (FirstCry)
-                                    </a>
-                                    </div>
-                                    <div className='year'>
-                                        <p className='a'>Aug 2021 - Present</p>
-                                    </div>
-                                </div>
-                                <div className='companyWork'>
-                                    <ul className='workList'>
-                                        <li>
-                                            Work in CRM(Customer Relationship Management)-Team as Full-Stack Developer.
-                                        </li>
-                                        <li>Developed REST API using the Express framework along backend logic.</li>
-                                        <li>Designed FrontEnd User-Interface using VueJS.</li>
-                                        <li>FrontEnd User Interface Integration with REST APIs. </li>
-                                        <li>Tools: NodeJS, ExpressJS, VueJS, PostgresSQL and Sequelize.</li>
                                     </ul>
                                 </div>
                             </div>
