@@ -162,7 +162,7 @@ class ProfileTab extends Component {
                                     </a>
                                     </div>
                                     <div className='year'>
-                                        <p className='a'>Aug 2021 - Present</p>
+                                        <p className='a'>Aug 2021 - May 2023</p>
                                     </div>
                                 </div>
                                 <div className='companyWork'>
