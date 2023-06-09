@@ -237,6 +237,7 @@ ul.workList {
 ul.workList > li {
   font-family: Fira Code;
   color: #d6c0c0;
+  cursor: grab;
 }
 
 ul.workList > li:hover {
