@@ -124,6 +124,15 @@ p.speech:after {
   border-color: #fff transparent transparent #fff;
 }
 
+input.form-control, textarea.form-control {
+  background-color: #262524 !important;
+}
+
+.errorMessage {
+  font-size: 20px;
+  color: red;
+}
+
 
 /* for tablets */
 

@@ -8,7 +8,7 @@ import AboutTab from '../aboutTab/aboutTab.jsx'
 // class backgroundtab
 class backgroundtab extends Component {
   state = {
-    status: 'home'
+    status: 'contact'
   };
 
   // ChangeHandler function for changing the tab
