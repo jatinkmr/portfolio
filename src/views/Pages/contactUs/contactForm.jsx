@@ -33,7 +33,7 @@ class ContactForm extends Component {
             } else {
                 const isValidEmail = email.split('@')
                 let arr = ['gmail.com', 'yahoo.com', 'outlook.com']
-                if (!arr.includes(isValidEmail[1])) {
+                if (!arr.includes(isValidEmail[1].toLowerCase())) {
                     return this.setState({
                         isFormAlreadyFilled: true,
                         isErrorOccurred: true,
