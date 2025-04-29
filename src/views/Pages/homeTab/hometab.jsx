@@ -20,7 +20,7 @@ const HomeTab = () => {
 
         <div className="description">
           <p>
-            I craft <span className="highlight-text">scalable web applications</span> with <span className="exp-highlight">3.3+ years</span> of hands-on experience across the entire development stack.
+            I craft <span className="highlight-text">scalable web applications</span> with <span className="exp-highlight">4+ years</span> of hands-on experience across the entire development stack.
           </p>
 
           <p className="intro-detail">
