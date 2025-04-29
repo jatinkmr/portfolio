@@ -24,7 +24,7 @@ const HomeTab = () => {
           </p>
 
           <p className="intro-detail">
-            Currently at <span className="company">FirstCry.com</span>, I build CRM dashboards and integrate frontend interfaces with REST APIs.
+            Previously at <span className="company">FirstCry.com</span>, I build CRM dashboards and integrate frontend interfaces with REST APIs.
             My expertise spans <span className="tech">Node.js</span>, <span className="tech">Express</span>, <span className="tech">React</span>,
             and <span className="tech">Vue.js</span>, with cloud deployments on <span className="tech">AWS</span>.
           </p>
