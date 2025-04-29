@@ -2,7 +2,7 @@
 
 button.active {
   background-color: blue;
-  color: black;
+  color: rgb(204, 200, 200);
 }
 
 .fakeDiv {
@@ -47,6 +47,7 @@ button.active {
   transition-duration: 0.4s, 0.4s;
   transition-timing-function: ease, ease;
   transition-delay: 0s, 0s;
+  border-radius: 20px;
 }
 
 .profileImage > img:hover {
@@ -57,6 +58,12 @@ button.active {
 .socializeRow {
   padding-left: 5%;
   margin-top: 5%;
+
+  p {
+    color: #d5dc93;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
 }
 
 .socialization {
@@ -72,6 +79,7 @@ button.active {
   transition-duration: 0.4s, 0.4s;
   transition-timing-function: ease, ease;
   transition-delay: 0s, 0s;
+  border-radius: 10px;
 }
 
 .socialization:hover {
@@ -83,9 +91,9 @@ button.active {
   font-family: Oleo Script;
 }
 
-.socializationLinks > ul li a {
-  font-size: 37px;
-  color: red;
+.socializationLinks>ul li a {
+  font-size: 30px;
+  color: grey;
   display: block;
   text-decoration: none;
 }
@@ -105,7 +113,7 @@ button.active {
 
 .socializationLinks {
   margin-left: 2%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 .socializationLinks > span {
@@ -215,6 +223,9 @@ li.nav-item > button {
   }
   .socialization {
     width: 36%;
+  }
+  .socializationLinks {
+    margin-bottom: 0.5rem;
   }
   .socializationLinks > ul li a {
     font-size: 30px;

@@ -18,7 +18,7 @@ class backgroundtab extends Component {
   }
 
   // render function which render's all the content
-  render () {
+  render() {
     const { status } = this.state;
     return (
       <div className='container'>
@@ -31,9 +31,12 @@ class backgroundtab extends Component {
                 <img src='images/mine.jpg' alt='mine' height='10%' width='60%' data-toggle='tooltip' title='Jatin Kumar "Kamboj"' />
               </div>
               <div className='row socializeRow'>
-                <div className='socialization'>
+                {/* <div className='socialization mx-auto text-center'>
                   I <strong>socialize</strong> On
-              </div>
+              </div> */}
+                <p className='a mx-auto text-center'>
+                  Software Engineer
+                </p>
               </div>
               <div className='row socializationLinks justify-content-center'>
                 <ul id='socialList'>
@@ -111,22 +114,22 @@ class backgroundtab extends Component {
                       data-toggle='tooltip' title='Home'
                     >
                       Home
-                  </button>
+                    </button>
                   </li>
                   <li className='nav-item' onClick={this.changeHandler}>
                     <button type='button' className={`btn btn-link px-1 ${status === "profile" ? "active" : ""}`} name='profile' data-toggle='tooltip' title='Profile'>
                       Profile
-                  </button>
+                    </button>
                   </li>
                   <li className='nav-item' onClick={this.changeHandler}>
                     <button type='button' className={`btn btn-link px-1 ${status === "about" ? "active" : ""}`} name='about' data-toggle='tooltip' title='About Me'>
                       About
-                  </button>
+                    </button>
                   </li>
                   <li className='nav-item' onClick={this.changeHandler}>
                     <button type='button' className={`btn btn-link px-1 ${status === "contact" ? "active" : ""}`} name='contact' data-toggle='tooltip' title='Contact'>
                       Contact
-                  </button>
+                    </button>
                   </li>
                 </ul>
               </div>

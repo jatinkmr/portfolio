@@ -65,7 +65,7 @@
 
 .skillHeading:hover {
   color: #d44545;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: white;
 }
 
