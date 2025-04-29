@@ -1,87 +1,333 @@
-/* for Desktop and Laptop */
-
-.mainAboutTab {
-  padding-top: 7%;
-  padding-left: 10%;
+/* Base styles */
+.about-container {
+  min-height: 100vh;
+  padding: 7% 5%;
+  background-color: #262524;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mainAboutHello {
-  color: #bda1d6cf;
-  width: 90%;
-  font-size: 25px;
-  font-family: Oleo Script;
-  text-shadow: 4px 4px black;
-  margin-bottom: 6%;
+.about-card {
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease;
 }
 
-.mainAboutHello>span {
-  font-family: Pacifico;
-  font-size: 30px;
-  text-decoration: underline;
-  color: red;
+.about-card:hover {
+  transform: translateY(-5px);
 }
 
-.mainAboutHello>i {
-  color: red;
+/* Header section */
+.header-section {
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgba(189, 161, 214, 0.2);
+  padding-bottom: 20px;
 }
 
-.whoAmI {
-  font-family: Oleo Script;
+.about-question {
+  font-family: 'Oleo Script', cursive;
   color: #72ab71;
   font-size: 32px;
-  text-shadow: 3px 3px #243f67;
-  padding-bottom: 3%;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #243f67;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.whoAmI>span {
-  color: #02051b;
-  font-family: Great Vibes;
-  font-size: 50px;
+.name-highlight {
+  color: #f8f8f8;
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
   text-shadow: 1px 1px #ff0e0e;
-  font-weight: 1000;
+  font-weight: bold;
+  margin: 0 5px;
+  position: relative;
+  display: inline-block;
 }
 
+.name-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff0e0e, transparent);
+}
 
-/* for tablets */
+.pulse-icon {
+  color: #ff0e0e;
+  animation: pulse 2s infinite;
+  margin-left: 10px;
+}
 
-@media screen and (max-width: 1000px) {
-  .mainAboutHello {
-    font-size: 22px;
+.greeting-section {
+  margin-top: 20px;
+}
+
+.wave-greeting {
+  font-size: 36px;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+  font-size: 40px;
+}
+
+/* About content */
+.about-content {
+  color: #bda1d6cf;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.about-content p:hover {
+  transform: translateX(5px);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.name-accent {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #ff6b6b;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight {
+  color: #72ab71;
+  font-weight: bold;
+  position: relative;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #72ab71, transparent);
+}
+
+.interest-text {
+  font-style: italic;
+  color: #ff9d9d;
+  border-left: 3px solid #ff9d9d;
+  padding-left: 15px !important;
+}
+
+.email-link {
+  color: #bda1d6cf;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.email-link:hover {
+  color: #72ab71;
+  text-decoration: underline;
+}
+
+.email-link .hover-icon {
+  margin-left: 5px;
+}
+
+/* CTA section */
+.cta-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(189, 161, 214, 0.2);
+}
+
+.cta-section p {
+  font-size: 24px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bounce-icon {
+  color: #ff0e0e;
+  animation: bounce 2s infinite;
+}
+
+.hover-icon {
+  color: #72ab71;
+  transition: transform 0.3s ease;
+}
+
+.hover-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .whoAmI {
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1000px) {
+  .about-card {
+    padding: 30px;
+  }
+
+  .about-question {
     font-size: 28px;
   }
 
-  .whoAmI>span {
+  .name-highlight {
     font-size: 42px;
   }
 
-  .waveHand>h1 {
-    width: 60%;
+  .about-content {
+    font-size: 20px;
+  }
+
+  .name-accent {
+    font-size: 26px;
+  }
+
+  .wave-greeting {
+    font-size: 32px;
   }
 }
 
-
-/* for mobilePhones */
-
 @media screen and (max-width: 767px) {
-  .mainAboutHello>span {
-    font-size: 28px;
-  }
-  .mainAboutHello {
-    font-size: 22px;
+  .about-card {
+    padding: 20px;
   }
 
-  .whoAmI {
+  .about-question {
     font-size: 25px;
   }
 
-  .whoAmI>span {
+  .name-highlight {
     font-size: 38px;
   }
 
-  .waveHand>h1 {
-    width: 90%;
+  .about-content {
+    font-size: 18px;
+  }
+
+  .name-accent {
+    font-size: 24px;
+  }
+
+  .wave-greeting {
+    font-size: 28px;
+  }
+
+  .cta-section p {
+    font-size: 20px;
   }
 }

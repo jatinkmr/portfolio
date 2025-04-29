@@ -1,49 +1,52 @@
-import React, { Component } from 'react'
-import './aboutTab.css'
+import React from 'react';
+import './aboutTab.css';
 
-// class AboutTab
-class AboutTab extends Component {
-    render() {
-        return (
-            <div className='row mainAboutTab fade-in'>
-                <div clasName='col-md-12'>
-                    <div className='whoAmI'>
-                        Who&#39;s <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    </div>
-                    <div className='waveHand'>
-                        <h1>
-                            Hey There...!!{' '}
-                            <span className='wave' role='img' aria-label='waving-hand'>
-                                👋
-                        </span>
+const AboutTab = () => {
+    return (
+        <div className="about-container">
+            <div className="about-card">
+                <div className="header-section">
+                    <h2 className="about-question">
+                        Discovering <span className="name-highlight">Jatin Kumar</span>
+                        <i className="fa fa-lightbulb-o pulse-icon" aria-hidden="true"></i>
+                    </h2>
+
+                    <div className="greeting-section">
+                        <h1 className="wave-greeting">
+                            Hello World! <span className="wave" role="img" aria-label="waving-hand">👋</span>
                         </h1>
                     </div>
-                    <div className='mainAboutHello'>
-                        I&#39;m <span title='Jatin Kumar "Kamboj"'>Jatin Kumar</span> from Delhi, India which is also known as Capital of India. I am an upComing Full Stack Developer.<br /><br />
-                        Well-organized person, problem solver, independent employee with high attention to detail. I Like outdoor activities, Pencil Sketching, Horror Movies and Video Games. <br /><br />
-                        {/* I&#39;m a <span title='Web Developer'>FULL/MERN Stack Developer</span> and Currently I&#39;m working as a <b><u>Software Developer</u></b> at{' '}
-                        <span>
-                            <a
-                                href='https://www.firstcry.com/'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                data-toggle='tooltip'
-                                title='FirstCry'
-                            >
-                                FirstCry
-                        </a>
-                        </span>. */}
-                        I&#39;m looking for new opportunities.
-                        <br /><br />
-                        I always tried to learn new technologies in Web Development and try to implement them too.
-                        <br /><br />
-                        Think we could Create SomeThing Together <i class="fa fa-question" aria-hidden="true"></i> <br />Feel Free to Drop me an email <i class="fa fa-envelope" aria-hidden="true"></i> &#10069;
+                </div>
+
+                <div className="about-content">
+                    <p>
+                        I'm a tech enthusiast based in the vibrant city of Delhi, India.
+                        Passionate about creating seamless digital experiences as a <span className="highlight">Full Stack Developer</span>.
+                    </p>
+
+                    <p>
+                        Known for my meticulous attention to detail, problem-solving mindset, and ability to work independently.
+                        Beyond coding, I find joy in exploring the outdoors, creating pencil sketches, watching horror films, and diving into immersive video games.
+                    </p>
+
+                    <p className="interest-text">Currently exploring exciting new opportunities in the tech world.</p>
+
+                    <p>
+                        I'm constantly experimenting with emerging web technologies and implementing innovative solutions that push boundaries.
+                    </p>
+
+                    <div className="cta-section">
+                        <p>
+                            Interested in collaborating on something extraordinary? <i className="fa fa-rocket bounce-icon" aria-hidden="true"></i>
+                        </p>
+                        <p>
+                            Let's connect! <a href="mailto:kumar.jatin873@gmail.com" className="email-link">Reach out via email <i className="fa fa-paper-plane hover-icon" aria-hidden="true"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
-        )
-    }
-}
+        </div>
+    );
+};
 
-// export aboutTab Page
-export default AboutTab
+export default AboutTab;

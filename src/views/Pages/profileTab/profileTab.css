@@ -1,341 +1,294 @@
-/* for Desktop and Laptop */
+/* Modern Profile Section CSS */
 
 .mainProfileDiv {
-  padding-left: 4%;
-  padding-top: 3%;
+  display: flex;
+  padding: 3rem 4%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
 }
 
+/* Skills Column */
 .skills {
-  color: white;
-  float: left;
-  width: 40%;
+  flex: 0 0 40%;
+  padding-right: 2rem;
 }
 
+/* Experience Column */
 .experience {
-  color: white;
-  float: right;
-  width: 60%;
+  flex: 0 0 60%;
 }
 
 .skill {
-  color: red;
-  font-family: URW Chancery L, cursive;
-  text-decoration: underline;
-  text-decoration-style: double;
-  text-decoration-color: #91924ac4;
+  color: #ff5252;
+  font-family: "Playfair Display", serif;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-bottom: 2px double #91924a;
 }
 
 .skillSection {
-  margin-top: 5%;
-  margin-bottom: 7%;
+  margin: 1.5rem 0;
 }
 
 .skillHeader {
-  padding-top: 5%;
-  padding-left: 2%;
+  margin: 2rem 0 1rem;
 }
 
-.skillHeader > h3 {
-  font-family: Oleo Script;
-  color: #c7ccd0a3;
-  text-decoration: underline;
+.skillHeader>h3 {
+  font-family: "Poppins", sans-serif;
+  color: #c7ccd0;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s ease;
 }
 
-.skillHeader > h3:hover {
-  text-shadow: 3px 3px red;
-}
-
-.skillContentDetails {
-  padding-left: 4%;
+.skillHeader>h3:hover {
+  color: #f8f9fa;
+  text-shadow: 1px 1px rgba(255, 0, 0, 0.6);
 }
 
 .skillHeading {
-  padding-left: 3%;
+  display: block;
+  margin-bottom: 0.5rem;
   color: #bc90de;
-  font-family: Comic Sans MS;
-  font-weight: bold;
-  font-size: 18px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
 .skillHeading:hover {
   color: #d44545;
   text-decoration: underline;
   text-decoration-color: white;
-  text-shadow: 4px -4px black;
 }
 
 .skillGrade {
-  height: 5px;
-  background-color: grey;
-  width: 80%;
-  margin-left: 3%;
+  height: 6px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 3px;
+  width: 90%;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
+/* Common skill bar style */
+[class$="Skill"] {
+  background-color: #4a6bff;
+  height: 6px;
+  border-radius: 3px;
+  transition: width 1s ease-in-out;
+}
+
+/* Work Experience Section */
+.workExperience {
+  position: relative;
+  padding: 0 0 2rem 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.workExperience:last-child {
+  margin-bottom: 0;
+}
+
+.position {
+  font-family: "Fira Code", monospace;
+  color: #e5b9b8;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.companyAndYear {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.companyName {
+  flex: 1;
+  min-width: 200px;
+}
+
+.companyName>a {
+  color: #9797b7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.companyName>a:hover {
+  color: #a79074;
+}
+
+.year>p {
+  color: #8a9abf;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.braces {
+  display: none;
+  /* Removing braces for modern design */
+}
+
+ul.workList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.workList>li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: "Inter", sans-serif;
+  color: #d6c0c0;
+  line-height: 1.5;
+}
+
+ul.workList>li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #4a6bff;
+}
+
+ul.workList>li:hover {
+  color: #9296ff;
+}
+
+ul.workList>li>a {
+  color: #0de48b;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+ul.workList>li>a:hover {
+  color: #ff5252;
+  text-decoration: underline;
+}
+
+/* Keep specific skill percentages from original code */
 .nodeJsSkill {
-  background-color: blue;
   width: 70%;
-  height: 5px;
 }
 
 .vueJsSkill {
-  background-color: blue;
   width: 50%;
-  height: 5px;
 }
 
 .gitSkill {
-  background-color: blue;
-  height: 5px;
   width: 60%;
 }
 
 .herokuSkill {
-  background-color: blue;
-  height: 5px;
   width: 50%;
 }
 
 .awsSkill {
-  background-color: blue;
-  height: 5px;
   width: 45%;
 }
 
 .htmlSkill {
-  background-color: blue;
-  height: 5px;
   width: 75%;
 }
 
 .jsxSkill {
-  background-color: blue;
-  height: 5px;
   width: 65%;
 }
 
 .cssSkill {
-  background-color: blue;
-  height: 5px;
   width: 62%;
 }
 
 .bootStrapSkill {
-  background-color: blue;
-  height: 5px;
   width: 60%;
 }
 
 .reactStrapSkill {
-  background-color: blue;
-  height: 5px;
   width: 55%;
 }
 
 .jQuerySkill {
-  background-color: blue;
-  height: 5px;
   width: 52%;
 }
 
 .reactSkill {
-  background-color: blue;
-  height: 5px;
   width: 45%;
 }
 
-.phpMySql {
-  background-color: blue;
-  height: 5px;
+.phpMySqlSkill {
   width: 55%;
 }
 
-.mongoDb {
-  background-color: blue;
-  height: 5px;
+.mongoDbSkill {
   width: 50%;
 }
 
-.postgreSql {
-  background-color: blue;
-  height: 5px;
+.postgreSqlSkill {
   width: 45%;
 }
 
-.knexJs {
-  background-color: blue;
-  height: 5px;
+.knexJsSkill {
   width: 50%;
 }
 
-.workExperience {
-  padding-top: 4%;
-  padding-left: 3%;
-}
-
-.nameAndYear {
-  width: 100%;
-}
-
-.companyAndYear {
-  width: 100%;
-  margin-top: 1%;
-}
-
-.companyName {
-  font-family: Times, Times New Roman, Georgia, serif;
-  float: left;
-  width: 55%;
-}
-
-.companyName > a {
-  color: #9797b7;
-}
-
-.companyName > a:hover {
-  color: #a79074d6;
-  text-decoration: none;
-}
-
-.year {
-  font-family: Times, Times New Roman, Georgia, serif;
-  float: right;
-  width: 45%;
-}
-
-.year > p {
-  color: #8a9abf;
-}
-
-.braces > p {
-  font-family: cursive;
-  color: #a00a0a;
-  font-size: 60px;
-  margin-right: 2%;
-}
-
-.experienceData {
-  width: 90%;
-}
-
-.position {
-  font-family: fira code;
-  color: #e5b9b8;
-  font-size: 19px;
-  margin-top: 5%;
-}
-
-.companyWork {
-  padding-top: 14%;
-}
-
-ul.workList {
-  list-style-type: "=> ";
-  padding-left: 7%;
-  width: 85%;
-}
-
-ul.workList > li {
-  font-family: Fira Code;
-  color: #d6c0c0;
-  cursor: grab;
-}
-
-ul.workList > li:hover {
-  color: #9296ff;
-}
-
-ul.workList > li > a {
-  color: #0de48bd9;
-  font-family: fantasy;
-}
-
-ul.workList > li > a:hover {
-  color: red;
-  text-shadow: 2px 2px #3c040c;
-  text-decoration: underline;
-  text-decoration-style: double;
-}
-
-/* for tablets */
-
-@media screen and (max-width: 1000px) {
-  .skill {
-    font-size: 20px;
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .mainProfileDiv {
+    flex-direction: column;
   }
-  .skillHeading {
-    font-size: 13px;
+
+  .skills,
+  .experience {
+    flex: 0 0 100%;
+    width: 100%;
   }
-  .position {
-    margin-top: 10%;
-    font-size: 13px;
-  }
-  .companyName {
-    width: 50%;
-    font-size: 11px;
-  }
-  .year > p {
-    width: 50%;
-    font-size: 11px;
-  }
-  .braces {
-    font-size: 50px;
-  }
-  .companyWork {
-    padding-top: 17%;
-  }
-  ul.workList {
-    width: 90%;
+
+  .skills {
+    margin-bottom: 3rem;
+    padding-right: 0;
   }
 }
-
-/* for mobilePhones */
 
 @media screen and (max-width: 767px) {
   .mainProfileDiv {
-    padding-left: 8%;
+    padding: 2rem;
   }
+
   .skill {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
-  .skills {
-    width: 90%;
-  }
-  .experience {
-    width: 90%;
-    float: none;
-  }
+
   .skillHeading {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
+
   .position {
-    margin-top: 6%;
-    font-size: 16px;
+    font-size: 1rem;
   }
-  .companyAndYear {
-    width: 120%;
-  }
-  .companyName {
-    width: 55%;
-    font-size: 11px;
-  }
-  .companyWork {
-    padding-top: 20%;
-  }
-  .companyName > a {
-    font-size: 16px;
-  }
-  .year > p {
-    width: 75%;
-    font-size: 12px;
-  }
-  .braces > p {
-    font-size: 55px;
-  }
-  ul.workList {
-    list-style-type: "# ";
+
+  .companyName,
+  .year {
     width: 100%;
   }
-  ul.workList > li {
-    padding-top: 2%;
+
+  .year {
+    margin-top: 0.5rem;
+  }
+
+  ul.workList>li {
+    font-size: 0.9rem;
   }
 }

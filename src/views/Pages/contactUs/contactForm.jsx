@@ -1,128 +1,170 @@
-import React, { Component, createRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import './contact.css'
+import './contact.css';
 
-// class ContactForm
-class ContactForm extends Component {
-    form = createRef()
-    state = {
-        isFormAlreadyFilled: false,
-        isErrorOccurred: false,
+const ContactForm = () => {
+    const form = useRef();
+    const [formState, setFormState] = useState({
         userName: '',
         email: '',
         message: '',
-        errorMessage: ''
-    }
+    });
+    const [status, setStatus] = useState({
+        submitted: false,
+        success: false,
+        message: '',
+        sending: false
+    });
 
-    inputChangeHandler = event => {
-        this.setState({
-            [event.target.name]: event.target.value
-        })
-    }
+    useEffect(() => {
+        // Initialize EmailJS
+        emailjs.init("mT2j9sQTEHiODyakr");
 
-    contactFormSubmitHandler = async (ev) => {
-        ev.preventDefault();
-        const { userName, email, message } = this.state
+        // Check if form was previously submitted
+        const formSubmitted = localStorage.getItem('isContactFormFilled') === 'true';
+        if (formSubmitted) {
+            setStatus({
+                submitted: true,
+                success: true,
+                message: 'Thank you for reaching out! I will get back to you soon.'
+            });
+        }
+    }, []);
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormState({
+            ...formState,
+            [name]: value
+        });
+    };
+
+    const validateEmail = (email) => {
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const { userName, email, message } = formState;
+
+        // Basic validation
+        if (!userName || !email || !message) {
+            return setStatus({
+                submitted: true,
+                success: false,
+                message: 'Please fill in all fields.'
+            });
+        }
+
+        // Email validation
+        if (!validateEmail(email)) {
+            return setStatus({
+                submitted: true,
+                success: false,
+                message: 'Please enter a valid email address.'
+            });
+        }
+
         try {
-            if (!userName || !email || !message) {
-                return this.setState({
-                    isFormAlreadyFilled: true,
-                    isErrorOccurred: true,
-                    errorMessage: 'Some Field has been empty between Name, Email or Message! Please Check!'
-                })
-            } else {
-                const isValidEmail = email.split('@')
-                let arr = ['gmail.com', 'yahoo.com', 'outlook.com']
-                if (!arr.includes(isValidEmail[1].toLowerCase())) {
-                    return this.setState({
-                        isFormAlreadyFilled: true,
-                        isErrorOccurred: true,
-                        errorMessage: 'Invalid Email! Please enter a valid email address! Only Gmail, Yahoo and Outlook is allowed!'
-                    })
-                }
-                this.setState({
-                    isFormAlreadyFilled: true,
-                    isErrorOccurred: true,
-                    errorMessage: "Sending..."
-                })
-                let response = await emailjs.send(
-                    'service_orc3b3h',
-                    'template_xn1qear',
-                    { userName, email, message },
-                    'mT2j9sQTEHiODyakr'
-                );
-                if (response.status === 200) {
-                    localStorage.setItem('isContactFormFilled', 'true')
-                    return this.setState({
-                        userName: '',
-                        email: '',
-                        message: '',
-                        isFormAlreadyFilled: true,
-                        isErrorOccurred: false,
-                        errorMessage: 'Message has been sent! Thanks you for reaching out to me!'
-                    })
-                }
+            // Set sending status
+            setStatus({
+                ...status,
+                sending: true,
+                message: 'Sending message...'
+            });
+
+            const response = await emailjs.send(
+                'service_orc3b3h',
+                'template_xn1qear',
+                { userName, email, message },
+                'mT2j9sQTEHiODyakr'
+            );
+
+            if (response.status === 200) {
+                localStorage.setItem('isContactFormFilled', 'true');
+                setFormState({ userName: '', email: '', message: '' });
+                setStatus({
+                    submitted: true,
+                    success: true,
+                    message: 'Message sent successfully! Thank you for reaching out.',
+                    sending: false
+                });
             }
         } catch (error) {
-            let storedData = (localStorage.getItem('isContactFormFilled') === 'true') ? true : false
-            if (storedData) {
-                localStorage.removeItem('isContactFormFilled')
-            }
-            this.setState({
-                isFormAlreadyFilled: false,
-                isErrorOccurred: true,
-                errorMessage: 'Error Occurred while sending the message! Unable to sent mail!'
-            })
+            localStorage.removeItem('isContactFormFilled');
+            setStatus({
+                submitted: true,
+                success: false,
+                message: 'Failed to send message. Please try again later.',
+                sending: false
+            });
         }
-    }
+    };
 
-    componentDidMount = async () => {
-        const storedData = (localStorage.getItem('isContactFormFilled') === 'true') ? true : false
+    const getStatusClass = () => {
+        if (!status.submitted) return '';
+        return status.success ? 'status-success' : 'status-error';
+    };
 
-        emailjs.init("mT2j9sQTEHiODyakr")
+    return (
+        <div className="contact-form-container">
+            <form ref={form} onSubmit={handleSubmit} className="contact-form">
+                <div className="form-group">
+                    <label htmlFor="userName">Name</label>
+                    <input
+                        id="userName"
+                        className="form-control"
+                        type="text"
+                        name="userName"
+                        value={formState.userName}
+                        onChange={handleInputChange}
+                        placeholder="Enter your name"
+                    />
+                </div>
 
-        this.setState({
-            isFormAlreadyFilled: storedData,
-            isErrorOccurred: !storedData,
-            errorMessage: 'Message has been sent! Thank you for reaching out to me!'
-        })
-    }
+                <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        id="email"
+                        className="form-control"
+                        type="email"
+                        name="email"
+                        value={formState.email}
+                        onChange={handleInputChange}
+                        placeholder="Enter your email"
+                    />
+                </div>
 
-    // render funtion for rendering the contact us form
-    render() {
-        const { isFormAlreadyFilled, isErrorOccurred, userName, email, message, errorMessage } = this.state
-        return (
-            <>
-                <form onSubmit={this.contactFormSubmitHandler} ref={this.form}>
-                    <div className="row">
-                        <div className="col-md-5 col-sm-10 mb-3 mr-3">
-                            <input className="form-control" type="text" name="userName" value={userName} onChange={this.inputChangeHandler} placeholder="Enter Your Name" />
-                        </div>
-                        <div className="col-md-5 col-sm-10 mb-3 mr-3">
-                            <input className="form-control" type="email" name="email" value={email} onChange={this.inputChangeHandler} placeholder="Enter Your Email" required />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-10 col-sm-10 mb-3 mr-3">
-                            <textarea className="form-control" name="message" value={message} onChange={this.inputChangeHandler} placeholder="Enter Your Message" rows="4" />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-10 col-sm-10 mb-3 mr-3">
-                            <button type="submit" className="btn btn-success" disabled={!isErrorOccurred} >Submit</button>
-                        </div>
-                    </div>
-                </form>
+                <div className="form-group">
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                        id="message"
+                        className="form-control"
+                        name="message"
+                        value={formState.message}
+                        onChange={handleInputChange}
+                        placeholder="Enter your message"
+                        rows="4"
+                    />
+                </div>
 
-                {isFormAlreadyFilled ? (
-                    <div className="row contactHeading errorMessage">
-                        {errorMessage}
-                    </div>
-                ) : null}
-            </>
-        )
-    }
-}
+                <button
+                    type="submit"
+                    className="submit-button"
+                    disabled={status.sending}
+                >
+                    {status.sending ? 'Sending...' : 'Send Message'}
+                </button>
+            </form>
 
-// contactForm
-export default ContactForm
+            {status.submitted && (
+                <div className={`status-message ${getStatusClass()}`}>
+                    {status.message}
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default ContactForm;
