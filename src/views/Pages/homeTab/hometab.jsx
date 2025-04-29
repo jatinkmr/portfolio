@@ -1,118 +1,53 @@
-import React, { Component } from 'react'
-import './hometab.css'
+import React from 'react';
+import './hometab.css';
 
-//Class Hometab
-class HomeTab extends Component {
-  render () {
-    return (
-      <div className='row mainDiv fade-in'>
-        <div className='col-md-12'>
-          <div className='intro'>
-            <h1>
-              <div className='hello'>
-                <span className='a b'>H</span>
-                <span className='a'>e</span>
-                <span className='a'>y</span>
-              &nbsp;
-              <span className='a b'>T</span>
-                <span className='a'>h</span>
-                <span className='a'>e</span>
-                <span className='a'>r</span>
-                <span className='a'>e</span>
-                <span className='a'>.</span>
-                <span className='a'>.</span>
-                <span className='a'>.</span>
-                <span className='a'>!</span>
-                <span className='a'>!</span>
-              </div>
-              <div className='myName'>
-                <span className='a b'>I</span>
-                <span className='a'>'</span>
-                <span className='a'>m</span>
-              &nbsp;
-              <span className='jImage'>
-                  <img src='images/j.png' alt='J' />
-                </span>
-                <span className='a b'>a</span>
-                <span className='a b'>t</span>
-                <span className='a b'>i</span>
-                <span className='a b'>n</span>
-              &nbsp;
-              <span className='a b'>K</span>
-                <span className='a b'>u</span>
-                <span className='a b'>m</span>
-                <span className='a b'>a</span>
-                <span className='a b'>r</span>
-                <span className='a'>,</span>
-              </div>
-              <div className='developer'>
-                <span className='a b'>W</span>
-                <span className='a'>e</span>
-                <span className='a'>b</span>
-              &nbsp; &nbsp;
-              <span className='a b'>D</span>
-                <span className='a'>e</span>
-                <span className='a'>v</span>
-                <span className='a'>e</span>
-                <span className='a'>l</span>
-                <span className='a'>0</span>
-                <span className='a'>p</span>
-                <span className='a'>e</span>
-                <span className='a'>r</span>
-                <span className='a'>!</span>
-              </div>
-            </h1>
-            <div className='desig'>
-              <p>
-                <span className='a'>MERN Stack </span>
-              &nbsp;
-              <span className='a b'>/</span>
-              &nbsp;
-              <span className='a'>FULL Stack</span>
-              </p>
-            </div>
-            <div className='coffee'>
-              P.S.{' '}
-              <span className="d-inline-block" tabIndex="0" data-toggle="tooltip" title="I">
-                <span className='a iLove'>
-                  <i className='fa fa-italic' aria-hidden='true'></i>
-                </span>{' '}
-              </span>
-              <span className="d-inline-block" tabIndex="0" data-toggle="tooltip" title="Love">
-                <span className='a iLove'>
-                  <i className='fa fa-heart' aria-hidden='true'></i>
-                </span>{' '}
-              </span>
-              <span className="d-inline-block" tabIndex="0" data-toggle="tooltip" title="Coffee">
-                <span className='a coffeeColor'>
-                  <i className='fa fa-coffee' aria-hidden='true'></i>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div className='resumeHolder'>
-            <div className='resumeHeader'>
-              <div className='resumeHeaderContent'>
-                Some <b>Other</b> points
-            </div>
-            </div>
-            <div className='resumeDiv'>
-              <a
-                href={process.env.PUBLIC_URL + '/resume/resume.pdf'}
-                download='JatinKumarKambojResume.pdf'
-              >
-                <div className='resumeButton'>
-                  <i className='fa fa-file-pdf-o'></i>&nbsp; &nbsp;
-                Resume&nbsp;[.pdf]
-              </div>
-              </a>
-            </div>
-          </div>
+const HomeTab = () => {
+  return (
+    <div className="home-container">
+      <div className="intro-section">
+        <div className="greeting">
+          <span className="highlight">Hello, I'm</span>
+          <span className="wave">👋</span>
+        </div>
+
+        <h1 className="name">
+          <span className="name-highlight">Jatin Kumar</span>
+        </h1>
+
+        <h2 className="title">
+          Full-Stack <span className="js-highlight">JavaScript</span> Developer
+        </h2>
+
+        <div className="description">
+          <p>
+            I craft <span className="highlight-text">scalable web applications</span> with <span className="exp-highlight">3.3+ years</span> of hands-on experience across the entire development stack.
+          </p>
+
+          <p className="intro-detail">
+            Currently at <span className="company">FirstCry.com</span>, I build CRM dashboards and integrate frontend interfaces with REST APIs.
+            My expertise spans <span className="tech">Node.js</span>, <span className="tech">Express</span>, <span className="tech">React</span>,
+            and <span className="tech">Vue.js</span>, with cloud deployments on <span className="tech">AWS</span>.
+          </p>
+
+          <p className="intro-detail">
+            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
+            or perfecting my coffee brewing technique <span className="coffee-icon">☕</span>.
+          </p>
+        </div>
+
+        <div className="cta-section">
+          <a
+            href={`${process.env.PUBLIC_URL}/resume/resume.pdf`}
+            download="JatinKumarKambojResume.pdf"
+            className="resume-btn"
+          >
+            <span className="btn-text">View My Resume</span>
+            <span className="icon">📜</span>
+          </a>
         </div>
       </div>
-    )
-  }
-}
+    </div>
+  );
+};
 
-// export class HomeTab
-export default HomeTab
+export default HomeTab;
