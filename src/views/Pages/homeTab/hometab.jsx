@@ -30,8 +30,8 @@ const HomeTab = () => {
           </p>
 
           <p className="intro-detail">
-            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
-            or perfecting my coffee brewing technique <span className="coffee-icon">☕</span>.
+            When I'm not coding, you'll find me exploring new technologies,<span className="passion"> crafting delicious meals</span>,
+            or perfecting my <span className="coffee-art">coffee brewing art</span><span className="coffee-icon">☕</span>.
           </p>
         </div>
 
