@@ -370,10 +370,24 @@ textarea.form-control {
   }
 
   .contact-form {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .form-control {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
   }
 
   .submit-button {
-    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .contact-form-container {
+    max-width: 70%;
   }
 }

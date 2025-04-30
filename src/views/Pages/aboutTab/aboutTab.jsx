@@ -37,10 +37,14 @@ const AboutTab = () => {
 
                     <div className="cta-section">
                         <p>
-                            Interested in collaborating on something extraordinary? <i className="fa fa-rocket bounce-icon" aria-hidden="true"></i>
+                            Interested in collaborating on something extraordinary?
                         </p>
+                    </div>
+                    <div className="connect-wrapper">
                         <p>
-                            Let's connect! <a href="mailto:kumar.jatin873@gmail.com" className="email-link">Reach out via email <i className="fa fa-paper-plane hover-icon" aria-hidden="true"></i></a>
+                            Let's connect! <a href="mailto:kumar.jatin873@gmail.com" className="email-link">
+                                Reach out via email <i className="fa fa-paper-plane hover-icon" aria-hidden="true"></i>
+                            </a>
                         </p>
                     </div>
                 </div>

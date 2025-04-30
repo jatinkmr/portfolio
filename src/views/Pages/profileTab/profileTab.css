@@ -291,4 +291,9 @@ ul.workList>li>a:hover {
   ul.workList>li {
     font-size: 0.9rem;
   }
+
+  .workExperience {
+    border-left: none;
+    padding-left: 0;
+  }
 }
