@@ -291,7 +291,7 @@
   }
 
   .name-highlight {
-    font-size: 42px;
+    font-size: 35px;
   }
 
   .about-content {
@@ -313,11 +313,11 @@
   }
 
   .about-question {
-    font-size: 25px;
+    font-size: 19px;
   }
 
   .name-highlight {
-    font-size: 38px;
+    font-size: 24px;
   }
 
   .about-content {
@@ -340,5 +340,13 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  .pulse-icon {
+    margin-left: 5px;
+  }
+
+  .social-links a {
+    height: 35px;
   }
 }

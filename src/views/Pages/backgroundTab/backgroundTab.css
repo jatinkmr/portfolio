@@ -91,7 +91,7 @@ button.active {
   font-family: Oleo Script;
 }
 
-.socializationLinks>ul li a {
+.socializationLinks > ul li a {
   font-size: 30px;
   color: grey;
   display: block;
@@ -112,7 +112,7 @@ button.active {
 }
 
 .socializationLinks {
-  margin-left: 2%;
+  margin-left: 5%;
   /* padding-top: 5%; */
 }
 
@@ -179,15 +179,22 @@ li.nav-item > button {
 
 /* for tablets */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .topBackGround {
     padding: 13%;
   }
   .socialization {
     width: 60%;
   }
-  .socializationLinks > ul li a {
-    font-size: 25px;
+  .socializationLinks {
+    margin-left: 10%;
+    ul {
+      li {
+        a {
+          font-size: 25px;
+        }
+      }
+    }
   }
   li.nav-item > button {
     width: 70px;
@@ -207,7 +214,7 @@ li.nav-item > button {
 
 /* for mobilePhones */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
   .footerContent,
   .dataHolder {
     margin-left: 0.5%;
@@ -225,6 +232,7 @@ li.nav-item > button {
     width: 36%;
   }
   .socializationLinks {
+    margin-left: 0%;
     margin-bottom: 0.5rem;
   }
   .socializationLinks > ul li a {

@@ -42,7 +42,7 @@
 }
 
 .greeting-text::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 60%;
   height: 4px;
@@ -129,7 +129,7 @@
 }
 
 .contact-form-section h2::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 50%;
   height: 3px;
@@ -216,6 +216,8 @@
   box-shadow: 6px 6px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   transition: transform 0.4s, box-shadow 0.4s;
+  width: 100%; /* Set width to 100% by default */
+  max-width: 100%; /* Remove width restriction */
 }
 
 .contact-form-container:hover {
@@ -335,6 +337,7 @@ textarea.form-control {
   .contact-info,
   .contact-form-section {
     width: 100%;
+    min-width: unset;
   }
 
   .greeting-text {
@@ -343,6 +346,11 @@ textarea.form-control {
 
   .contact-form-section h2 {
     font-size: 1.5rem;
+  }
+
+  .contact-form-container {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -388,6 +396,13 @@ textarea.form-control {
   }
 
   .contact-form-container {
-    max-width: 70%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .status-message {
+    margin: 0 1rem 1rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
   }
 }
