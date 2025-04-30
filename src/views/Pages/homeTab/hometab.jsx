@@ -3,11 +3,11 @@ import './hometab.css';
 
 const HomeTab = () => {
   return (
-    <div className="home-container">
+    <div className="home-container fade-in">
       <div className="intro-section">
         <div className="greeting">
           <span className="highlight">Hello, I'm</span>
-          <span className="wave">👋</span>
+          <span className="wave" role="img" aria-label="wave">👋</span>
         </div>
 
         <h1 className="name">
@@ -31,7 +31,7 @@ const HomeTab = () => {
 
           <p className="intro-detail">
             When I'm not coding, you'll find me exploring new technologies,<span className="passion"> crafting delicious meals</span>,
-            or perfecting my <span className="coffee-art">coffee brewing art</span><span className="coffee-icon">☕</span>.
+            or perfecting my <span className="coffee-art">coffee brewing art </span><span className="coffee-icon" role="img" aria-label="coffee">☕</span>.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ const HomeTab = () => {
             className="resume-btn"
           >
             <span className="btn-text">View My Resume</span>
-            <span className="icon">📜</span>
+            <span className="icon" role="img" aria-label="scroll">📜</span>
           </a>
         </div>
       </div>

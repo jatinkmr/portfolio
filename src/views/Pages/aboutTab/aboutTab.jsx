@@ -3,7 +3,7 @@ import './aboutTab.css';
 
 const AboutTab = () => {
     return (
-        <div className="about-container">
+        <div className="about-container fade-in">
             <div className="about-card">
                 <div className="header-section">
                     <h2 className="about-question">
