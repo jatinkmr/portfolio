@@ -2,6 +2,21 @@ import React from 'react';
 import './hometab.css';
 
 const HomeTab = () => {
+
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+
+    const resumeUrl = `${process.env.PUBLIC_URL}/resume/jatin-kumar-kamboj-cv.pdf`;
+
+    window.open(resumeUrl, '_blank');
+
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="home-container fade-in">
       <div className="intro-section">
@@ -40,8 +55,8 @@ const HomeTab = () => {
         <div className="cta-section">
           <a
             href={`${process.env.PUBLIC_URL}/resume/resume.pdf`}
-            download="JatinKumarKambojResume.pdf"
             className="resume-btn"
+            onClick={handleResumeClick}
           >
             <span className="btn-text">View My Resume</span>
             <span className="icon" role="img" aria-label="scroll">📜</span>
