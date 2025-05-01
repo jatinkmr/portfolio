@@ -5,14 +5,16 @@ const HomeTab = () => {
   return (
     <div className="home-container fade-in">
       <div className="intro-section">
-        <div className="greeting">
-          <span className="highlight">Hello, I'm</span>
-          <span className="wave" role="img" aria-label="wave">👋</span>
-        </div>
+        <div className="greeting-name-section">
+          <div className="greeting">
+            <span className="highlight">Hello, I'm</span>
+            <span className="wave" role="img" aria-label="wave">👋</span>
+          </div>
 
-        <h1 className="name">
-          <span className="name-highlight">Jatin Kumar</span>
-        </h1>
+          <h1 className="name">
+            <span className="name-highlight">Jatin Kumar</span>
+          </h1>
+        </div>
 
         <h2 className="title">
           Full-Stack <span className="js-highlight">JavaScript</span> Developer

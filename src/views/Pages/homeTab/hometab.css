@@ -215,6 +215,11 @@
   }
 }
 
+.greeting-name-section {
+  display: flex;
+  gap: 1rem;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .home-container {
