@@ -1,7 +1,7 @@
 /* for Desktop and Laptop */
 
 button.active {
-  background-color: blue;
+  background-color: #4f46e5;
   color: rgb(204, 200, 200);
 }
 
@@ -31,8 +31,8 @@ button.active {
 }
 
 .topBackGround {
-  padding: 10%;
-  background-color: blue;
+  padding: 2.2rem;
+  background-color: #4f46e5;
 }
 
 .profileImage {
@@ -121,6 +121,10 @@ button.active {
   width: 5%;
 }
 
+ul#socialList > li a {
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
 ul#socialList > li a:hover {
   color: blue;
   text-shadow: 3px -1px white;
@@ -139,8 +143,8 @@ ul#headingList > li {
 
 li.nav-item > button:hover {
   box-shadow: 4px 4px black;
-  background-color: blue;
-  color: red;
+  background-color: #4338ca;
+  color: white;
   zoom: 1;
   text-decoration: none;
 }
