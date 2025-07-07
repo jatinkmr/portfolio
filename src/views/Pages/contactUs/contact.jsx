@@ -50,7 +50,7 @@ const ContactTab = () => {
                             <i className="fa fa-linkedin"></i>
                         </a>
                         <a href="mailto:kumar.jatin873@gmail.com" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Google(gMail)'>
-                            <i className='fa fa-google-plus'></i>
+                            <i className="fa fa-envelope"></i>
                         </a>
                         <a href="https://twitter.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Twitter'>
                             <i className="fa fa-twitter"></i>
