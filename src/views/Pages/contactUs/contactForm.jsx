@@ -9,6 +9,16 @@ const ContactForm = () => {
         email: '',
         message: '',
     });
+    const [fieldErrors, setFieldErrors] = useState({
+        userName: '',
+        email: '',
+        message: ''
+    });
+    const [fieldTouched, setFieldTouched] = useState({
+        userName: false,
+        email: false,
+        message: false
+    });
     const [status, setStatus] = useState({
         submitted: false,
         success: false,
@@ -37,6 +47,29 @@ const ContactForm = () => {
             ...formState,
             [name]: value
         });
+
+        // Real-time validation for touched fields
+        if (fieldTouched[name]) {
+            const error = validateField(name, value);
+            setFieldErrors({
+                ...fieldErrors,
+                [name]: error
+            });
+        }
+    };
+
+    const handleFieldBlur = (e) => {
+        const { name, value } = e.target;
+        setFieldTouched({
+            ...fieldTouched,
+            [name]: true
+        });
+
+        const error = validateField(name, value);
+        setFieldErrors({
+            ...fieldErrors,
+            [name]: error
+        });
     };
 
     const validateEmail = (email) => {
@@ -44,25 +77,69 @@ const ContactForm = () => {
         return pattern.test(email);
     };
 
+    const validateField = (name, value) => {
+        let error = '';
+
+        switch (name) {
+            case 'userName':
+                if (!value.trim()) {
+                    error = 'Name is required';
+                } else if (value.trim().length < 2) {
+                    error = 'Name must be at least 2 characters';
+                } else if (value.trim().length > 50) {
+                    error = 'Name must be less than 50 characters';
+                }
+                break;
+            case 'email':
+                if (!value.trim()) {
+                    error = 'Email is required';
+                } else if (!validateEmail(value)) {
+                    error = 'Please enter a valid email address';
+                }
+                break;
+            case 'message':
+                if (!value.trim()) {
+                    error = 'Message is required';
+                } else if (value.trim().length < 10) {
+                    error = 'Message must be at least 10 characters';
+                } else if (value.trim().length > 1000) {
+                    error = 'Message must be less than 1000 characters';
+                }
+                break;
+            default:
+                break;
+        }
+
+        return error;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { userName, email, message } = formState;
 
-        // Basic validation
-        if (!userName || !email || !message) {
-            return setStatus({
-                submitted: true,
-                success: false,
-                message: 'Please fill in all fields.'
-            });
-        }
+        // Mark all fields as touched
+        setFieldTouched({
+            userName: true,
+            email: true,
+            message: true
+        });
 
-        // Email validation
-        if (!validateEmail(email)) {
+        // Validate all fields
+        const errors = {
+            userName: validateField('userName', userName),
+            email: validateField('email', email),
+            message: validateField('message', message)
+        };
+
+        setFieldErrors(errors);
+
+        // Check if there are any errors
+        const hasErrors = Object.values(errors).some(error => error !== '');
+        if (hasErrors) {
             return setStatus({
                 submitted: true,
                 success: false,
-                message: 'Please enter a valid email address.'
+                message: 'Please fix the errors above before submitting.'
             });
         }
 
@@ -84,6 +161,8 @@ const ContactForm = () => {
             if (response.status === 200) {
                 localStorage.setItem('isContactFormFilled', 'true');
                 setFormState({ userName: '', email: '', message: '' });
+                setFieldErrors({ userName: '', email: '', message: '' });
+                setFieldTouched({ userName: false, email: false, message: false });
                 setStatus({
                     submitted: true,
                     success: true,
@@ -114,53 +193,124 @@ const ContactForm = () => {
                     <label htmlFor="userName">Name</label>
                     <input
                         id="userName"
-                        className="form-control"
+                        className={`form-control ${fieldErrors.userName ? 'error' : ''} ${fieldTouched.userName && !fieldErrors.userName ? 'success' : ''}`}
                         type="text"
                         name="userName"
                         value={formState.userName}
                         onChange={handleInputChange}
+                        onBlur={handleFieldBlur}
                         placeholder="Enter your name"
                     />
+                    {fieldErrors.userName && (
+                        <div className="field-error">
+                            <i className="fa fa-exclamation-circle"></i>
+                            {fieldErrors.userName}
+                        </div>
+                    )}
+                    {fieldTouched.userName && !fieldErrors.userName && formState.userName && (
+                        <div className="field-success">
+                            <i className="fa fa-check-circle"></i>
+                            Looks good!
+                        </div>
+                    )}
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
                     <input
                         id="email"
-                        className="form-control"
+                        className={`form-control ${fieldErrors.email ? 'error' : ''} ${fieldTouched.email && !fieldErrors.email ? 'success' : ''}`}
                         type="email"
                         name="email"
                         value={formState.email}
                         onChange={handleInputChange}
+                        onBlur={handleFieldBlur}
                         placeholder="Enter your email"
                     />
+                    {fieldErrors.email && (
+                        <div className="field-error">
+                            <i className="fa fa-exclamation-circle"></i>
+                            {fieldErrors.email}
+                        </div>
+                    )}
+                    {fieldTouched.email && !fieldErrors.email && formState.email && (
+                        <div className="field-success">
+                            <i className="fa fa-check-circle"></i>
+                            Valid email address!
+                        </div>
+                    )}
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
                     <textarea
                         id="message"
-                        className="form-control"
+                        className={`form-control ${fieldErrors.message ? 'error' : ''} ${fieldTouched.message && !fieldErrors.message ? 'success' : ''}`}
                         name="message"
                         value={formState.message}
                         onChange={handleInputChange}
+                        onBlur={handleFieldBlur}
                         placeholder="Enter your message"
                         rows="4"
                     />
+                    <div className="character-count">
+                        {formState.message.length}/1000 characters
+                    </div>
+                    {fieldErrors.message && (
+                        <div className="field-error">
+                            <i className="fa fa-exclamation-circle"></i>
+                            {fieldErrors.message}
+                        </div>
+                    )}
+                    {fieldTouched.message && !fieldErrors.message && formState.message && (
+                        <div className="field-success">
+                            <i className="fa fa-check-circle"></i>
+                            Message looks great!
+                        </div>
+                    )}
                 </div>
 
                 <button
                     type="submit"
-                    className="submit-button"
+                    className={`submit-button ${status.sending ? 'loading' : ''}`}
                     disabled={status.sending}
                 >
-                    {status.sending ? 'Sending...' : 'Send Message'}
+                    {status.sending ? (
+                        <>
+                            <div className="loading-spinner"></div>
+                            Sending Message...
+                        </>
+                    ) : (
+                        <>
+                            <i className="fa fa-paper-plane"></i>
+                            Send Message
+                        </>
+                    )}
                 </button>
             </form>
 
             {status.submitted && (
                 <div className={`status-message ${getStatusClass()}`}>
-                    {status.message}
+                    {status.success ? (
+                        <div className="success-animation">
+                            <div className="success-checkmark">
+                                <div className="check-icon">
+                                    <span className="icon-line line-tip"></span>
+                                    <span className="icon-line line-long"></span>
+                                    <div className="icon-circle"></div>
+                                    <div className="icon-fix"></div>
+                                </div>
+                            </div>
+                            <div className="success-text">
+                                {status.message}
+                            </div>
+                        </div>
+                    ) : (
+                        <>
+                            <i className="fa fa-exclamation-triangle"></i>
+                            {status.message}
+                        </>
+                    )}
                 </div>
             )}
         </div>
