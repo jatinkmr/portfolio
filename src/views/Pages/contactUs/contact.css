@@ -261,13 +261,65 @@
   color: #9e9e9e;
 }
 
+/* Field validation styles */
+.form-control.error {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2);
+}
+
+.form-control.success {
+  border-color: #38a169;
+  box-shadow: 0 0 0 3px rgba(56, 161, 105, 0.2);
+}
+
+.field-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: #fc8181;
+  font-size: 0.875rem;
+  animation: slideDown 0.3s ease;
+}
+
+.field-success {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: #68d391;
+  font-size: 0.875rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.character-count {
+  text-align: right;
+  font-size: 0.75rem;
+  color: #9e9e9e;
+  margin-top: 0.25rem;
+}
+
 textarea.form-control {
   resize: vertical;
   min-height: 120px;
 }
 
 .submit-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   width: 100%;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(135deg, #b08a27, #8a6d1f);
@@ -279,6 +331,28 @@ textarea.form-control {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-button.loading {
+  background: linear-gradient(135deg, #8a6d1f, #6b5419);
+  cursor: not-allowed;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid #1a1a19;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .submit-button:hover {
@@ -326,6 +400,168 @@ textarea.form-control {
   background-color: #4a2a2a;
   color: #fc8181;
   border: 1px solid #e53e3e;
+}
+
+/* Success Animation */
+.success-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.success-checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #68d391;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #68d391;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  position: relative;
+}
+
+.success-checkmark .check-icon {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 1;
+  transform: scale(0);
+  animation: scale 0.3s ease-in-out 0.9s both;
+}
+
+.check-icon .icon-line {
+  height: 2px;
+  background: #68d391;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+}
+
+.check-icon .line-tip {
+  top: 46px;
+  left: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+  animation: icon-line-tip 0.75s;
+}
+
+.check-icon .line-long {
+  top: 38px;
+  right: 8px;
+  width: 47px;
+  transform: rotate(-45deg);
+  animation: icon-line-long 0.75s;
+}
+
+.check-icon .icon-circle {
+  top: -4px;
+  left: -4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 4px solid rgba(104, 211, 145, 0.5);
+  position: absolute;
+}
+
+.check-icon .icon-fix {
+  top: 8px;
+  width: 5px;
+  left: 26px;
+  z-index: 1;
+  height: 85px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+@keyframes icon-line-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+
+@keyframes icon-line-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+
+@keyframes scale {
+  0%, 50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 60px #68d391;
+  }
+}
+
+.success-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeInUp 0.6s ease 1.2s both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Styles */
@@ -404,5 +640,26 @@ textarea.form-control {
     margin: 0 1rem 1rem;
     padding: 0.75rem;
     font-size: 0.95rem;
+  }
+
+  .success-checkmark {
+    width: 60px;
+    height: 60px;
+  }
+
+  .check-icon {
+    width: 42px;
+    height: 42px;
+    left: 9px;
+    top: 9px;
+  }
+
+  .field-error,
+  .field-success {
+    font-size: 0.8rem;
+  }
+
+  .character-count {
+    font-size: 0.7rem;
   }
 }
