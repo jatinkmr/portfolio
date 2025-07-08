@@ -1,4 +1,5 @@
 import React from 'react';
+import { PopupButton } from "react-calendly";
 import ContactForm from './contactForm';
 import './contact.css';
 
@@ -39,6 +40,21 @@ const ContactTab = () => {
                         <div className='info-details'>
                             <h3>Location</h3>
                             <p>New Delhi, India</p>
+                        </div>
+                    </div>
+
+                    <div className='info-card calendly-card'>
+                        <div className='info-icon'>
+                            <i className="fa fa-calendar"></i>
+                        </div>
+                        <div className='info-details'>
+                            <h3>Schedule a Meeting</h3>
+                            <PopupButton
+                                url="https://calendly.com/kumar-jatin873/15min"
+                                rootElement={document.getElementById("root")}
+                                text="Book a Meeting"
+                                className="calendly-popup-btn"
+                            />
                         </div>
                     </div>
 

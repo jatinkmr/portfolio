@@ -351,8 +351,12 @@ textarea.form-control {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .submit-button:hover {
@@ -420,7 +424,8 @@ textarea.form-control {
   stroke-miterlimit: 10;
   margin: 10% auto;
   box-shadow: inset 0px 0px 0px #68d391;
-  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
   position: relative;
 }
 
@@ -532,7 +537,8 @@ textarea.form-control {
 }
 
 @keyframes scale {
-  0%, 50% {
+  0%,
+  50% {
     transform: scale(0);
   }
   100% {
@@ -564,6 +570,43 @@ textarea.form-control {
   }
 }
 
+/* Calendly */
+.calendly-card {
+  position: relative;
+}
+
+.calendly-popup-btn {
+  background: linear-gradient(135deg, #b08a27, #8a6d1f);
+  color: #1a1a19;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+  margin-top: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.calendly-popup-btn:hover {
+  background: linear-gradient(135deg, #c9a031, #a48425);
+  transform: translate3d(3px, 3px, 0);
+  box-shadow: 0px 0px rgba(0, 0, 0, 0.4);
+  color: #1a1a19;
+}
+
+.calendly-popup-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(176, 138, 39, 0.3);
+}
+
+.calendly-popup-btn:active {
+  transform: translate3d(2px, 2px, 0);
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .contact-content {
@@ -586,6 +629,17 @@ textarea.form-control {
 
   .contact-form-container {
     max-width: 100%;
+    width: 100%;
+  }
+
+  .calendly-popup-btn {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .calendly-card .info-details {
     width: 100%;
   }
 }
@@ -661,5 +715,10 @@ textarea.form-control {
 
   .character-count {
     font-size: 0.7rem;
+  }
+
+  .calendly-popup-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
 }
