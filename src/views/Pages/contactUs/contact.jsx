@@ -43,7 +43,7 @@ const ContactTab = () => {
                         </div>
                     </div>
 
-                    <div className='info-card calendly-card'>
+                    <div className='info-card'>
                         <div className='info-icon'>
                             <i className="fa fa-calendar"></i>
                         </div>
