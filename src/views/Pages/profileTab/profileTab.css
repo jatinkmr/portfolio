@@ -39,7 +39,7 @@
   margin: 2rem 0 1rem;
 }
 
-.skillHeader>h3 {
+.skillHeader > h3 {
   font-family: "Poppins", sans-serif;
   color: #c7ccd0;
   position: relative;
@@ -49,7 +49,7 @@
   transition: all 0.3s ease;
 }
 
-.skillHeader>h3:hover {
+.skillHeader > h3:hover {
   color: #f8f9fa;
   text-shadow: 1px 1px rgba(255, 0, 0, 0.6);
 }
@@ -120,18 +120,18 @@
   min-width: 200px;
 }
 
-.companyName>a {
+.companyName > a {
   color: #9797b7;
   text-decoration: none;
   transition: color 0.3s ease;
   font-family: "Inter", sans-serif;
 }
 
-.companyName>a:hover {
+.companyName > a:hover {
   color: #a79074;
 }
 
-.year>p {
+.year > p {
   color: #8a9abf;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
@@ -148,7 +148,7 @@ ul.workList {
   padding-left: 0;
 }
 
-ul.workList>li {
+ul.workList > li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.75rem;
@@ -157,25 +157,25 @@ ul.workList>li {
   line-height: 1.5;
 }
 
-ul.workList>li::before {
+ul.workList > li::before {
   content: "→";
   position: absolute;
   left: 0;
   color: #4a6bff;
 }
 
-ul.workList>li:hover {
+ul.workList > li:hover {
   color: #9296ff;
 }
 
-ul.workList>li>a {
+ul.workList > li > a {
   color: #0de48b;
   font-weight: 500;
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.3s ease;
 }
 
-ul.workList>li>a:hover {
+ul.workList > li > a:hover {
   color: #ff5252;
   text-decoration: underline;
 }
@@ -289,7 +289,7 @@ ul.workList>li>a:hover {
     margin-top: 0.5rem;
   }
 
-  ul.workList>li {
+  ul.workList > li {
     font-size: 0.9rem;
   }
 

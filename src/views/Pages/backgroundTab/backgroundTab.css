@@ -38,6 +38,7 @@ button.active {
 .profileImage {
   text-align: center;
   margin-top: -6%;
+  position: relative;
 }
 
 .profileImage > img {
@@ -47,7 +48,55 @@ button.active {
   transition-duration: 0.4s, 0.4s;
   transition-timing-function: ease, ease;
   transition-delay: 0s, 0s;
-  border-radius: 20px;
+  border-radius: 20%;
+}
+
+/* Blue circle overlay in upper right */
+.profileImage::after {
+  content: "";
+  position: absolute;
+  top: 1%;
+  right: 18%;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  border-radius: 50%;
+  border: 3px solid #262524;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* Optional: Add chevron arrows inside the blue circle */
+.profileImage::before {
+  content: "‹/›";
+  position: absolute;
+  top: 1%;
+  right: 18%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+/* Animation for up and down floating effect */
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 .profileImage > img:hover {
@@ -153,11 +202,12 @@ li.nav-item > button {
   width: 100px;
   position: relative;
   overflow: hidden;
+  text-decoration: none !important;
 }
 
 /* Shine effect overlay */
 li.nav-item > button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
