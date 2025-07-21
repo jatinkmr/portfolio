@@ -6,10 +6,15 @@ const ProfileTab = () => {
         <div className='mainProfileDiv fade-in'>
             {/* Left Column - Skills */}
             <div className='skills'>
-                <h2 className='a skill'>Skills</h2>
+                <h2 className='a skill'>
+                    <i className="fa fa-cogs" aria-hidden="true"></i> Skills
+                </h2>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>HTML</h3>
+                    <h3 className='a'>
+                        <i className="fa fa-code" aria-hidden="true"></i>
+                        HTML
+                    </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
@@ -33,7 +38,10 @@ const ProfileTab = () => {
                 </div>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>CSS</h3>
+                    <h3 className='a'>
+                        <i className="fa fa-css3" aria-hidden="true"></i>
+                        CSS
+                    </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
@@ -57,7 +65,11 @@ const ProfileTab = () => {
                 </div>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>JavaScript</h3>
+                    <h3 className='a'>
+                        {/* <i className="fa fa-code" aria-hidden="true"></i> */}
+                        <i className="fa-brands fa-js"></i>
+                        JavaScript
+                    </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
@@ -93,7 +105,10 @@ const ProfileTab = () => {
                 </div>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>Back-End</h3>
+                    <h3 className='a'>
+                        <i className="fa fa-database" aria-hidden="true"></i>
+                        Back-End
+                    </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
@@ -117,7 +132,10 @@ const ProfileTab = () => {
                 </div>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>Other</h3>
+                    <h3 className='a'>
+                        <i className="fa fa-cogs" aria-hidden="true"></i>
+                        Other
+                    </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
@@ -143,10 +161,12 @@ const ProfileTab = () => {
 
             {/* Right Column - Experience */}
             <div className='experience'>
-                <h2 className='a skill'>Work Experience</h2>
+                <h2 className='a skill'>
+                    <i className="fa fa-briefcase" aria-hidden="true"></i> Work Experience
+                </h2>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>Full Time</h3>
+                    <h3 className='a'><i className="fa fa-briefcase" aria-hidden="true"></i> Full Time</h3>
                 </div>
 
                 <div className='workExperience'>
@@ -154,6 +174,7 @@ const ProfileTab = () => {
                         <div className='position a'>Software Developer</div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
+                                <i className="fa fa-map-marker" aria-hidden="true"></i>
                                 <a
                                     href='https://www.firstcry.com/'
                                     target='_blank'
@@ -166,6 +187,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <p className='a'>Aug 2021 - May 2023</p>
                             </div>
                         </div>
@@ -186,6 +208,7 @@ const ProfileTab = () => {
                         <div className='position a'>Associate Software Developer</div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
+                                <i className="fa fa-map-marker" aria-hidden="true"></i>
                                 <a
                                     href='https://www.momkidcare.com/'
                                     target='_blank'
@@ -198,6 +221,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <p className='a'>Nov 2020 - Aug 2021</p>
                             </div>
                         </div>
@@ -228,7 +252,7 @@ const ProfileTab = () => {
                 </div>
 
                 <div className='skillHeader'>
-                    <h3 className='a'>Internships</h3>
+                    <h3 className='a'><i className="fa fa-graduation-cap" aria-hidden="true"></i> Internships</h3>
                 </div>
 
                 <div className='workExperience'>
@@ -236,6 +260,7 @@ const ProfileTab = () => {
                         <div className='position a'>Intern FullStack Web Developer</div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
+                                <i className="fa fa-map-marker" aria-hidden="true"></i>
                                 <a
                                     href='https://www.momkidcare.com/'
                                     target='_blank'
@@ -248,6 +273,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <p className='a'>Mar - Nov 2020</p>
                             </div>
                         </div>
@@ -281,6 +307,7 @@ const ProfileTab = () => {
                         <div className='position a'>Intern Back-End Developer</div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
+                                <i className="fa fa-map-marker" aria-hidden="true"></i>
                                 <a
                                     href='https://www.entrancezone.com/'
                                     target='_blank'
@@ -293,6 +320,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <p className='a'>Nov 2019</p>
                             </div>
                         </div>
@@ -324,6 +352,7 @@ const ProfileTab = () => {
                         <div className='position a'>Intern Software Developer</div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
+                                <i className="fa fa-map-marker" aria-hidden="true"></i>
                                 <a
                                     href='http://www.itechmission.org/'
                                     target='_blank'
@@ -336,6 +365,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
+                                <i className="fa fa-calendar" aria-hidden="true"></i>
                                 <p className='a'>Jul - Oct 2019</p>
                             </div>
                         </div>

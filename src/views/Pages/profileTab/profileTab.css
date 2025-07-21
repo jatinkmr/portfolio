@@ -1,4 +1,7 @@
 /* Modern Profile Section CSS */
+h2.skill i {
+  margin-right: 10px;
+}
 
 .mainProfileDiv {
   display: flex;
@@ -120,6 +123,17 @@
   min-width: 200px;
 }
 
+.companyName {
+  display: flex;
+  align-items: center;
+}
+
+.companyName i {
+  margin-right: 8px;
+  color: #9797b7;
+  font-size: 1rem;
+}
+
 .companyName > a {
   color: #9797b7;
   text-decoration: none;
@@ -129,6 +143,21 @@
 
 .companyName > a:hover {
   color: #a79074;
+}
+
+.year {
+  display: flex;
+  align-items: center;
+}
+
+.year i {
+  margin-right: 8px;
+  color: #8a9abf;
+  font-size: 0.9rem;
+}
+
+.year p {
+  margin-bottom: 0;
 }
 
 .year > p {
@@ -243,6 +272,16 @@ ul.workList > li > a:hover {
 
 .knexJsSkill {
   width: 50%;
+}
+
+.skillHeader h3 i {
+  margin-right: 10px;
+}
+
+.skillHeading i {
+  margin-right: 8px;
+  width: 16px;
+  text-align: center;
 }
 
 /* Responsive Design */
