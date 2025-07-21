@@ -12,25 +12,24 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa fa-code" aria-hidden="true"></i>
-                        HTML
+                        <i className="fa fa-code" aria-hidden="true"></i> HTML
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
-                        <span className='skillHeading'>HTML</span>
+                        <span className='skillHeading'><i className="fa fa-html5" aria-hidden="true"></i> HTML</span>
                         <div className='skillGrade'>
                             <div className='htmlSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>JSX</span>
+                        <span className='skillHeading'><i className="fa fa-code" aria-hidden="true"></i> JSX</span>
                         <div className='skillGrade'>
                             <div className='jsxSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>PHP</span>
+                        <span className='skillHeading'><i className="fa fa-file-code-o" aria-hidden="true"></i> PHP</span>
                         <div className='skillGrade'>
                             <div className='phpMySqlSkill'></div>
                         </div>
@@ -39,25 +38,24 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa fa-css3" aria-hidden="true"></i>
-                        CSS
+                        <i className="fa fa-css3" aria-hidden="true"></i> CSS
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
-                        <span className='skillHeading'>CSS</span>
+                        <span className='skillHeading'><i className="fa fa-css3" aria-hidden="true"></i> CSS</span>
                         <div className='skillGrade'>
                             <div className='cssSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>Bootstrap</span>
+                        <span className='skillHeading'><i className="fa fa-columns" aria-hidden="true"></i> Bootstrap</span>
                         <div className='skillGrade'>
                             <div className='bootStrapSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>ReactStrap</span>
+                        <span className='skillHeading'><i className="fa fa-th" aria-hidden="true"></i> ReactStrap</span>
                         <div className='skillGrade'>
                             <div className='reactStrapSkill'></div>
                         </div>
@@ -66,38 +64,36 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        {/* <i className="fa fa-code" aria-hidden="true"></i> */}
-                        <i className="fa-brands fa-js"></i>
-                        JavaScript
+                        <i className="fa fa-code" aria-hidden="true"></i> JavaScript
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
-                        <span className='skillHeading'>ReactJS</span>
+                        <span className='skillHeading'><i className="fa fa-code-fork" aria-hidden="true"></i> ReactJS</span>
                         <div className='skillGrade'>
                             <div className='reactSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>NodeJS</span>
+                        <span className='skillHeading'><i className="fa fa-server" aria-hidden="true"></i> NodeJS</span>
                         <div className='skillGrade'>
                             <div className='nodeJsSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>KnexJS</span>
+                        <span className='skillHeading'><i className="fa fa-database" aria-hidden="true"></i> KnexJS</span>
                         <div className='skillGrade'>
                             <div className='knexJsSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>jQuery</span>
+                        <span className='skillHeading'><i className="fa fa-jsfiddle" aria-hidden="true"></i> jQuery</span>
                         <div className='skillGrade'>
                             <div className='jQuerySkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>VueJS</span>
+                        <span className='skillHeading'><i className="fa fa-code" aria-hidden="true"></i> VueJS</span>
                         <div className='skillGrade'>
                             <div className='vueJsSkill'></div>
                         </div>
@@ -106,25 +102,24 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa fa-database" aria-hidden="true"></i>
-                        Back-End
+                        <i className="fa fa-database" aria-hidden="true"></i> Back-End
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
-                        <span className='skillHeading'>MySQL</span>
+                        <span className='skillHeading'><i className="fa fa-database" aria-hidden="true"></i> MySQL</span>
                         <div className='skillGrade'>
                             <div className='phpMySqlSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>MongoDB</span>
+                        <span className='skillHeading'><i className="fa fa-database" aria-hidden="true"></i> MongoDB</span>
                         <div className='skillGrade'>
                             <div className='mongoDbSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>PostgreSQL</span>
+                        <span className='skillHeading'><i className="fa fa-database" aria-hidden="true"></i> PostgreSQL</span>
                         <div className='skillGrade'>
                             <div className='postgreSqlSkill'></div>
                         </div>
@@ -133,25 +128,24 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa fa-cogs" aria-hidden="true"></i>
-                        Other
+                        <i className="fa fa-cogs" aria-hidden="true"></i> Other
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
                     <div className='skillSection'>
-                        <span className='skillHeading'>Git</span>
+                        <span className='skillHeading'><i className="fa fa-git" aria-hidden="true"></i> Git</span>
                         <div className='skillGrade'>
                             <div className='gitSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>Heroku</span>
+                        <span className='skillHeading'><i className="fa fa-cloud-upload" aria-hidden="true"></i> Heroku</span>
                         <div className='skillGrade'>
                             <div className='herokuSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'>AWS</span>
+                        <span className='skillHeading'><i className="fa fa-cloud" aria-hidden="true"></i> AWS</span>
                         <div className='skillGrade'>
                             <div className='awsSkill'></div>
                         </div>
@@ -171,7 +165,10 @@ const ProfileTab = () => {
 
                 <div className='workExperience'>
                     <div className='experienceData'>
-                        <div className='position a'>Software Developer</div>
+                        <div className='position a'>
+                            <i className="fa fa-laptop" aria-hidden="true"></i>
+                            Software Developer
+                        </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
                                 <i className="fa fa-map-marker" aria-hidden="true"></i>
@@ -205,7 +202,10 @@ const ProfileTab = () => {
 
                 <div className='workExperience'>
                     <div className='experienceData'>
-                        <div className='position a'>Associate Software Developer</div>
+                        <div className='position a'>
+                            <i className="fa fa-laptop" aria-hidden="true"></i>
+                            Associate Software Developer
+                        </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
                                 <i className="fa fa-map-marker" aria-hidden="true"></i>
@@ -257,7 +257,10 @@ const ProfileTab = () => {
 
                 <div className='workExperience'>
                     <div className='experienceData'>
-                        <div className='position a'>Intern FullStack Web Developer</div>
+                        <div className='position a'>
+                            <i className="fa fa-code" aria-hidden="true"></i> 
+                            Intern FullStack Web Developer
+                        </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
                                 <i className="fa fa-map-marker" aria-hidden="true"></i>
@@ -304,7 +307,10 @@ const ProfileTab = () => {
 
                 <div className='workExperience'>
                     <div className='experienceData'>
-                        <div className='position a'>Intern Back-End Developer</div>
+                        <div className='position a'>
+                            <i className="fa fa-server" aria-hidden="true"></i>
+                            Intern Back-End Developer
+                        </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
                                 <i className="fa fa-map-marker" aria-hidden="true"></i>
@@ -349,7 +355,10 @@ const ProfileTab = () => {
 
                 <div className='workExperience'>
                     <div className='experienceData'>
-                        <div className='position a'>Intern Software Developer</div>
+                        <div className='position a'>
+                            <i className="fa fa-code" aria-hidden="true"></i>
+                            Intern Software Developer
+                        </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
                                 <i className="fa fa-map-marker" aria-hidden="true"></i>

@@ -110,6 +110,10 @@ h2.skill i {
   margin-bottom: 0.75rem;
 }
 
+.position i {
+  margin-right: 10px;
+}
+
 .companyAndYear {
   display: flex;
   justify-content: space-between;
