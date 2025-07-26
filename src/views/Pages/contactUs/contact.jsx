@@ -35,7 +35,7 @@ const ContactTab = () => {
 
                     <div className='info-card'>
                         <div className='info-icon'>
-                            <i className="fa fa-map-marker"></i>
+                            <i className="fas fa-map-marker-alt"></i>
                         </div>
                         <div className='info-details'>
                             <h3>Location</h3>
@@ -45,7 +45,7 @@ const ContactTab = () => {
 
                     <div className='info-card'>
                         <div className='info-icon'>
-                            <i className="fa fa-calendar"></i>
+                            <i className="fas fa-calendar"></i>
                         </div>
                         <div className='info-details'>
                             <h3>Schedule a Meeting</h3>
@@ -60,22 +60,22 @@ const ContactTab = () => {
 
                     <div className='social-links'>
                         <a href="https://github.com/jatinkmr" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='GitHub'>
-                            <i className="fa fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/jatinkumarkamboj/" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='LinkedIn'>
-                            <i className="fa fa-linkedin"></i>
+                            <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:kumar.jatin873@gmail.com" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Google(gMail)'>
                             <i className="fa fa-envelope"></i>
                         </a>
                         <a href="https://twitter.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Twitter'>
-                            <i className="fa fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                         </a>
                         <a href="https://www.instagram.com/ijatinkrkamb0j/" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Instagram'>
-                            <i className="fa fa-instagram"></i>
+                            <i className="fab fa-instagram"></i>
                         </a>
                         <a href="https://www.facebook.com/jatin.kamboj.37" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Facebook'>
-                            <i className="fa fa-facebook"></i>
+                            <i className="fab fa-facebook"></i>
                         </a>
                     </div>
                 </div>

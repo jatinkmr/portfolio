@@ -8,7 +8,7 @@ const AboutTab = () => {
                 <div className="header-section">
                     <h2 className="about-question">
                         Discovering <span className="name-highlight">Jatin Kumar</span>
-                        <i className="fa fa-lightbulb-o pulse-icon" aria-hidden="true"></i>
+                        <i className="fas fa-lightbulb pulse-icon" aria-hidden="true"></i>
                     </h2>
 
                     <div className="greeting-section">
