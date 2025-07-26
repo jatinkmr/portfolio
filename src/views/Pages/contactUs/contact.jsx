@@ -45,7 +45,7 @@ const ContactTab = () => {
 
                     <div className='info-card'>
                         <div className='info-icon'>
-                            <i className="fas fa-calendar"></i>
+                            <i className="fa-solid fa-calendar-days"></i>
                         </div>
                         <div className='info-details'>
                             <h3>Schedule a Meeting</h3>
