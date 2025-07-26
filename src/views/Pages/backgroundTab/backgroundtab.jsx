@@ -47,7 +47,7 @@ class backgroundtab extends Component {
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='GitHub'
                     >
-                      <i className='fa fa-github-square'></i>
+                      <i className='fab fa-github'></i>
                     </a>
                   </li>
                   <li>
@@ -57,7 +57,7 @@ class backgroundtab extends Component {
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='LinkedIn'
                     >
-                      <i className='fa fa-linkedin'></i>
+                      <i className='fab fa-linkedin'></i>
                     </a>
                   </li>
                   <li>
@@ -77,7 +77,7 @@ class backgroundtab extends Component {
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='Twitter'
                     >
-                      <i className='fa fa-twitter'></i>
+                      <i className='fab fa-twitter'></i>
                     </a>
                   </li>
                   <li>
@@ -87,7 +87,7 @@ class backgroundtab extends Component {
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='InstaGram'
                     >
-                      <i className='fa fa-instagram'></i>
+                      <i className='fab fa-instagram'></i>
                     </a>
                   </li>
                   <li>
@@ -97,7 +97,7 @@ class backgroundtab extends Component {
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='FaceBook'
                     >
-                      <i className='fa fa-facebook-square'></i>
+                      <i className='fab fa-facebook-square'></i>
                     </a>
                   </li>
                 </ul>
