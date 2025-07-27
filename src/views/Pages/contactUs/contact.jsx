@@ -25,7 +25,7 @@ const ContactTab = () => {
                 <div className='contact-info'>
                     <div className='info-card'>
                         <div className='info-icon'>
-                            <i className="fa fa-envelope"></i>
+                            <i className="fa-brands fa-google"></i>
                         </div>
                         <div className='info-details'>
                             <h3>Email</h3>
@@ -66,7 +66,7 @@ const ContactTab = () => {
                             <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="mailto:kumar.jatin873@gmail.com" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Google(gMail)'>
-                            <i className="fa fa-envelope"></i>
+                            <i className="fa-brands fa-google"></i>
                         </a>
                         <a href="https://twitter.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Twitter'>
                             <i className="fab fa-twitter"></i>
