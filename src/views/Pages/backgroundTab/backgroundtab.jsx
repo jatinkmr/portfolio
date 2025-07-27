@@ -67,7 +67,7 @@ class backgroundtab extends Component {
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='Google(gMail)'
                     >
-                      <i class="fa fa-envelope"></i>
+                      <i class="fa-brands fa-google"></i>
                     </a>
                   </li>
                   <li>
