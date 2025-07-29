@@ -68,8 +68,8 @@ const ContactTab = () => {
                         <a href="mailto:kumar.jatin873@gmail.com" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Google(gMail)'>
                             <i className="fa-brands fa-google"></i>
                         </a>
-                        <a href="https://twitter.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Twitter'>
-                            <i className="fab fa-twitter"></i>
+                        <a href="https://x.com/jatinkrkamboj" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Twitter'>
+                            <i className="fa-brands fa-x-twitter"></i>
                         </a>
                         <a href="https://www.instagram.com/ijatinkrkamb0j/" target="_blank" rel="noopener noreferrer" data-toggle='tooltip' title='Instagram'>
                             <i className="fab fa-instagram"></i>
