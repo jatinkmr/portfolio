@@ -72,12 +72,12 @@ class backgroundtab extends Component {
                   </li>
                   <li>
                     <a
-                      href='https://twitter.com/jatinkrkamboj'
+                      href='https://x.com/jatinkrkamboj'
                       target='_blank'
                       rel='noopener noreferrer'
                       data-toggle='tooltip' title='Twitter'
                     >
-                      <i className='fab fa-twitter'></i>
+                      <i className='fa-brands fa-x-twitter'></i>
                     </a>
                   </li>
                   <li>
