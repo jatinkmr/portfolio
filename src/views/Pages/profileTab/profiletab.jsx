@@ -7,7 +7,7 @@ const ProfileTab = () => {
             {/* Left Column - Skills */}
             <div className='skills'>
                 <h2 className='a skill'>
-                    <i className="fa-solid fa-gears" aria-hidden="true"></i> Skills
+                    <i className="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Skills
                 </h2>
 
                 <div className='skillHeader'>
@@ -55,7 +55,7 @@ const ProfileTab = () => {
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'><i className="fa-brands fa-react" aria-hidden="true"></i> ReactStrap</span>
+                        <span className='skillHeading'><i className="fa-solid fa-layer-group" aria-hidden="true"></i> ReactStrap</span>
                         <div className='skillGrade'>
                             <div className='reactStrapSkill'></div>
                         </div>
@@ -64,7 +64,7 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa-brands fa-js" aria-hidden="true"></i> JavaScript
+                        <i className="fa-brands fa-js-square" aria-hidden="true"></i> JavaScript
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
@@ -81,13 +81,13 @@ const ProfileTab = () => {
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'><i className="fa-solid fa-database" aria-hidden="true"></i> KnexJS</span>
+                        <span className='skillHeading'><i className="fa-solid fa-cubes" aria-hidden="true"></i> KnexJS</span>
                         <div className='skillGrade'>
                             <div className='knexJsSkill'></div>
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'><i className="fa-solid fa-code" aria-hidden="true"></i> jQuery</span>
+                        <span className='skillHeading'><i className="fa-solid fa-dollar-sign" aria-hidden="true"></i> jQuery</span>
                         <div className='skillGrade'>
                             <div className='jQuerySkill'></div>
                         </div>
@@ -102,7 +102,7 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa-solid fa-database" aria-hidden="true"></i> Back-End
+                        <i className="fa-solid fa-server" aria-hidden="true"></i> Back-End
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
@@ -119,7 +119,7 @@ const ProfileTab = () => {
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'><i className="fas fa-database" aria-hidden="true"></i> PostgreSQL</span>
+                        <span className='skillHeading'><i className="fa-solid fa-chart-simple" aria-hidden="true"></i> PostgreSQL</span>
                         <div className='skillGrade'>
                             <div className='postgreSqlSkill'></div>
                         </div>
@@ -128,7 +128,7 @@ const ProfileTab = () => {
 
                 <div className='skillHeader'>
                     <h3 className='a'>
-                        <i className="fa-solid fa-gears" aria-hidden="true"></i> Other
+                        <i className="fa-solid fa-rocket" aria-hidden="true"></i> Other
                     </h3>
                 </div>
                 <div className='skillContentDetails'>
@@ -139,7 +139,7 @@ const ProfileTab = () => {
                         </div>
                     </div>
                     <div className='skillSection'>
-                        <span className='skillHeading'><i className="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i> Heroku</span>
+                        <span className='skillHeading'><i className="fa-solid fa-cube" aria-hidden="true"></i> Heroku</span>
                         <div className='skillGrade'>
                             <div className='herokuSkill'></div>
                         </div>
@@ -156,22 +156,22 @@ const ProfileTab = () => {
             {/* Right Column - Experience */}
             <div className='experience'>
                 <h2 className='a skill'>
-                    <i className="fa-solid fa-briefcase" aria-hidden="true"></i> Work Experience
+                    <i className="fa-solid fa-user-tie" aria-hidden="true"></i> Work Experience
                 </h2>
 
                 <div className='skillHeader'>
-                    <h3 className='a'><i className="fa-solid fa-briefcase" aria-hidden="true"></i> Full Time</h3>
+                    <h3 className='a'><i className="fa-solid fa-building" aria-hidden="true"></i> Full Time</h3>
                 </div>
 
                 <div className='workExperience'>
                     <div className='experienceData'>
                         <div className='position a'>
-                            <i className="fa-solid fa-laptop" aria-hidden="true"></i>
+                            <i className="fa-solid fa-laptop-code" aria-hidden="true"></i>
                             Software Developer
                         </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
-                                <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <i className="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
                                 <a
                                     href='https://www.firstcry.com/'
                                     target='_blank'
@@ -184,7 +184,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
-                                <i className="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                <i className="fa-solid fa-calendar-alt" aria-hidden="true"></i>
                                 <p className='a'>Aug 2021 - May 2023</p>
                             </div>
                         </div>
@@ -203,12 +203,12 @@ const ProfileTab = () => {
                 <div className='workExperience'>
                     <div className='experienceData'>
                         <div className='position a'>
-                            <i className="fa-solid fa-laptop" aria-hidden="true"></i>
+                            <i className="fa-solid fa-laptop-code" aria-hidden="true"></i>
                             Associate Software Developer
                         </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
-                                <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <i className="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
                                 <a
                                     href='https://www.momkidcare.com/'
                                     target='_blank'
@@ -221,7 +221,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
-                                <i className="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                <i className="fa-solid fa-calendar-alt" aria-hidden="true"></i>
                                 <p className='a'>Nov 2020 - Aug 2021</p>
                             </div>
                         </div>
@@ -258,12 +258,12 @@ const ProfileTab = () => {
                 <div className='workExperience'>
                     <div className='experienceData'>
                         <div className='position a'>
-                            <i className="fa-solid fa-code" aria-hidden="true"></i>
+                            <i className="fa-solid fa-terminal" aria-hidden="true"></i>
                             Intern FullStack Web Developer
                         </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
-                                <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <i className="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
                                 <a
                                     href='https://www.momkidcare.com/'
                                     target='_blank'
@@ -276,7 +276,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
-                                <i className="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                <i className="fa-solid fa-calendar-alt" aria-hidden="true"></i>
                                 <p className='a'>Mar - Nov 2020</p>
                             </div>
                         </div>
@@ -313,7 +313,7 @@ const ProfileTab = () => {
                         </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
-                                <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <i className="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
                                 <a
                                     href='https://www.entrancezone.com/'
                                     target='_blank'
@@ -326,7 +326,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
-                                <i className="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                <i className="fa-solid fa-calendar-alt" aria-hidden="true"></i>
                                 <p className='a'>Nov 2019</p>
                             </div>
                         </div>
@@ -356,12 +356,12 @@ const ProfileTab = () => {
                 <div className='workExperience'>
                     <div className='experienceData'>
                         <div className='position a'>
-                            <i className="fa-solid fa-code" aria-hidden="true"></i>
+                            <i className="fa-solid fa-laptop-code" aria-hidden="true"></i>
                             Intern Software Developer
                         </div>
                         <div className='companyAndYear'>
                             <div className='companyName'>
-                                <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                <i className="fa-solid fa-map-marker-alt" aria-hidden="true"></i>
                                 <a
                                     href='http://www.itechmission.org/'
                                     target='_blank'
@@ -374,7 +374,7 @@ const ProfileTab = () => {
                                 </a>
                             </div>
                             <div className='year'>
-                                <i className="fa-solid fa-calendar-days" aria-hidden="true"></i>
+                                <i className="fa-solid fa-calendar-alt" aria-hidden="true"></i>
                                 <p className='a'>Jul - Oct 2019</p>
                             </div>
                         </div>
