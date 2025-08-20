@@ -152,7 +152,7 @@ const ContactForm = () => {
             });
 
             const response = await emailjs.send(
-                'service_orc3b3h',
+                'service_atn9oju',
                 'template_xn1qear',
                 { userName, email, message },
                 'mT2j9sQTEHiODyakr'
