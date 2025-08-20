@@ -293,13 +293,8 @@ const ContactForm = () => {
                 <div className={`status-message ${getStatusClass()}`}>
                     {status.success ? (
                         <div className="success-animation">
-                            <div className="success-checkmark">
-                                <div className="check-icon">
-                                    <span className="icon-line line-tip"></span>
-                                    <span className="icon-line line-long"></span>
-                                    <div className="icon-circle"></div>
-                                    <div className="icon-fix"></div>
-                                </div>
+                            <div className="success-icon">
+                                <i className="fa-solid fa-circle-check fa-bounce"></i>
                             </div>
                             <div className="success-text">
                                 {status.message}
