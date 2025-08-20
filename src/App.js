@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import BackgroundTab from './views/Pages/backgroundTab/backgroundtab.jsx'
 
 const loading = () => (
@@ -11,13 +11,12 @@ class App extends Component {
     return (
       <HashRouter>
         <React.Suspense fallback={loading()}>
-          <Switch>
+          <Routes>
             <Route
               path='/'
-              name='Background'
-              render={props => <BackgroundTab {...props} />}
+              element={<BackgroundTab />}
             />
-          </Switch>
+          </Routes>
         </React.Suspense>
       </HashRouter>
     )
