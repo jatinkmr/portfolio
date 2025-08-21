@@ -28,7 +28,7 @@ class backgroundtab extends Component {
             <div className='socialMediaHolder'>
               <div className='topBackGround'></div>
               <div className='profileImage'>
-                <img src='/images/mine.jpg' alt='mine' height='10%' width='60%' data-toggle='tooltip' title='Jatin Kumar "Kamboj"' />
+                <img src='images/mine.jpg' alt='mine' height='10%' width='60%' data-toggle='tooltip' title='Jatin Kumar "Kamboj"' />
               </div>
               <div className='row socializeRow'>
                 {/* <div className='socialization mx-auto text-center'>
