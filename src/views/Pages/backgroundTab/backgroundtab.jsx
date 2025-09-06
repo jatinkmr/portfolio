@@ -15,7 +15,7 @@ const Backgroundtab = () => {
   };
 
   return (
-    <motion.div 
+    <motion.div
       className='container'
       initial="hidden"
       animate="visible"
@@ -25,14 +25,14 @@ const Backgroundtab = () => {
         <div className='row fakeDiv'></div>
         <div className='row dataHolder'>
           {/* Social Media Holder with Animation */}
-          <motion.div 
+          <motion.div
             className='socialMediaHolder'
             variants={slideInFromLeft}
             initial="hidden"
             animate="visible"
           >
             <div className='topBackGround'></div>
-            <motion.div 
+            <motion.div
               className='profileImage'
               variants={scaleIn}
               initial="hidden"
@@ -40,28 +40,58 @@ const Backgroundtab = () => {
               transition={{ delay: 0.3 }}
               whileHover={{ scale: 1.05 }}
             >
-              <img 
-                src='images/mine.jpg' 
-                alt='mine' 
-                height='10%' 
-                width='60%' 
-                data-toggle='tooltip' 
-                title='Jatin Kumar "Kamboj"' 
+              <img
+                src='images/mine.jpg'
+                alt='mine'
+                height='10%'
+                width='60%'
+                data-toggle='tooltip'
+                title='Jatin Kumar "Kamboj"'
               />
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className='row socializeRow'
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.8,
+                ease: "easeOut"
+              }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.2 }
+              }}
             >
-              <p className='a mx-auto text-center'>
-                Software Engineer
-              </p>
+              <motion.p
+                className='a mx-auto text-center'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.6
+                }}
+                whileHover={{
+                  textShadow: "0px 0px 8px rgba(255,255,255,0.8)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.span
+                  initial={{ display: "inline-block", opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 1,
+                    duration: 0.5,
+                    ease: "backOut"
+                  }}
+                >
+                  Software Engineer
+                </motion.span>
+              </motion.p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className='row socializationLinks justify-content-center'
               initial="hidden"
               animate="visible"
@@ -87,8 +117,8 @@ const Backgroundtab = () => {
                     key={index}
                     variants={{
                       hidden: { opacity: 0, y: 20 },
-                      visible: { 
-                        opacity: 1, 
+                      visible: {
+                        opacity: 1,
                         y: 0,
                         transition: { duration: 0.4 }
                       }
@@ -96,11 +126,11 @@ const Backgroundtab = () => {
                     whileHover={{ scale: 1.2, y: -5 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <a 
-                      href={social.href} 
-                      target='_blank' 
-                      rel='noopener noreferrer' 
-                      data-toggle='tooltip' 
+                    <a
+                      href={social.href}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      data-toggle='tooltip'
                       title={social.title}
                     >
                       <i className={social.icon}></i>
@@ -112,7 +142,7 @@ const Backgroundtab = () => {
           </motion.div>
 
           <div className='contentHolder'>
-            <motion.div 
+            <motion.div
               className='contentHeading bg-dark'
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -120,9 +150,9 @@ const Backgroundtab = () => {
             >
               <ul id='headingList' className='nav justify-content-center'>
                 {['home', 'profile', 'about', 'contact'].map((tab) => (
-                  <motion.li 
+                  <motion.li
                     key={tab}
-                    className='nav-item' 
+                    className='nav-item'
                     onClick={changeHandler}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -131,7 +161,7 @@ const Backgroundtab = () => {
                       type='button'
                       className={`btn btn-link px-1 ${status === tab ? "active" : ""}`}
                       name={tab}
-                      data-toggle='tooltip' 
+                      data-toggle='tooltip'
                       title={tab.charAt(0).toUpperCase() + tab.slice(1)}
                     >
                       {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -140,7 +170,7 @@ const Backgroundtab = () => {
                 ))}
               </ul>
             </motion.div>
-            
+
             <div className='contentData'>
               <AnimatePresence mode='wait'>
                 {status === 'home' && <HomeTab key="home" />}
@@ -151,8 +181,8 @@ const Backgroundtab = () => {
             </div>
           </div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           className='row footerContent'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

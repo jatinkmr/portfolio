@@ -141,7 +141,7 @@ const HomeTab = () => {
               className="icon" 
               role="img" 
               aria-label="scroll"
-              animate={{ rotate: [0, 10, -10, 0] }}
+              animate={{ rotate: [0, 20, -20, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
               📜
