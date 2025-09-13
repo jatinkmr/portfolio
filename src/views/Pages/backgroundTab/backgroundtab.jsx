@@ -1,154 +1,198 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import './backgroundTab.css'
 import HomeTab from '../homeTab/hometab.jsx'
 import ProfileTab from '../profileTab/profiletab.jsx'
 import ContactTab from '../contactUs/contact.jsx'
 import AboutTab from '../aboutTab/aboutTab.jsx'
+import { fadeIn, slideInFromLeft, scaleIn } from '../../utils/animation.js'
 
-// class backgroundtab
-class backgroundtab extends Component {
-  state = {
-    status: 'home'
+const Backgroundtab = () => {
+  const [status, setStatus] = useState('home');
+
+  const changeHandler = (event) => {
+    setStatus(event.target.name);
   };
 
-  // ChangeHandler function for changing the tab
-  changeHandler = event => {
-    this.setState({ status: event.target.name })
-    // console.log('Status => ', event.target.name)
-  }
+  return (
+    <motion.div
+      className='container'
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+    >
+      <div className='col-md-12'>
+        <div className='row fakeDiv'></div>
+        <div className='row dataHolder'>
+          {/* Social Media Holder with Animation */}
+          <motion.div
+            className='socialMediaHolder'
+            variants={slideInFromLeft}
+            initial="hidden"
+            animate="visible"
+          >
+            <div className='topBackGround'></div>
+            <motion.div
+              className='profileImage'
+              variants={scaleIn}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img
+                src='images/mine.jpg'
+                alt='mine'
+                height='10%'
+                width='60%'
+                data-toggle='tooltip'
+                title='Jatin Kumar "Kamboj"'
+              />
+            </motion.div>
 
-  // render function which render's all the content
-  render() {
-    const { status } = this.state;
-    return (
-      <div className='container'>
-        <div className='col-md-12'>
-          <div className='row fakeDiv'></div>
-          <div className='row dataHolder'>
-            <div className='socialMediaHolder'>
-              <div className='topBackGround'></div>
-              <div className='profileImage'>
-                <img src='images/mine.jpg' alt='mine' height='10%' width='60%' data-toggle='tooltip' title='Jatin Kumar "Kamboj"' />
-              </div>
-              <div className='row socializeRow'>
-                {/* <div className='socialization mx-auto text-center'>
-                  I <strong>socialize</strong> On
-              </div> */}
-                <p className='a mx-auto text-center'>
+            <motion.div
+              className='row socializeRow'
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.8,
+                ease: "easeOut"
+              }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.2 }
+              }}
+            >
+              <motion.p
+                className='a mx-auto text-center'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.6
+                }}
+                whileHover={{
+                  textShadow: "0px 0px 8px rgba(255,255,255,0.8)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.span
+                  initial={{ display: "inline-block", opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    delay: 1,
+                    duration: 0.5,
+                    ease: "backOut"
+                  }}
+                >
                   Software Engineer
-                </p>
-              </div>
-              <div className='row socializationLinks justify-content-center'>
-                <ul id='socialList'>
-                  <li>
+                </motion.span>
+              </motion.p>
+            </motion.div>
+
+            <motion.div
+              className='row socializationLinks justify-content-center'
+              initial="hidden"
+              animate="visible"
+              variants={{
+                visible: {
+                  transition: {
+                    staggerChildren: 0.1,
+                    delayChildren: 0.6
+                  }
+                }
+              }}
+            >
+              <ul id='socialList'>
+                {[
+                  { href: 'https://www.github.com/jatinkmr', icon: 'fab fa-github', title: 'GitHub' },
+                  { href: 'https://www.linkedin.com/in/jatinkumarkamboj/', icon: 'fab fa-linkedin', title: 'LinkedIn' },
+                  { href: 'mailto:kumar.jatin873@gmail.com', icon: 'fa-brands fa-google', title: 'Google(gMail)' },
+                  { href: 'https://x.com/jatinkrkamboj', icon: 'fa-brands fa-x-twitter', title: 'Twitter' },
+                  { href: 'https://www.instagram.com/ijatinkrkamb0j/', icon: 'fab fa-instagram', title: 'InstaGram' },
+                  { href: 'https://www.facebook.com/jatin.kamboj.37', icon: 'fab fa-facebook-square', title: 'FaceBook' }
+                ].map((social, index) => (
+                  <motion.li
+                    key={index}
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 0.4 }
+                      }
+                    }}
+                    whileHover={{ scale: 1.2, y: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <a
-                      href='https://www.github.com/jatinkmr'
+                      href={social.href}
                       target='_blank'
                       rel='noopener noreferrer'
-                      data-toggle='tooltip' title='GitHub'
+                      data-toggle='tooltip'
+                      title={social.title}
                     >
-                      <i className='fab fa-github'></i>
+                      <i className={social.icon}></i>
                     </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://www.linkedin.com/in/jatinkumarkamboj/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      data-toggle='tooltip' title='LinkedIn'
-                    >
-                      <i className='fab fa-linkedin'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='mailto:kumar.jatin873@gmail.com'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      data-toggle='tooltip' title='Google(gMail)'
-                    >
-                      <i class="fa-brands fa-google"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://x.com/jatinkrkamboj'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      data-toggle='tooltip' title='Twitter'
-                    >
-                      <i className='fa-brands fa-x-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://www.instagram.com/ijatinkrkamb0j/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      data-toggle='tooltip' title='InstaGram'
-                    >
-                      <i className='fab fa-instagram'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='https://www.facebook.com/jatin.kamboj.37'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      data-toggle='tooltip' title='FaceBook'
-                    >
-                      <i className='fab fa-facebook-square'></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className='contentHolder'>
-              <div className='contentHeading bg-dark'>
-                <ul id='headingList' className='nav justify-content-center'>
-                  <li className='nav-item' onClick={this.changeHandler}>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
+
+          <div className='contentHolder'>
+            <motion.div
+              className='contentHeading bg-dark'
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <ul id='headingList' className='nav justify-content-center'>
+                {['home', 'profile', 'about', 'contact'].map((tab) => (
+                  <motion.li
+                    key={tab}
+                    className='nav-item'
+                    onClick={changeHandler}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
                     <button
                       type='button'
-                      className={`btn btn-link px-1 ${status === "home" ? "active" : ""}`}
-                      name='home'
-                      data-toggle='tooltip' title='Home'
+                      className={`btn btn-link px-1 ${status === tab ? "active" : ""}`}
+                      name={tab}
+                      data-toggle='tooltip'
+                      title={tab.charAt(0).toUpperCase() + tab.slice(1)}
                     >
-                      Home
+                      {tab.charAt(0).toUpperCase() + tab.slice(1)}
                     </button>
-                  </li>
-                  <li className='nav-item' onClick={this.changeHandler}>
-                    <button type='button' className={`btn btn-link px-1 ${status === "profile" ? "active" : ""}`} name='profile' data-toggle='tooltip' title='Profile'>
-                      Profile
-                    </button>
-                  </li>
-                  <li className='nav-item' onClick={this.changeHandler}>
-                    <button type='button' className={`btn btn-link px-1 ${status === "about" ? "active" : ""}`} name='about' data-toggle='tooltip' title='About Me'>
-                      About
-                    </button>
-                  </li>
-                  <li className='nav-item' onClick={this.changeHandler}>
-                    <button type='button' className={`btn btn-link px-1 ${status === "contact" ? "active" : ""}`} name='contact' data-toggle='tooltip' title='Contact'>
-                      Contact
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div className='contentData'>
-                {status === 'home' ? <HomeTab /> : null}
-                {status === 'profile' ? <ProfileTab /> : null}
-                {status === 'about' ? <AboutTab /> : null}
-                {status === 'contact' ? <ContactTab /> : null}
-              </div>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+
+            <div className='contentData'>
+              <AnimatePresence mode='wait'>
+                {status === 'home' && <HomeTab key="home" />}
+                {status === 'profile' && <ProfileTab key="profile" />}
+                {status === 'about' && <AboutTab key="about" />}
+                {status === 'contact' && <ContactTab key="contact" />}
+              </AnimatePresence>
             </div>
           </div>
-          <div className='row footerContent'>
-            <p className='text-right'>Copyright &copy; 2020 Jatin Kumar "Kamboj"</p>
-          </div>
         </div>
-      </div>
-    )
-  }
-}
 
-// export backgroundtab class
-export default backgroundtab
+        <motion.div
+          className='row footerContent'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
+          <p className='text-right'>Copyright © 2020 Jatin Kumar "Kamboj"</p>
+        </motion.div>
+      </div>
+    </motion.div>
+  );
+};
+
+export default Backgroundtab
