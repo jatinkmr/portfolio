@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import './contact.css';
+import { containerVariants, formGroupVariants, fieldErrorVariants, fieldSuccessVariants, buttonVariants, statusMessageVariants, spinnerVariants } from '../../utils/animation';
 
 const ContactForm = () => {
     const form = useRef();
@@ -187,11 +189,31 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="contact-form-container">
-            <form ref={form} onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
-                    <label htmlFor="userName">Name</label>
-                    <input
+        <motion.div 
+            className="contact-form-container"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+        >
+            <motion.form 
+                ref={form} 
+                onSubmit={handleSubmit} 
+                className="contact-form"
+                variants={containerVariants}
+            >
+                <motion.div 
+                    className="form-group"
+                    variants={formGroupVariants}
+                >
+                    <motion.label 
+                        htmlFor="userName"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.1 }}
+                    >
+                        Name
+                    </motion.label>
+                    <motion.input
                         id="userName"
                         className={`form-control ${fieldErrors.userName ? 'error' : ''} ${fieldTouched.userName && !fieldErrors.userName ? 'success' : ''}`}
                         type="text"
@@ -200,24 +222,62 @@ const ContactForm = () => {
                         onChange={handleInputChange}
                         onBlur={handleFieldBlur}
                         placeholder="Enter your name"
+                        whileFocus={{ scale: 1.02, borderColor: "#007bff" }}
+                        transition={{ duration: 0.2 }}
                     />
-                    {fieldErrors.userName && (
-                        <div className="field-error">
-                            <i className="fa fa-exclamation-circle"></i>
-                            {fieldErrors.userName}
-                        </div>
-                    )}
-                    {fieldTouched.userName && !fieldErrors.userName && formState.userName && (
-                        <div className="field-success">
-                            <i className="fa fa-check-circle"></i>
-                            Looks good!
-                        </div>
-                    )}
-                </div>
+                    <AnimatePresence>
+                        {fieldErrors.userName && (
+                            <motion.div 
+                                className="field-error"
+                                variants={fieldErrorVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <motion.i 
+                                    className="fa fa-exclamation-circle"
+                                    initial={{ rotate: -180, opacity: 0 }}
+                                    animate={{ rotate: 0, opacity: 1 }}
+                                    transition={{ duration: 0.3 }}
+                                />
+                                {fieldErrors.userName}
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                    <AnimatePresence>
+                        {fieldTouched.userName && !fieldErrors.userName && formState.userName && (
+                            <motion.div 
+                                className="field-success"
+                                variants={fieldSuccessVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <motion.i 
+                                    className="fa fa-check-circle"
+                                    initial={{ scale: 0 }}
+                                    animate={{ scale: 1 }}
+                                    transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
+                                />
+                                Looks good!
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                </motion.div>
 
-                <div className="form-group">
-                    <label htmlFor="email">Email</label>
-                    <input
+                <motion.div 
+                    className="form-group"
+                    variants={formGroupVariants}
+                >
+                    <motion.label 
+                        htmlFor="email"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        Email
+                    </motion.label>
+                    <motion.input
                         id="email"
                         className={`form-control ${fieldErrors.email ? 'error' : ''} ${fieldTouched.email && !fieldErrors.email ? 'success' : ''}`}
                         type="email"
@@ -226,24 +286,62 @@ const ContactForm = () => {
                         onChange={handleInputChange}
                         onBlur={handleFieldBlur}
                         placeholder="Enter your email"
+                        whileFocus={{ scale: 1.02, borderColor: "#007bff" }}
+                        transition={{ duration: 0.2 }}
                     />
-                    {fieldErrors.email && (
-                        <div className="field-error">
-                            <i className="fa fa-exclamation-circle"></i>
-                            {fieldErrors.email}
-                        </div>
-                    )}
-                    {fieldTouched.email && !fieldErrors.email && formState.email && (
-                        <div className="field-success">
-                            <i className="fa fa-check-circle"></i>
-                            Valid email address!
-                        </div>
-                    )}
-                </div>
+                    <AnimatePresence>
+                        {fieldErrors.email && (
+                            <motion.div 
+                                className="field-error"
+                                variants={fieldErrorVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <motion.i 
+                                    className="fa fa-exclamation-circle"
+                                    initial={{ rotate: -180, opacity: 0 }}
+                                    animate={{ rotate: 0, opacity: 1 }}
+                                    transition={{ duration: 0.3 }}
+                                />
+                                {fieldErrors.email}
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                    <AnimatePresence>
+                        {fieldTouched.email && !fieldErrors.email && formState.email && (
+                            <motion.div 
+                                className="field-success"
+                                variants={fieldSuccessVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <motion.i 
+                                    className="fa fa-check-circle"
+                                    initial={{ scale: 0 }}
+                                    animate={{ scale: 1 }}
+                                    transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
+                                />
+                                Valid email address!
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                </motion.div>
 
-                <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea
+                <motion.div 
+                    className="form-group"
+                    variants={formGroupVariants}
+                >
+                    <motion.label 
+                        htmlFor="message"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        Message
+                    </motion.label>
+                    <motion.textarea
                         id="message"
                         className={`form-control ${fieldErrors.message ? 'error' : ''} ${fieldTouched.message && !fieldErrors.message ? 'success' : ''}`}
                         name="message"
@@ -252,63 +350,160 @@ const ContactForm = () => {
                         onBlur={handleFieldBlur}
                         placeholder="Enter your message"
                         rows="4"
+                        whileFocus={{ scale: 1.02, borderColor: "#007bff" }}
+                        transition={{ duration: 0.2 }}
                     />
-                    <div className="character-count">
+                    <motion.div 
+                        className="character-count"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.4 }}
+                    >
                         {formState.message.length}/1000 characters
-                    </div>
-                    {fieldErrors.message && (
-                        <div className="field-error">
-                            <i className="fa fa-exclamation-circle"></i>
-                            {fieldErrors.message}
-                        </div>
-                    )}
-                    {fieldTouched.message && !fieldErrors.message && formState.message && (
-                        <div className="field-success">
-                            <i className="fa fa-check-circle"></i>
-                            Message looks great!
-                        </div>
-                    )}
-                </div>
+                    </motion.div>
+                    <AnimatePresence>
+                        {fieldErrors.message && (
+                            <motion.div 
+                                className="field-error"
+                                variants={fieldErrorVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <motion.i 
+                                    className="fa fa-exclamation-circle"
+                                    initial={{ rotate: -180, opacity: 0 }}
+                                    animate={{ rotate: 0, opacity: 1 }}
+                                    transition={{ duration: 0.3 }}
+                                />
+                                {fieldErrors.message}
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                    <AnimatePresence>
+                        {fieldTouched.message && !fieldErrors.message && formState.message && (
+                            <motion.div 
+                                className="field-success"
+                                variants={fieldSuccessVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                <motion.i 
+                                    className="fa fa-check-circle"
+                                    initial={{ scale: 0 }}
+                                    animate={{ scale: 1 }}
+                                    transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
+                                />
+                                Message looks great!
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                </motion.div>
 
-                <button
+                <motion.button
                     type="submit"
                     className={`submit-button ${status.sending ? 'loading' : ''}`}
                     disabled={status.sending}
+                    variants={buttonVariants}
+                    initial="idle"
+                    whileHover={status.sending ? "loading" : "hover"}
+                    whileTap={status.sending ? "loading" : "tap"}
+                    animate={status.sending ? "loading" : "idle"}
                 >
                     {status.sending ? (
                         <>
-                            <div className="loading-spinner"></div>
-                            Sending Message...
+                            <motion.div 
+                                className="loading-spinner"
+                                variants={spinnerVariants}
+                                animate="animate"
+                            />
+                            <motion.span
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.2 }}
+                            >
+                                Sending Message...
+                            </motion.span>
                         </>
                     ) : (
                         <>
-                            <i className="fa fa-paper-plane"></i>
+                            <motion.i 
+                                className="fa fa-paper-plane"
+                                whileHover={{ x: 2, y: -2 }}
+                                transition={{ duration: 0.2 }}
+                            />
                             Send Message
                         </>
                     )}
-                </button>
-            </form>
+                </motion.button>
+            </motion.form>
 
-            {status.submitted && (
-                <div className={`status-message ${getStatusClass()}`}>
-                    {status.success ? (
-                        <div className="success-animation">
-                            <div className="success-icon">
-                                <i className="fa-solid fa-circle-check fa-bounce"></i>
-                            </div>
-                            <div className="success-text">
-                                {status.message}
-                            </div>
-                        </div>
-                    ) : (
-                        <>
-                            <i className="fa fa-exclamation-triangle"></i>
-                            {status.message}
-                        </>
-                    )}
-                </div>
-            )}
-        </div>
+            <AnimatePresence>
+                {status.submitted && (
+                    <motion.div 
+                        className={`status-message ${getStatusClass()}`}
+                        variants={statusMessageVariants}
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                    >
+                        {status.success ? (
+                            <motion.div 
+                                className="success-animation"
+                                initial={{ scale: 0.5 }}
+                                animate={{ scale: 1 }}
+                                transition={{ 
+                                    delay: 0.2,
+                                    type: "spring",
+                                    stiffness: 150
+                                }}
+                            >
+                                <motion.div 
+                                    className="success-icon"
+                                    initial={{ scale: 0, rotate: -180 }}
+                                    animate={{ scale: 1, rotate: 0 }}
+                                    transition={{ 
+                                        delay: 0.3,
+                                        duration: 0.6,
+                                        ease: "backOut"
+                                    }}
+                                >
+                                    <i className="fa-solid fa-circle-check fa-bounce"></i>
+                                </motion.div>
+                                <motion.div 
+                                    className="success-text"
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.5 }}
+                                >
+                                    {status.message}
+                                </motion.div>
+                            </motion.div>
+                        ) : (
+                            <>
+                                <motion.i 
+                                    className="fa fa-exclamation-triangle"
+                                    initial={{ scale: 0, rotate: -45 }}
+                                    animate={{ scale: 1, rotate: 0 }}
+                                    transition={{ 
+                                        type: "spring",
+                                        stiffness: 200
+                                    }}
+                                />
+                                <motion.span
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 0.2 }}
+                                >
+                                    {status.message}
+                                </motion.span>
+                            </>
+                        )}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </motion.div>
     );
 };
 
