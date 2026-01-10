@@ -94,9 +94,7 @@ const HomeTab = () => {
           </motion.p>
 
           <motion.p className="intro-detail" variants={staggerItem}>
-            Previously at <span className="company">FirstCry.com</span>, I build CRM dashboards and integrate frontend interfaces with REST APIs.
-            My expertise spans <span className="tech">Node.js</span>, <span className="tech">Express</span>, <span className="tech">React</span>,
-            and <span className="tech">Vue.js</span>, with cloud deployments on <span className="tech">AWS</span>.
+            Currently working as a <span className="company">Software Engineer</span> at <span className="company">Squareboat</span>, where I build high-performance, low-latency REST APIs using <span className="tech">Node.js</span>, <span className="tech">Express.js</span>, and <span className="tech">NestJS</span>. I work extensively with <span className="tech">MongoDB</span>, <span className="tech">MySQL</span>, <span className="tech">ObjectionJS</span>, and <span className="tech">Redis</span> caching to optimize system performance. My experience includes implementing App Store and Play Store subscription systems, FCM push notifications, CRON jobs, and building Puppeteer/Cheerio-based data crawlers along with Typesense-powered search. I've also developed a Reddit + GPT-driven sentiment analysis pipeline using Neo4j GraphDB, and managed deployments with PM2, AWS, and Nginx, enhancing monitoring and logging through Bunyan.
           </motion.p>
 
           <motion.p className="intro-detail" variants={staggerItem}>
