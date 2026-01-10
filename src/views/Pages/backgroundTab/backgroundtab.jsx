@@ -188,7 +188,7 @@ const Backgroundtab = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          <p className='text-right'>Copyright © 2020 Jatin Kumar "Kamboj"</p>
+          <p className='text-right'>Copyright © 2026 Jatin Kumar "Kamboj"</p>
         </motion.div>
       </div>
     </motion.div>
