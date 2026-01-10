@@ -123,7 +123,6 @@ const ProfileTab = () => {
     const htmlSkills = [
         { name: 'HTML', icon: 'fa-brands fa-html5', className: 'htmlSkill', percentage: 75 },
         { name: 'JSX', icon: 'fa-brands fa-react', className: 'jsxSkill', percentage: 65 },
-        { name: 'PHP', icon: 'fa-brands fa-php', className: 'phpMySqlSkill', percentage: 55 }
     ];
 
     // CSS Skills Data
@@ -137,7 +136,9 @@ const ProfileTab = () => {
     const jsSkills = [
         { name: 'ReactJS', icon: 'fa-brands fa-react', className: 'reactSkill', percentage: 45 },
         { name: 'NodeJS', icon: 'fa-brands fa-node-js', className: 'nodeJsSkill', percentage: 70 },
+        { name: 'NestJS', icon: 'fa-solid fa-cube', className: 'nestJsSkill', percentage: 65 },
         { name: 'KnexJS', icon: 'fa-solid fa-cubes', className: 'knexJsSkill', percentage: 50 },
+        { name: 'Objection.js', icon: 'fa-solid fa-link', className: 'objectionJsSkill', percentage: 55 },
         { name: 'jQuery', icon: 'fa-solid fa-dollar-sign', className: 'jQuerySkill', percentage: 52 },
         { name: 'VueJS', icon: 'fa-brands fa-vuejs', className: 'vueJsSkill', percentage: 50 }
     ];
@@ -146,18 +147,47 @@ const ProfileTab = () => {
     const backendSkills = [
         { name: 'MySQL', icon: 'fa-solid fa-database', className: 'phpMySqlSkill', percentage: 55 },
         { name: 'MongoDB', icon: 'fa-solid fa-leaf', className: 'mongoDbSkill', percentage: 50 },
-        { name: 'PostgreSQL', icon: 'fa-solid fa-chart-simple', className: 'postgreSqlSkill', percentage: 45 }
+        { name: 'PostgreSQL', icon: 'fa-solid fa-chart-simple', className: 'postgreSqlSkill', percentage: 45 },
+        { name: 'Typesense', icon: 'fa-solid fa-magnifying-glass', className: 'typesenseSkill', percentage: 50 }
     ];
 
     // Other Skills Data
     const otherSkills = [
         { name: 'Git', icon: 'fa-brands fa-git-alt', className: 'gitSkill', percentage: 60 },
-        { name: 'Heroku', icon: 'fa-solid fa-cube', className: 'herokuSkill', percentage: 50 },
+        { name: 'Docker', icon: 'fa-brands fa-docker', className: 'dockerSkill', percentage: 55 },
+        { name: 'Nginx', icon: 'fa-solid fa-server', className: 'nginxSkill', percentage: 50 },
+        { name: 'PM2', icon: 'fa-solid fa-gauge-high', className: 'pm2Skill', percentage: 60 },
+        { name: 'Heroku', icon: 'fa-solid fa-cloud', className: 'herokuSkill', percentage: 50 },
         { name: 'AWS', icon: 'fa-brands fa-aws', className: 'awsSkill', percentage: 45 }
+    ];
+
+    // API & Security Skills Data
+    const apiSecuritySkills = [
+        { name: 'JWT', icon: 'fa-solid fa-key', className: 'jwtSkill', percentage: 65 },
+        { name: 'Joi', icon: 'fa-solid fa-shield-halved', className: 'joiSkill', percentage: 60 },
+        { name: 'Swagger', icon: 'fa-solid fa-file-code', className: 'swaggerSkill', percentage: 60 }
     ];
 
     // Full Time Experience Data
     const fullTimeExperiences = [
+        {
+            position: 'Software Engineer',
+            icon: 'fa-solid fa-laptop-code',
+            companyName: 'Squareboat',
+            companyUrl: 'https://www.squareboat.com/',
+            companyTooltip: 'Squareboat',
+            duration: 'April 2024 - Present',
+            responsibilities: [
+                'Designed, developed, and maintained scalable RESTful APIs ensuring high performance, security, and low-latency data access',
+                'Engineered backend systems using Node.js-based frameworks with clean, modular architecture and industry best practices',
+                'Integrated SQL/NoSQL databases (MySQL, PostgreSQL, MongoDB) with efficient data modeling, indexing, and optimized querying',
+                'Implemented authentication and authorization mechanisms including JWT, role-based access control, and data encryption',
+                'Built automated workflows such as scheduled CRON jobs, notification services, and data processing pipelines',
+                'Applied caching (Redis), performance optimization, and logging solutions for high system reliability and troubleshooting',
+                'Collaborated closely with cross-functional teams — product, frontend, QA, and DevOps — to deliver high-quality releases',
+                'Tools: Node.js, Express.js, NestJS, MongoDB, Mongoose, PostgreSQL, MySQL, Redis, Typesense, Sequelize, Objection.js, Knex.js, Docker, AWS, Nginx, PM2, NodeMailer, Mailman, Pub/Sub, Payment & Subscription Integrations, CRON Jobs, Puppeteer, Cheerio, JWT, Role-Based Access Control, Joi Validation, Rate Limiting, Git, Swagger, Taiga, Bunyan'
+            ]
+        },
         {
             position: 'Software Developer',
             icon: 'fa-solid fa-laptop-code',
@@ -166,11 +196,15 @@ const ProfileTab = () => {
             companyTooltip: 'FirstCry',
             duration: 'Aug 2021 - May 2023',
             responsibilities: [
-                'Work in CRM(Customer Relationship Management)-Team as Full-Stack Developer.',
-                'Developed REST API using the Express framework along backend logic.',
-                'Designed FrontEnd User-Interface using VueJS.',
-                'FrontEnd User Interface Integration with REST APIs.',
-                'Tools: NodeJS, ExpressJS, VueJS, PostgresSQL and Sequelize.'
+                'Developing and maintaining the CRM dashboard using VueJS for the frontend user interface',
+                'Developing REST APIs using Node and ExpressJS for the backend logic of the application',
+                'Designing and implementing the frontend user interface using VueJS',
+                'Integrating the frontend user interface with the REST APIs to enable seamless communication between the frontend and the backend',
+                'Integrating the application with the PostgreSQL database using Sequelize.js and developing queries to fetch data from the database',
+                'Collaborating with the team members and stakeholders to understand the requirements, identify the technical challenges, and propose effective solutions',
+                'Contributing to the development and maintenance of the application codebase, ensuring code quality, scalability, and maintainability',
+                'Troubleshooting and resolving bugs and issues in the application, using tools like Redmine and Smartworks for bug tracking',
+                'Tools: NodeJS, ExpressJS, VueJS, PostgresSQL, Sequelize, Redmine, Smartworks'
             ]
         },
         {
@@ -364,6 +398,28 @@ const ProfileTab = () => {
                 </motion.div>
                 <div className='skillContentDetails'>
                     {backendSkills.map((skill, index) => (
+                        <SkillBar
+                            key={skill.name}
+                            skill={skill}
+                            percentage={skill.percentage}
+                            delay={1.0 + index * 0.1}
+                        />
+                    ))}
+                </div>
+
+                {/* API Secutiry */}
+                <motion.div
+                    className='apiSecurity'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.9 }}
+                >
+                    <h3 className='a'>
+                        <i className="fa-solid fa-user-shield" aria-hidden="true"></i> API Security
+                    </h3>
+                </motion.div>
+                <div className="skillContentDetails">
+                    {apiSecuritySkills.map((skill, index) => (
                         <SkillBar
                             key={skill.name}
                             skill={skill}
